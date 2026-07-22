@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+tests/test_corpus.py
+tests/test_main.py
+tru_ai/__init__.py
+tru_ai/__main__.py
+tru_ai.egg-info/PKG-INFO
+tru_ai.egg-info/SOURCES.txt
+tru_ai.egg-info/dependency_links.txt
+tru_ai.egg-info/requires.txt
+tru_ai.egg-info/top_level.txt
+tru_ai/api/main.py
+tru_ai/extraction/corpus.py

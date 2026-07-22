@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: tru-ai
+Version: 0.8.5.1
+Summary: Artificial Intelligence for the Universal Reflexivity Theory
+Requires-Python: >=3.11
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: pydantic
+Requires-Dist: typer
+Requires-Dist: python-dotenv

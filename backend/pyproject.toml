@@ -1,0 +1,26 @@
+[project]
+name = "tru-ai"
+version = "0.8.5.1"
+description = "Artificial Intelligence for the Universal Reflexivity Theory"
+requires-python = ">=3.11"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "networkx",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "pydantic",
+    "typer",
+    "python-dotenv",
+]
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+networkx
+numpy
+pandas
+scikit-learn
+pydantic
+typer
+python-dotenv
