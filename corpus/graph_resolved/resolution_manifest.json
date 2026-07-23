@@ -1,0 +1,28 @@
+{
+  "automatic_merge_count": 0,
+  "decision_count": 0,
+  "generated_at": "2026-07-23T21:47:46.337196+00:00",
+  "merged_node_count": 0,
+  "original_edge_count": 2,
+  "original_node_count": 4,
+  "outputs": {
+    "adjacency": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_resolved\\adjacency.json",
+    "edges": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_resolved\\edges.jsonl",
+    "merge_decisions": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_resolved\\merge_decisions.jsonl",
+    "nodes": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_resolved\\nodes.jsonl",
+    "unresolved_candidates": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_resolved\\unresolved_candidates.jsonl"
+  },
+  "resolved_edge_count": 2,
+  "resolved_node_count": 4,
+  "review_candidate_count": 0,
+  "source": {
+    "edges": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph\\edges.jsonl",
+    "nodes": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph\\nodes.jsonl"
+  },
+  "validation": {
+    "errors": [],
+    "valid": true,
+    "warnings": []
+  },
+  "version": "v0.8.5.6"
+}
