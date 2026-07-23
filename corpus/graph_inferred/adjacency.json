@@ -1,0 +1,50 @@
+{
+  "concept-conscience": {
+    "incoming": [],
+    "outgoing": [
+      {
+        "confidence": 0.96,
+        "edge_id": "edge-fbfcd7e0af1303a2",
+        "object_id": "concept-observation",
+        "occurrence_count": 1,
+        "predicate": "etre_capable_de"
+      }
+    ]
+  },
+  "concept-observation": {
+    "incoming": [
+      {
+        "confidence": 0.96,
+        "edge_id": "edge-fbfcd7e0af1303a2",
+        "occurrence_count": 1,
+        "predicate": "etre_capable_de",
+        "subject_id": "concept-conscience"
+      }
+    ],
+    "outgoing": []
+  },
+  "concept-tru": {
+    "incoming": [],
+    "outgoing": [
+      {
+        "confidence": 0.92,
+        "edge_id": "edge-6638ed8d5073d2bd",
+        "object_id": "entity-bdf66938e8752540",
+        "occurrence_count": 1,
+        "predicate": "proposer"
+      }
+    ]
+  },
+  "entity-bdf66938e8752540": {
+    "incoming": [
+      {
+        "confidence": 0.92,
+        "edge_id": "edge-6638ed8d5073d2bd",
+        "occurrence_count": 1,
+        "predicate": "proposer",
+        "subject_id": "concept-tru"
+      }
+    ],
+    "outgoing": []
+  }
+}

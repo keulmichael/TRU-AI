@@ -1,0 +1,32 @@
+{
+  "active_rule_count": 15,
+  "enriched_edge_count": 2,
+  "fixed_point_reached": true,
+  "generated_at": "2026-07-23T23:03:52.316547+00:00",
+  "inferred_edge_count": 0,
+  "max_depth_configured": 2,
+  "max_depth_reached": 0,
+  "original_edge_count": 2,
+  "original_node_count": 4,
+  "outputs": {
+    "graph_inferred_adjacency": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_inferred\\adjacency.json",
+    "graph_inferred_edges": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_inferred\\edges.jsonl",
+    "graph_inferred_manifest": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_inferred\\inference_manifest.json",
+    "graph_inferred_nodes": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_inferred\\nodes.jsonl",
+    "inference_manifest": "C:\\Sites\\Projects\\TRU-AI\\corpus\\inference\\inference_manifest.json",
+    "inference_traces": "C:\\Sites\\Projects\\TRU-AI\\corpus\\inference\\inference_traces.jsonl",
+    "inferred_edges": "C:\\Sites\\Projects\\TRU-AI\\corpus\\inference\\inferred_edges.jsonl"
+  },
+  "passes_executed": 1,
+  "source": {
+    "edges": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_resolved\\edges.jsonl",
+    "nodes": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_resolved\\nodes.jsonl"
+  },
+  "trace_count": 0,
+  "validation": {
+    "errors": [],
+    "valid": true,
+    "warnings": []
+  },
+  "version": "v0.8.6.0"
+}
