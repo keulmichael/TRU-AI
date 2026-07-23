@@ -2,3 +2,9 @@ corpus/processed/concepts.jsonl
 corpus/processed/concept_occurrences.jsonl
 corpus/processed/propositions.jsonl
 corpus/processed/relations.jsonl
+corpus/graph/nodes.jsonl
+corpus/graph/edges.jsonl
+corpus/graph/adjacency.json
+corpus/graph/graph_manifest.json
+corpus/graph/*
+!corpus/graph/.gitkeep
