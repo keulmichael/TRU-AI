@@ -1,0 +1,25 @@
+{
+  "explanation_count": 0,
+  "generated_at": "2026-07-24T07:27:17.427765+00:00",
+  "inferred_edge_count": 0,
+  "maximum_proof_depth": 0,
+  "output_paths": {
+    "explanations": "C:\\Sites\\Projects\\TRU-AI\\corpus\\reasoning\\explanations.jsonl",
+    "proof_trees": "C:\\Sites\\Projects\\TRU-AI\\corpus\\reasoning\\proof_trees.jsonl",
+    "reasoning_manifest": "C:\\Sites\\Projects\\TRU-AI\\corpus\\reasoning\\reasoning_manifest.json"
+  },
+  "proof_tree_count": 0,
+  "source_paths": {
+    "graph_inferred_edges": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_inferred\\edges.jsonl",
+    "graph_inferred_nodes": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_inferred\\nodes.jsonl",
+    "inference_traces": "C:\\Sites\\Projects\\TRU-AI\\corpus\\inference\\inference_traces.jsonl",
+    "inferred_edges": "C:\\Sites\\Projects\\TRU-AI\\corpus\\inference\\inferred_edges.jsonl"
+  },
+  "unexplained_edge_count": 0,
+  "validation": {
+    "errors": [],
+    "valid": true,
+    "warnings": []
+  },
+  "version": "v0.8.7.0"
+}
