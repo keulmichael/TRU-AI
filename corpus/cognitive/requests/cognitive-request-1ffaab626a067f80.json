@@ -1,0 +1,595 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [
+        {
+          "claim_id": "cognitive-claim-59c0a722ae84f83c",
+          "classification": "DÉDUCTION",
+          "confidence": 0.62,
+          "evidence_ids": [
+            "cognitive-evidence-e4fc258a99631419"
+          ],
+          "text": "Application de l'opérateur tru-operator-66669e5ce3fdf6ac : écart interprétatif entre phénomène demandé et concepts TRU disponibles."
+        }
+      ],
+      "explicit_claims": [
+        {
+          "claim_id": "cognitive-claim-5a35f001d00bb5f2",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-4ca761980bc5993c"
+          ],
+          "text": "Le second opérateur fondamental est R, qui désigne la relation. Si la différence constitue le moteur du changement, elle demeure pourtant dépourvue de signification lorsqu'elle est considérée isolément. Une différence ne devient intelligible qu'à partir du moment où elle peut être comparée à autre chose. La relation représente précisément cette structure fondamentale qui rend possible toute comparaison. Dans la Théorie de la Réflexivité Universelle, aucune réalité n'existe indépendamment des relations qui l'unissent aux autres réalités. Un objet, une pensée, un être vivant ou une société ne peuvent être compris par leurs seules propriétés internes ; ils acquièrent leur véritable signification à travers l'ensemble des interactions qui les relient à leur environnement. R ne désigne donc pas un lien particulier mais le principe même selon lequel les éléments d'un système deviennent mutuellement intelligibles. Les relations évoluent continuellement, se renforcent, disparaissent, se recomposent et produisent sans cesse de nouvelles organisations. Les propriétés émergentes d'un système proviennent bien davantage de la qualité de ces relations que des caractéristiques isolées de chacun de ses composants. La théorie rejoint ici de nombreuses approches contemporaines des systèmes complexes tout en leur donnant une portée plus générale : la relation ne constitue pas seulement une propriété des systèmes vivants ou sociaux ; elle représente l'une des dimensions fondamentales de toute réalité réflexive. Sans relation, aucune différence ne pourrait être interprétée, aucune comparaison ne deviendrait possible et aucune reconnaissance ne pourrait émerger."
+        },
+        {
+          "claim_id": "cognitive-claim-3c3b85b1f8c36041",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-79b65cb60162f297"
+          ],
+          "text": "Dans la Théorie de la Réflexivité Universelle, la transformation peut être définie comme une modification durable de la structure selon laquelle une conscience perçoit, interprète, ressent, agit et organise son existence. Le terme de structure est essentiel, car il distingue la transformation d’une variation ponctuelle. Une émotion peut changer, une opinion peut être momentanément abandonnée, une habitude peut être interrompue pendant quelque temps sans que l’organisation profonde de la conscience soit réellement modifiée. La transformation apparaît lorsque les relations entre les éléments changent : une ancienne perception n’entraîne plus automatiquement la même interprétation, une émotion ne produit plus la même réponse, une situation familière ouvre désormais des possibilités différentes et une relation auparavant subie peut être comprise, limitée ou réorganisée."
+        },
+        {
+          "claim_id": "cognitive-claim-50d7497d2d2e7522",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-aeb490109ce0f48a"
+          ],
+          "text": "Cette dynamique permet de mieux comprendre le phénomène des traumatismes. Les approches psychologiques contemporaines décrivent le traumatisme comme une expérience dont l'intensité dépasse momentanément les capacités habituelles d'intégration de l'individu. L'événement ne peut être correctement assimilé et continue d'exercer une influence durable sur la vie psychique. La Théorie de la Réflexivité Universelle retrouve cette analyse tout en lui donnant une formulation plus générale. Le traumatisme correspond à une différence dont l'intégration réflexive demeure inachevée. L'événement ne disparaît pas de la mémoire ; il y demeure sous une forme"
+        },
+        {
+          "claim_id": "cognitive-claim-5b94befe86efaa22",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-ba31b80c7e421760"
+          ],
+          "text": "Cette situation devient particulièrement visible lorsqu'il s'agit d'aborder le problème de la reconnaissance de la conscience. Les recherches contemporaines ont proposé de nombreuses théories concernant la conscience elle-même : certaines privilégient les corrélats neuronaux, d'autres les architectures cognitives, les flux d'information, les propriétés émergentes ou les expériences subjectives. Ces approches permettent de mieux comprendre les conditions dans lesquelles apparaissent certaines formes de perception, de mémoire, d'attention ou de décision. En revanche, elles répondent plus difficilement à une autre question : comment une conscience parvient-elle à reconnaître ce qu'elle observe, à reconnaître qu'elle reconnaît, puis à intégrer cette reconnaissance dans son évolution ? La reconnaissance ne correspond ni à une simple perception, ni à une représentation, ni à une décision isolée. Elle désigne un processus dynamique reliant l'observation, l'interprétation, la transformation et l'intégration de l'expérience. C'est précisément ce mécanisme que la Théorie de la Réflexivité Universelle propose de placer au centre de son analyse."
+        }
+      ],
+      "hypotheses": [
+        {
+          "claim_id": "cognitive-claim-ab66fd3a300ce520",
+          "classification": "HYPOTHÈSE",
+          "confidence": 0.45,
+          "evidence_ids": [
+            "cognitive-evidence-4ca761980bc5993c",
+            "cognitive-evidence-53b653438c31cc58",
+            "cognitive-evidence-79b65cb60162f297"
+          ],
+          "text": "L'application au burn-out est interprétative si le traité ne le nomme pas explicitement ; elle ne constitue pas un diagnostic médical."
+        }
+      ],
+      "missing_knowledge": [],
+      "sources": [
+        {
+          "byte_size": 4778047,
+          "content_hash": "a393dcbccc45c2e5",
+          "empty_page_numbers": [],
+          "extracted_page_count": 882,
+          "extraction_errors": [],
+          "format": "pdf",
+          "is_demo_source": false,
+          "page_count": 882,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+          "source_id": "source-01795ab64af8762c",
+          "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+        }
+      ],
+      "summary": "TRU-AI analyse burn_out, tru en séparant les éléments explicitement soutenus, les déductions et les hypothèses. L'opérateur formalisé mobilisé est Delta.",
+      "unknowns": [],
+      "warnings": [
+        "Analyse conceptuelle uniquement ; aucun diagnostic médical n'est produit."
+      ]
+    },
+    "classifications": {
+      "DÉDUCTION": [
+        {
+          "claim_id": "cognitive-claim-59c0a722ae84f83c",
+          "classification": "DÉDUCTION",
+          "confidence": 0.62,
+          "evidence_ids": [
+            "cognitive-evidence-e4fc258a99631419"
+          ],
+          "text": "Application de l'opérateur tru-operator-66669e5ce3fdf6ac : écart interprétatif entre phénomène demandé et concepts TRU disponibles."
+        }
+      ],
+      "EXPLICITE": [
+        {
+          "claim_id": "cognitive-claim-5a35f001d00bb5f2",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-4ca761980bc5993c"
+          ],
+          "text": "Le second opérateur fondamental est R, qui désigne la relation. Si la différence constitue le moteur du changement, elle demeure pourtant dépourvue de signification lorsqu'elle est considérée isolément. Une différence ne devient intelligible qu'à partir du moment où elle peut être comparée à autre chose. La relation représente précisément cette structure fondamentale qui rend possible toute comparaison. Dans la Théorie de la Réflexivité Universelle, aucune réalité n'existe indépendamment des relations qui l'unissent aux autres réalités. Un objet, une pensée, un être vivant ou une société ne peuvent être compris par leurs seules propriétés internes ; ils acquièrent leur véritable signification à travers l'ensemble des interactions qui les relient à leur environnement. R ne désigne donc pas un lien particulier mais le principe même selon lequel les éléments d'un système deviennent mutuellement intelligibles. Les relations évoluent continuellement, se renforcent, disparaissent, se recomposent et produisent sans cesse de nouvelles organisations. Les propriétés émergentes d'un système proviennent bien davantage de la qualité de ces relations que des caractéristiques isolées de chacun de ses composants. La théorie rejoint ici de nombreuses approches contemporaines des systèmes complexes tout en leur donnant une portée plus générale : la relation ne constitue pas seulement une propriété des systèmes vivants ou sociaux ; elle représente l'une des dimensions fondamentales de toute réalité réflexive. Sans relation, aucune différence ne pourrait être interprétée, aucune comparaison ne deviendrait possible et aucune reconnaissance ne pourrait émerger."
+        },
+        {
+          "claim_id": "cognitive-claim-3c3b85b1f8c36041",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-79b65cb60162f297"
+          ],
+          "text": "Dans la Théorie de la Réflexivité Universelle, la transformation peut être définie comme une modification durable de la structure selon laquelle une conscience perçoit, interprète, ressent, agit et organise son existence. Le terme de structure est essentiel, car il distingue la transformation d’une variation ponctuelle. Une émotion peut changer, une opinion peut être momentanément abandonnée, une habitude peut être interrompue pendant quelque temps sans que l’organisation profonde de la conscience soit réellement modifiée. La transformation apparaît lorsque les relations entre les éléments changent : une ancienne perception n’entraîne plus automatiquement la même interprétation, une émotion ne produit plus la même réponse, une situation familière ouvre désormais des possibilités différentes et une relation auparavant subie peut être comprise, limitée ou réorganisée."
+        },
+        {
+          "claim_id": "cognitive-claim-50d7497d2d2e7522",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-aeb490109ce0f48a"
+          ],
+          "text": "Cette dynamique permet de mieux comprendre le phénomène des traumatismes. Les approches psychologiques contemporaines décrivent le traumatisme comme une expérience dont l'intensité dépasse momentanément les capacités habituelles d'intégration de l'individu. L'événement ne peut être correctement assimilé et continue d'exercer une influence durable sur la vie psychique. La Théorie de la Réflexivité Universelle retrouve cette analyse tout en lui donnant une formulation plus générale. Le traumatisme correspond à une différence dont l'intégration réflexive demeure inachevée. L'événement ne disparaît pas de la mémoire ; il y demeure sous une forme"
+        },
+        {
+          "claim_id": "cognitive-claim-5b94befe86efaa22",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-ba31b80c7e421760"
+          ],
+          "text": "Cette situation devient particulièrement visible lorsqu'il s'agit d'aborder le problème de la reconnaissance de la conscience. Les recherches contemporaines ont proposé de nombreuses théories concernant la conscience elle-même : certaines privilégient les corrélats neuronaux, d'autres les architectures cognitives, les flux d'information, les propriétés émergentes ou les expériences subjectives. Ces approches permettent de mieux comprendre les conditions dans lesquelles apparaissent certaines formes de perception, de mémoire, d'attention ou de décision. En revanche, elles répondent plus difficilement à une autre question : comment une conscience parvient-elle à reconnaître ce qu'elle observe, à reconnaître qu'elle reconnaît, puis à intégrer cette reconnaissance dans son évolution ? La reconnaissance ne correspond ni à une simple perception, ni à une représentation, ni à une décision isolée. Elle désigne un processus dynamique reliant l'observation, l'interprétation, la transformation et l'intégration de l'expérience. C'est précisément ce mécanisme que la Théorie de la Réflexivité Universelle propose de placer au centre de son analyse."
+        }
+      ],
+      "HYPOTHÈSE": [
+        {
+          "claim_id": "cognitive-claim-ab66fd3a300ce520",
+          "classification": "HYPOTHÈSE",
+          "confidence": 0.45,
+          "evidence_ids": [
+            "cognitive-evidence-4ca761980bc5993c",
+            "cognitive-evidence-53b653438c31cc58",
+            "cognitive-evidence-79b65cb60162f297"
+          ],
+          "text": "L'application au burn-out est interprétative si le traité ne le nomme pas explicitement ; elle ne constitue pas un diagnostic médical."
+        }
+      ],
+      "INCONNU": []
+    },
+    "cognitive_execution": {
+      "applicable_operators": [
+        {
+          "conceptual_version": "v0.9.0-alpha",
+          "definitions": [
+            "Delta Toute observation commence par une différence. Pour qu’une conscience distingue une manifestation, il faut qu’un état se détache d’un autre, qu’une variation apparaisse sur un fond de relative continuité, qu’une attente soit confirmée ou démentie, ou qu’une représentation rencontre une réalité qui ne lui correspond pas entièrement. Une conscience placée devant une identité absolue, sans variation, sans contraste et sans succession, ne pourrait rien observer comme événement déterminé, car aucune différence ne permettrait de séparer un avant d’un après, une partie d’un ensemble ou une manifestation de son contexte. La différence n’est donc pas seulement l’un des contenus possibles de l’expérience ; elle constitue la condition selon laquelle quelque chose devient observable, informatif et susceptible d’être reconnu. La Théorie de la Réflexivité Universelle nomme Delta, noté Δ, l’écart dynamique qui apparaît lorsqu’une conscience compare deux états, deux manifestations, deux représentations ou deux niveaux de reconnaissance et constate qu’ils ne coïncident pas entièrement."
+          ],
+          "inputs": [
+            "état ou configuration actuelle",
+            "possibilité, attente, prédiction ou configuration reconnue"
+          ],
+          "limitations": [
+            "Delta ne doit pas être appliqué si un seul état est établi.",
+            "Delta ne transforme pas une interprétation médicale en diagnostic."
+          ],
+          "name": "Delta",
+          "operator_id": "tru-operator-66669e5ce3fdf6ac",
+          "outputs": [
+            "écart qualifié",
+            "orientation possible de transformation"
+          ],
+          "preconditions": [
+            "au moins deux états ou représentations comparables sont disponibles",
+            "l'écart est soutenu par des preuves textuelles ou une comparaison explicite"
+          ],
+          "source_evidence": [
+            "cognitive-evidence-e4fc258a99631419"
+          ],
+          "transformation": "Comparer deux états ou représentations pour rendre explicite l'écart pertinent."
+        }
+      ],
+      "applied_operators": [
+        {
+          "application_id": "operator-application-6379ba539c0e6ed7",
+          "applied": true,
+          "confidence": 0.62,
+          "operator_id": "tru-operator-66669e5ce3fdf6ac",
+          "output": "écart interprétatif entre phénomène demandé et concepts TRU disponibles",
+          "premise_evidence_ids": [
+            "cognitive-evidence-e4fc258a99631419"
+          ],
+          "refusal_reason": null,
+          "rule": "delta_compares_current_state_with_recognized_possibility"
+        }
+      ],
+      "comparisons": [
+        {
+          "compared_states": [
+            "phénomène demandé : burn-out",
+            "mémoire TRU sélectionnée"
+          ],
+          "comparison_id": "cognitive-comparison-087b4ecfff14a3a5",
+          "delta_detected": "écart interprétatif entre phénomène demandé et concepts TRU disponibles",
+          "differences": [
+            "le phénomène demandé n'est pas nécessairement affirmé directement par le traité"
+          ],
+          "dimensions": [
+            "reconnaissance",
+            "tension entre état vécu et possibilité reconnue",
+            "transformation",
+            "écart"
+          ],
+          "limitations": [],
+          "provenance": [
+            "cognitive-evidence-4ca761980bc5993c",
+            "cognitive-evidence-53b653438c31cc58",
+            "cognitive-evidence-79b65cb60162f297",
+            "cognitive-evidence-870c4c748ddd2769",
+            "cognitive-evidence-8b871321ec5f133f",
+            "cognitive-evidence-95ede896b8236081",
+            "cognitive-evidence-aeb490109ce0f48a",
+            "cognitive-evidence-ba31b80c7e421760",
+            "cognitive-evidence-cc80438fac5b6816",
+            "cognitive-evidence-e07c44490d7a890b",
+            "cognitive-evidence-e1fe7171799cb0ff",
+            "cognitive-evidence-e4fc258a99631419"
+          ],
+          "similarities": [
+            "la question peut être mise en rapport avec les concepts TRU sélectionnés"
+          ],
+          "tru_meaning": "Delta sert ici à nommer un écart seulement si les états comparés sont suffisamment établis."
+        }
+      ],
+      "concepts_recognized": [
+        "burn_out",
+        "tru"
+      ],
+      "concepts_rejected": [],
+      "confidence": 0.82,
+      "confidence_justification": "Confiance calculée avec 4 affirmation(s) explicite(s), 1 déduction(s), 1 hypothèse(s), 0 inconnue(s), 1 opérateur(s) appliqué(s), 0 contradiction(s) et 1 source(s) de production.",
+      "context": [],
+      "contradictions": [],
+      "deductions": [
+        "cognitive-claim-59c0a722ae84f83c"
+      ],
+      "deltas_detected": [
+        "écart interprétatif entre phénomène demandé et concepts TRU disponibles"
+      ],
+      "evidence_selected": [
+        "cognitive-evidence-4ca761980bc5993c",
+        "cognitive-evidence-53b653438c31cc58",
+        "cognitive-evidence-79b65cb60162f297",
+        "cognitive-evidence-870c4c748ddd2769",
+        "cognitive-evidence-8b871321ec5f133f",
+        "cognitive-evidence-95ede896b8236081",
+        "cognitive-evidence-aeb490109ce0f48a",
+        "cognitive-evidence-ba31b80c7e421760",
+        "cognitive-evidence-cc80438fac5b6816",
+        "cognitive-evidence-e07c44490d7a890b",
+        "cognitive-evidence-e1fe7171799cb0ff",
+        "cognitive-evidence-e4fc258a99631419"
+      ],
+      "execution_id": "cognitive-execution-37c4392fceb6d8d0",
+      "final_answer": "TRU-AI analyse burn_out, tru en séparant les éléments explicitement soutenus, les déductions et les hypothèses. L'opérateur formalisé mobilisé est Delta.",
+      "hypotheses": [
+        "cognitive-claim-ab66fd3a300ce520"
+      ],
+      "intention": "applied_analysis",
+      "memory_activated": [
+        "memory-element-3d8b016b9b42fa9c",
+        "memory-element-3f8bc8dc61417088",
+        "memory-element-4cbf28eda5e93e5a",
+        "memory-element-528f7332ec272f54",
+        "memory-element-71b04e8638b2491e",
+        "memory-element-8ae623acf32adeff",
+        "memory-element-b0641448c7576fab",
+        "memory-element-c2196fb393155cf9",
+        "memory-element-cebafcee44baa9dc",
+        "memory-element-d9b7fdf8d943231b",
+        "memory-element-e3ae07054cc0d834",
+        "memory-element-f0e3d51178dedcdc"
+      ],
+      "observation": "Question observée : Analyse le burn-out selon la TRU.",
+      "premises": [
+        "cognitive-evidence-4ca761980bc5993c",
+        "cognitive-evidence-53b653438c31cc58",
+        "cognitive-evidence-79b65cb60162f297",
+        "cognitive-evidence-870c4c748ddd2769",
+        "cognitive-evidence-8b871321ec5f133f",
+        "cognitive-evidence-95ede896b8236081",
+        "cognitive-evidence-aeb490109ce0f48a",
+        "cognitive-evidence-ba31b80c7e421760",
+        "cognitive-evidence-cc80438fac5b6816",
+        "cognitive-evidence-e07c44490d7a890b",
+        "cognitive-evidence-e1fe7171799cb0ff",
+        "cognitive-evidence-e4fc258a99631419"
+      ],
+      "problem": "Résoudre une demande de type applied_analysis portant sur burn_out, tru à partir de preuves canoniques.",
+      "question": "Analyse le burn-out selon la TRU.",
+      "reflexive_evaluation": {
+        "concepts_recognized": true,
+        "confidence_matches_evidence": true,
+        "contradiction_detected": false,
+        "evidence_sufficient": true,
+        "hypothesis_promoted_to_fact": false,
+        "missing_information_count": 0,
+        "question_understood": true,
+        "unauthorized_rule_applied": false
+      },
+      "response_plan": [
+        "rappeler_les_preuves_explicitement_disponibles",
+        "identifier_les_concepts_applicables",
+        "séparer_déductions_et_hypothèses",
+        "signaler_les_limites_non_médicales",
+        "justifier_la_confiance"
+      ],
+      "rules": [
+        "delta_compares_current_state_with_recognized_possibility"
+      ],
+      "unknowns": []
+    },
+    "confidence": 0.82,
+    "evidence": [
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-8ae623acf32adeff",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-4ca761980bc5993c",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          672
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Le second opérateur fondamental est R, qui désigne la relation. Si la différence constitue le moteur du changement, elle demeure pourtant dépourvue de signification lorsqu'elle est considérée isolément. Une différence ne devient intelligible qu'à partir du moment où elle peut être comparée à autre chose. La relation représente précisément cette structure fondamentale qui rend possible toute comparaison. Dans la Théorie de la Réflexivité Universelle, aucune réalité n'existe indépendamment des relations qui l'unissent aux autres réalités. Un objet, une pensée, un être vivant ou une société ne peuvent être compris par leurs seules propriétés internes ; ils acquièrent leur véritable signification à travers l'ensemble des interactions qui les relient à leur environnement. R ne désigne donc pas un lien particulier mais le principe même selon lequel les éléments d'un système deviennent mutuellement intelligibles. Les relations évoluent continuellement, se renforcent, disparaissent, se recomposent et produisent sans cesse de nouvelles organisations. Les propriétés émergentes d'un système proviennent bien davantage de la qualité de ces relations que des caractéristiques isolées de chacun de ses composants. La théorie rejoint ici de nombreuses approches contemporaines des systèmes complexes tout en leur donnant une portée plus générale : la relation ne constitue pas seulement une propriété des systèmes vivants ou sociaux ; elle représente l'une des dimensions fondamentales de toute réalité réflexive. Sans relation, aucune différence ne pourrait être interprétée, aucune comparaison ne deviendrait possible et aucune reconnaissance ne pourrait émerger."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-b0641448c7576fab",
+        "element_type": "Démonstration",
+        "evidence_id": "cognitive-evidence-53b653438c31cc58",
+        "extraction_confidence": 0.84,
+        "page_numbers": [
+          758
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Cette complémentarité apparaît d'abord dans le domaine de la logique. Depuis Aristote jusqu'aux logiques contemporaines, la logique cherche à déterminer les règles qui permettent de distinguer un raisonnement valide d'un raisonnement erroné. Elle établit les conditions de cohérence qui rendent possible toute démonstration. La Théorie de la Réflexivité Universelle retrouve cette exigence de cohérence, mais elle l'étend au processus de reconnaissance lui-même. Un raisonnement logique ne peut être élaboré que parce qu'une conscience est déjà capable d'observer des différences, de les comparer, de les mémoriser et de reconnaître des relations stables entre elles. La logique formalise les relations entre les propositions ; la réflexivité décrit les conditions qui rendent possible la reconnaissance de ces relations. Ainsi, les lois de la logique ne sont pas remplacées par la TRU ; elles apparaissent comme l'une des expressions les plus élaborées d'une capacité plus fondamentale de la conscience à organiser les différences selon des structures cohérentes."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-3d8b016b9b42fa9c",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-79b65cb60162f297",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          213
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Dans la Théorie de la Réflexivité Universelle, la transformation peut être définie comme une modification durable de la structure selon laquelle une conscience perçoit, interprète, ressent, agit et organise son existence. Le terme de structure est essentiel, car il distingue la transformation d’une variation ponctuelle. Une émotion peut changer, une opinion peut être momentanément abandonnée, une habitude peut être interrompue pendant quelque temps sans que l’organisation profonde de la conscience soit réellement modifiée. La transformation apparaît lorsque les relations entre les éléments changent : une ancienne perception n’entraîne plus automatiquement la même interprétation, une émotion ne produit plus la même réponse, une situation familière ouvre désormais des possibilités différentes et une relation auparavant subie peut être comprise, limitée ou réorganisée."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-3f8bc8dc61417088",
+        "element_type": "Démonstration",
+        "evidence_id": "cognitive-evidence-870c4c748ddd2769",
+        "extraction_confidence": 0.84,
+        "page_numbers": [
+          760
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La Théorie de la Réflexivité Universelle s'est progressivement construite selon une démarche comparable. Les parties précédentes ont établi des axiomes, formulé des lois, introduit des opérateurs puis démontré des théorèmes qui découlent logiquement de ces fondements. Cette progression ne transforme pas la TRU en théorie mathématique au sens strict, car son objet demeure l'organisation de la reconnaissance et non une structure abstraite autonome. Elle montre néanmoins qu'une théorie générale de la reconnaissance peut atteindre un niveau élevé de formalisation en s'appuyant sur des démonstrations conceptuelles rigoureuses plutôt que sur de simples intuitions philosophiques. La démonstration devient ainsi l'expression réflexive de la cohérence interne du système théorique."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-528f7332ec272f54",
+        "element_type": "Démonstration",
+        "evidence_id": "cognitive-evidence-8b871321ec5f133f",
+        "extraction_confidence": 0.84,
+        "page_numbers": [
+          694
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Cette propriété permet de comprendre le sens véritable de l' universalité dans la Théorie de la Réflexivité Universelle. L'universalité ne signifie pas que tous les phénomènes deviennent identiques ni que toutes les disciplines puissent être réduites à une seule explication. Elle signifie que les mécanismes fondamentaux de la reconnaissance traversent l'ensemble des domaines de la réalité sous des formes adaptées à leur niveau d'organisation. Les lois de la physique, les processus biologiques, les apprentissages psychologiques, les évolutions culturelles ou les transformations historiques ne sont pas confondus. Ils demeurent irréductibles dans leurs contenus particuliers. En revanche, ils peuvent être décrits selon une même architecture opératoire fondée sur les différences, les relations, les mémoires, les événements, les reconnaissances, les transformations et les manifestations. L'universalité réside donc dans la structure du processus, non dans l'uniformité de ses manifestations."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-cebafcee44baa9dc",
+        "element_type": "Démonstration",
+        "evidence_id": "cognitive-evidence-95ede896b8236081",
+        "extraction_confidence": 0.84,
+        "page_numbers": [
+          77
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "L’authenticité ne doit donc pas être jugée selon la conformité à un modèle unique. Deux consciences peuvent intégrer une valeur comparable et l’exprimer par des choix différents. La Théorie de la Réflexivité Universelle recherche la cohérence entre la compréhension et la manifestation, non l’uniformité des comportements."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-f0e3d51178dedcdc",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-aeb490109ce0f48a",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          743
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Cette dynamique permet de mieux comprendre le phénomène des traumatismes. Les approches psychologiques contemporaines décrivent le traumatisme comme une expérience dont l'intensité dépasse momentanément les capacités habituelles d'intégration de l'individu. L'événement ne peut être correctement assimilé et continue d'exercer une influence durable sur la vie psychique. La Théorie de la Réflexivité Universelle retrouve cette analyse tout en lui donnant une formulation plus générale. Le traumatisme correspond à une différence dont l'intégration réflexive demeure inachevée. L'événement ne disparaît pas de la mémoire ; il y demeure sous une forme"
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-71b04e8638b2491e",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-ba31b80c7e421760",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          865
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Cette situation devient particulièrement visible lorsqu'il s'agit d'aborder le problème de la reconnaissance de la conscience. Les recherches contemporaines ont proposé de nombreuses théories concernant la conscience elle-même : certaines privilégient les corrélats neuronaux, d'autres les architectures cognitives, les flux d'information, les propriétés émergentes ou les expériences subjectives. Ces approches permettent de mieux comprendre les conditions dans lesquelles apparaissent certaines formes de perception, de mémoire, d'attention ou de décision. En revanche, elles répondent plus difficilement à une autre question : comment une conscience parvient-elle à reconnaître ce qu'elle observe, à reconnaître qu'elle reconnaît, puis à intégrer cette reconnaissance dans son évolution ? La reconnaissance ne correspond ni à une simple perception, ni à une représentation, ni à une décision isolée. Elle désigne un processus dynamique reliant l'observation, l'interprétation, la transformation et l'intégration de l'expérience. C'est précisément ce mécanisme que la Théorie de la Réflexivité Universelle propose de placer au centre de son analyse."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-4cbf28eda5e93e5a",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-cc80438fac5b6816",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          859
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Cette perspective conduit enfin à considérer la spiritualité comme un processus de transformation plutôt que comme un simple ensemble de croyances. Les traditions spirituelles les plus diverses insistent souvent davantage sur la transformation de l'existence que sur l'adhésion intellectuelle à une doctrine. Les pratiques, les rites, les enseignements ou les exercices intérieurs visent généralement à modifier durablement la manière de vivre, de percevoir les autres, d'affronter la souffrance ou d'orienter ses choix. La Théorie de la Réflexivité Universelle permet d'interpréter cette évolution comme un processus continu de reconnaissance. La transformation spirituelle ne réside pas seulement dans l'acquisition de nouvelles idées ; elle correspond à une réorganisation progressive des mécanismes par lesquels la personne comprend son expérience et construit sa relation au monde. Cette conception rapproche la spiritualité d'autres processus étudiés dans les chapitres précédents, qu'il s'agisse de l'éducation, de l'accompagnement, de la santé ou même de la recherche scientifique. Tous relèvent, selon des modalités différentes, d'une capacité à apprendre, à intégrer et à évoluer."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-d9b7fdf8d943231b",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-e07c44490d7a890b",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          692
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Cette universalité apparaît d'abord à travers l'existence d' invariants. Un invariant désigne une propriété qui demeure constante malgré les transformations, les changements d'échelle ou la diversité des manifestations observées. Les objets, les organismes, les sociétés ou les civilisations évoluent continuellement, mais certaines relations fondamentales persistent au cours de ces transformations. Dans la Théorie de la Réflexivité Universelle, les opérateurs eux-mêmes constituent de tels invariants. Toute organisation réflexive, quelle que soit sa nature, doit nécessairement produire des différences, établir des relations, conserver une mémoire, reconnaître certaines transformations et manifester les résultats de cette reconnaissance. Les formes particulières changent selon les niveaux d'organisation, mais la structure générale du processus demeure identique. Les invariants ne décrivent donc pas des objets immobiles ; ils expriment les régularités profondes qui rendent possible la continuité de la dynamique réflexive à travers la diversité des réalités observées."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-e3ae07054cc0d834",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-e1fe7171799cb0ff",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          280
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Dans le cadre de la Théorie de la Réflexivité Universelle, l’âme peut être définie comme le principe de continuité, de singularité et d’intégration par lequel une conscience relie ses expériences, ses transformations, ses relations et sa mémoire dans une unité intérieure relativement stable, sans que cette définition présuppose l’existence démontrée d’une substance indépendante du corps. Le terme de principe ne désigne pas ici nécessairement une entité cachée qui produirait les états de conscience depuis un lieu séparé. Il désigne une fonction organisatrice, une structure de continuité et un niveau d’intelligibilité. Parler d’âme revient à reconnaître qu’une existence consciente ne se présente pas seulement comme une juxtaposition d’événements psychiques, de sensations corporelles et d’informations reçues, mais comme une trajectoire dans laquelle ces éléments sont reliés, interprétés, hiérarchisés et intégrés depuis une perspective singulière. L’âme désigne ainsi moins une chose que le mode profond selon lequel une conscience devient capable de se maintenir à travers le changement, de reconnaître comme siennes des expériences différentes et de construire une relation durable entre ce qu’elle a été, ce qu’elle éprouve et ce qu’elle peut devenir."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-c2196fb393155cf9",
+        "element_type": "Démonstration",
+        "evidence_id": "cognitive-evidence-e4fc258a99631419",
+        "extraction_confidence": 0.84,
+        "page_numbers": [
+          333
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta Toute observation commence par une différence. Pour qu’une conscience distingue une manifestation, il faut qu’un état se détache d’un autre, qu’une variation apparaisse sur un fond de relative continuité, qu’une attente soit confirmée ou démentie, ou qu’une représentation rencontre une réalité qui ne lui correspond pas entièrement. Une conscience placée devant une identité absolue, sans variation, sans contraste et sans succession, ne pourrait rien observer comme événement déterminé, car aucune différence ne permettrait de séparer un avant d’un après, une partie d’un ensemble ou une manifestation de son contexte. La différence n’est donc pas seulement l’un des contenus possibles de l’expérience ; elle constitue la condition selon laquelle quelque chose devient observable, informatif et susceptible d’être reconnu. La Théorie de la Réflexivité Universelle nomme Delta, noté Δ, l’écart dynamique qui apparaît lorsqu’une conscience compare deux états, deux manifestations, deux représentations ou deux niveaux de reconnaissance et constate qu’ils ne coïncident pas entièrement."
+      }
+    ],
+    "missing_knowledge": [],
+    "request_id": "cognitive-request-1ffaab626a067f80",
+    "sources": [
+      {
+        "byte_size": 4778047,
+        "content_hash": "a393dcbccc45c2e5",
+        "empty_page_numbers": [],
+        "extracted_page_count": 882,
+        "extraction_errors": [],
+        "format": "pdf",
+        "is_demo_source": false,
+        "page_count": 882,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+        "source_id": "source-01795ab64af8762c",
+        "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+      }
+    ],
+    "warnings": [
+      "Analyse conceptuelle uniquement ; aucun diagnostic médical n'est produit."
+    ]
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.82,
+    "confidence_justification": "Confiance calculée avec 4 affirmation(s) explicite(s), 1 déduction(s), 1 hypothèse(s), 0 inconnue(s), 1 opérateur(s) appliqué(s), 0 contradiction(s) et 1 source(s) de production.",
+    "contradictions": [],
+    "coverage_score": 1.0,
+    "deduction_claim_ids": [
+      "cognitive-claim-59c0a722ae84f83c"
+    ],
+    "definitions_used": [
+      "memory-element-3d8b016b9b42fa9c",
+      "memory-element-4cbf28eda5e93e5a",
+      "memory-element-71b04e8638b2491e",
+      "memory-element-8ae623acf32adeff",
+      "memory-element-d9b7fdf8d943231b",
+      "memory-element-e3ae07054cc0d834",
+      "memory-element-f0e3d51178dedcdc"
+    ],
+    "demonstrations_used": [
+      "memory-element-3f8bc8dc61417088",
+      "memory-element-528f7332ec272f54",
+      "memory-element-b0641448c7576fab",
+      "memory-element-c2196fb393155cf9",
+      "memory-element-cebafcee44baa9dc"
+    ],
+    "detected_concepts": [
+      "burn_out",
+      "tru"
+    ],
+    "evidence_rejected": [],
+    "evidence_used": [
+      "cognitive-evidence-4ca761980bc5993c",
+      "cognitive-evidence-53b653438c31cc58",
+      "cognitive-evidence-79b65cb60162f297",
+      "cognitive-evidence-870c4c748ddd2769",
+      "cognitive-evidence-8b871321ec5f133f",
+      "cognitive-evidence-95ede896b8236081",
+      "cognitive-evidence-aeb490109ce0f48a",
+      "cognitive-evidence-ba31b80c7e421760",
+      "cognitive-evidence-cc80438fac5b6816",
+      "cognitive-evidence-e07c44490d7a890b",
+      "cognitive-evidence-e1fe7171799cb0ff",
+      "cognitive-evidence-e4fc258a99631419"
+    ],
+    "explicit_claim_ids": [
+      "cognitive-claim-3c3b85b1f8c36041",
+      "cognitive-claim-50d7497d2d2e7522",
+      "cognitive-claim-5a35f001d00bb5f2",
+      "cognitive-claim-5b94befe86efaa22"
+    ],
+    "hypothesis_claim_ids": [
+      "cognitive-claim-ab66fd3a300ce520"
+    ],
+    "inferences_used": [],
+    "intent": "applied_analysis",
+    "missing_knowledge": [],
+    "original_question": "Analyse le burn-out selon la TRU.",
+    "pages_consulted": [
+      77,
+      213,
+      280,
+      333,
+      672,
+      692,
+      694,
+      743,
+      758,
+      760,
+      859,
+      865
+    ],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-1ffaab626a067f80",
+    "response_plan": [
+      "rappeler_les_preuves_explicitement_disponibles",
+      "identifier_les_concepts_applicables",
+      "séparer_déductions_et_hypothèses",
+      "signaler_les_limites_non_médicales",
+      "justifier_la_confiance"
+    ],
+    "selected_concepts": [
+      "burn_out",
+      "tru"
+    ],
+    "sources_consulted": [
+      "source-01795ab64af8762c"
+    ],
+    "unknown_claim_ids": []
+  }
+}

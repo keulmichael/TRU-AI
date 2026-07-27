@@ -1,0 +1,688 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [],
+      "explicit_claims": [
+        {
+          "claim_id": "cognitive-claim-285bdc86136bda96",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-68e7939a32ce6536"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Dans la mécanique universelle, le passage de la reconnaissance à la transformation peut être représenté ainsi : Rn→ΔI→Tn+1 où Rn désigne la réalité reconnue, ΔI l’écart devenu manifeste entre cette reconnaissance et l’organisation antérieure, et Tn+1T la transformation produite par l’intégration progressive de cet écart. La reconnaissance révèle que la conscience ne peut plus demeurer exactement dans son état précédent. Elle introduit une tension entre ce qui est désormais compris et ce qui continue d’être vécu, pensé ou accompli selon l’ancienne structure. Cette tension peut être ressentie comme incohérence, inconfort, responsabilité, nécessité de décision ou impossibilité de continuer comme auparavant. La transformation constitue le travail par lequel cette tension est progressivement incorporée dans une organisation nouvelle."
+        },
+        {
+          "claim_id": "cognitive-claim-3483cb8e55cc0bbe",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-77ed70f3d4446327"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Pour l’écart entre état actuel et possibilité reconnue : ΔEP=D(Ea,Pr) où Ea désigne l’état actuel et Pr la possibilité reconnue. Cette différence ne constitue pas une mesure de la distance vers un futur certain, mais une estimation des transformations nécessaires pour rendre la possibilité plus manifeste."
+        },
+        {
+          "claim_id": "cognitive-claim-4881a4e2652d2d1d",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-86525646369b415b"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Delta comme tension Lorsqu’un écart devient pertinent pour une conscience ou pour un système, il produit souvent une tension. Celle-ci désigne l’état résultant de la coexistence de deux configurations qui ne peuvent être entièrement maintenues ensemble sans réorganisation. Une représentation affirme une chose tandis qu’une manifestation en indique une autre ; une intention vise une relation qui produit pourtant un effet contraire ; une identité ancienne demeure active alors qu’une possibilité nouvelle a été reconnue."
+        },
+        {
+          "claim_id": "cognitive-claim-622008db844c3c31",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-99bb73c98bb608ee"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Les démonstrations précédentes ont progressivement révélé les mécanismes fondamentaux de la dynamique réflexive. Toute reconnaissance suppose une différence, toute différence pleinement intégrée exige un témoignage, toute conscience rencontre les limites de sa propre solitude réflexive et toute mémoire organise naturellement la répétition des structures qui ont assuré sa stabilité. Une question demeure cependant ouverte. Que se produit-il lorsqu'une différence persiste sans parvenir à être intégrée par les structures existantes ? Pourquoi certaines expériences deviennent-elles de puissants moteurs de transformation tandis que d'autres s'installent durablement sous forme de souffrance ? La Théorie de la Réflexivité Universelle propose une réponse qui dépasse les approches psychologiques traditionnelles. Elle considère que la souffrance correspond à une différence persistante qui ne parvient pas encore à être intégrée par l'organisation réflexive du système. La souffrance n'est donc ni une réalité autonome, ni une substance, ni une punition, ni un simple dysfonctionnement biologique. Elle constitue un état transitoire de la dynamique réflexive, révélant l'existence d'un Delta dont la portée dépasse encore les capacités actuelles d'intégration de la conscience."
+        }
+      ],
+      "hypotheses": [],
+      "missing_knowledge": [
+        "Précondition non satisfaite : moins de deux états comparables sont établis."
+      ],
+      "sources": [
+        {
+          "byte_size": 4778047,
+          "content_hash": "a393dcbccc45c2e5",
+          "empty_page_numbers": [],
+          "extracted_page_count": 882,
+          "extraction_errors": [],
+          "format": "pdf",
+          "is_demo_source": false,
+          "page_count": 882,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+          "source_id": "source-01795ab64af8762c",
+          "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+        }
+      ],
+      "summary": "TRU-AI explique delta, etat à partir des formulations explicites disponibles et refuse l'application opératoire lorsque ses préconditions ne sont pas établies. L'opérateur formalisé disponible est Delta.",
+      "unknowns": [],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [],
+      "EXPLICITE": [
+        {
+          "claim_id": "cognitive-claim-285bdc86136bda96",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-68e7939a32ce6536"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Dans la mécanique universelle, le passage de la reconnaissance à la transformation peut être représenté ainsi : Rn→ΔI→Tn+1 où Rn désigne la réalité reconnue, ΔI l’écart devenu manifeste entre cette reconnaissance et l’organisation antérieure, et Tn+1T la transformation produite par l’intégration progressive de cet écart. La reconnaissance révèle que la conscience ne peut plus demeurer exactement dans son état précédent. Elle introduit une tension entre ce qui est désormais compris et ce qui continue d’être vécu, pensé ou accompli selon l’ancienne structure. Cette tension peut être ressentie comme incohérence, inconfort, responsabilité, nécessité de décision ou impossibilité de continuer comme auparavant. La transformation constitue le travail par lequel cette tension est progressivement incorporée dans une organisation nouvelle."
+        },
+        {
+          "claim_id": "cognitive-claim-3483cb8e55cc0bbe",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-77ed70f3d4446327"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Pour l’écart entre état actuel et possibilité reconnue : ΔEP=D(Ea,Pr) où Ea désigne l’état actuel et Pr la possibilité reconnue. Cette différence ne constitue pas une mesure de la distance vers un futur certain, mais une estimation des transformations nécessaires pour rendre la possibilité plus manifeste."
+        },
+        {
+          "claim_id": "cognitive-claim-4881a4e2652d2d1d",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-86525646369b415b"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Delta comme tension Lorsqu’un écart devient pertinent pour une conscience ou pour un système, il produit souvent une tension. Celle-ci désigne l’état résultant de la coexistence de deux configurations qui ne peuvent être entièrement maintenues ensemble sans réorganisation. Une représentation affirme une chose tandis qu’une manifestation en indique une autre ; une intention vise une relation qui produit pourtant un effet contraire ; une identité ancienne demeure active alors qu’une possibilité nouvelle a été reconnue."
+        },
+        {
+          "claim_id": "cognitive-claim-622008db844c3c31",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-99bb73c98bb608ee"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Les démonstrations précédentes ont progressivement révélé les mécanismes fondamentaux de la dynamique réflexive. Toute reconnaissance suppose une différence, toute différence pleinement intégrée exige un témoignage, toute conscience rencontre les limites de sa propre solitude réflexive et toute mémoire organise naturellement la répétition des structures qui ont assuré sa stabilité. Une question demeure cependant ouverte. Que se produit-il lorsqu'une différence persiste sans parvenir à être intégrée par les structures existantes ? Pourquoi certaines expériences deviennent-elles de puissants moteurs de transformation tandis que d'autres s'installent durablement sous forme de souffrance ? La Théorie de la Réflexivité Universelle propose une réponse qui dépasse les approches psychologiques traditionnelles. Elle considère que la souffrance correspond à une différence persistante qui ne parvient pas encore à être intégrée par l'organisation réflexive du système. La souffrance n'est donc ni une réalité autonome, ni une substance, ni une punition, ni un simple dysfonctionnement biologique. Elle constitue un état transitoire de la dynamique réflexive, révélant l'existence d'un Delta dont la portée dépasse encore les capacités actuelles d'intégration de la conscience."
+        }
+      ],
+      "HYPOTHÈSE": [],
+      "INCONNU": []
+    },
+    "cognitive_execution": {
+      "applicable_operators": [
+        {
+          "conceptual_version": "v0.9.0-alpha",
+          "definitions": [
+            "Delta émotionnel Dans cette étape, Delta désigne l’écart entre l’état de la conscience avant la réception du témoignage et son état après l’affectation. Il peut également désigner la différence entre l’émotion éprouvée, l’interprétation formulée et la réalité actuelle."
+          ],
+          "inputs": [
+            "état ou configuration actuelle",
+            "possibilité, attente, prédiction ou configuration reconnue"
+          ],
+          "limitations": [
+            "Delta ne doit pas être appliqué si un seul état est établi.",
+            "Delta ne transforme pas une interprétation médicale en diagnostic."
+          ],
+          "name": "Delta",
+          "operator_id": "tru-operator-e4f6bc58b914bf22",
+          "outputs": [
+            "écart qualifié",
+            "orientation possible de transformation"
+          ],
+          "preconditions": [
+            "au moins deux états ou représentations comparables sont disponibles",
+            "l'écart est soutenu par des preuves textuelles ou une comparaison explicite"
+          ],
+          "source_evidence": [
+            "cognitive-evidence-005f33537b46c4ba",
+            "cognitive-evidence-32d4f5467e54a7a8",
+            "cognitive-evidence-49bada45a6b1700d",
+            "cognitive-evidence-86525646369b415b",
+            "cognitive-evidence-99bb73c98bb608ee",
+            "cognitive-evidence-9c94ea6f1980fbd1",
+            "cognitive-evidence-c961a7758bd8d9e6",
+            "cognitive-evidence-cd4119c14319f757",
+            "cognitive-evidence-d9ce65d4789ed280"
+          ],
+          "transformation": "Comparer deux états ou représentations pour rendre explicite l'écart pertinent."
+        }
+      ],
+      "applied_operators": [
+        {
+          "application_id": "operator-application-f11d3c52eb67d1de",
+          "applied": false,
+          "confidence": 0.0,
+          "operator_id": "tru-operator-e4f6bc58b914bf22",
+          "output": null,
+          "premise_evidence_ids": [
+            "cognitive-evidence-005f33537b46c4ba",
+            "cognitive-evidence-32d4f5467e54a7a8",
+            "cognitive-evidence-49bada45a6b1700d",
+            "cognitive-evidence-86525646369b415b",
+            "cognitive-evidence-99bb73c98bb608ee",
+            "cognitive-evidence-9c94ea6f1980fbd1",
+            "cognitive-evidence-c961a7758bd8d9e6",
+            "cognitive-evidence-cd4119c14319f757",
+            "cognitive-evidence-d9ce65d4789ed280"
+          ],
+          "refusal_reason": "Précondition non satisfaite : moins de deux états comparables sont établis.",
+          "rule": "delta_requires_two_comparable_states"
+        }
+      ],
+      "comparisons": [
+        {
+          "compared_states": [
+            "question formulée : Peut-on appliquer Delta si aucun second état n'est identifié ?"
+          ],
+          "comparison_id": "cognitive-comparison-b49a97895ad65d5f",
+          "delta_detected": null,
+          "differences": [],
+          "dimensions": [
+            "reconnaissance",
+            "transformation",
+            "écart"
+          ],
+          "limitations": [
+            "comparaison insuffisante pour appliquer Delta comme opérateur complet"
+          ],
+          "provenance": [
+            "cognitive-evidence-005f33537b46c4ba",
+            "cognitive-evidence-32d4f5467e54a7a8",
+            "cognitive-evidence-49bada45a6b1700d",
+            "cognitive-evidence-68e7939a32ce6536",
+            "cognitive-evidence-77ed70f3d4446327",
+            "cognitive-evidence-86525646369b415b",
+            "cognitive-evidence-99bb73c98bb608ee",
+            "cognitive-evidence-9c94ea6f1980fbd1",
+            "cognitive-evidence-c961a7758bd8d9e6",
+            "cognitive-evidence-cd4119c14319f757",
+            "cognitive-evidence-d4003dc2300c50bf",
+            "cognitive-evidence-d9ce65d4789ed280"
+          ],
+          "similarities": [
+            "la mémoire contient des éléments pertinents pour le concept demandé"
+          ],
+          "tru_meaning": null
+        }
+      ],
+      "concepts_recognized": [
+        "delta",
+        "etat"
+      ],
+      "concepts_rejected": [],
+      "confidence": 0.7362,
+      "confidence_justification": "Confiance décomposée : couverture=0.95, preuves=0.92, raisonnement=0.65, opérateur=0.82, pénalité_hypothèses=0.00, pénalité_contradictions=0.00, pénalité_inconnues=0.00.",
+      "context": [],
+      "contradictions": [],
+      "deductions": [],
+      "deltas_detected": [],
+      "evidence_selected": [
+        "cognitive-evidence-005f33537b46c4ba",
+        "cognitive-evidence-32d4f5467e54a7a8",
+        "cognitive-evidence-49bada45a6b1700d",
+        "cognitive-evidence-68e7939a32ce6536",
+        "cognitive-evidence-77ed70f3d4446327",
+        "cognitive-evidence-86525646369b415b",
+        "cognitive-evidence-99bb73c98bb608ee",
+        "cognitive-evidence-9c94ea6f1980fbd1",
+        "cognitive-evidence-c961a7758bd8d9e6",
+        "cognitive-evidence-cd4119c14319f757",
+        "cognitive-evidence-d4003dc2300c50bf",
+        "cognitive-evidence-d9ce65d4789ed280"
+      ],
+      "execution_id": "cognitive-execution-8a1afddcd7c79f1f",
+      "final_answer": "TRU-AI explique delta, etat à partir des formulations explicites disponibles et refuse l'application opératoire lorsque ses préconditions ne sont pas établies. L'opérateur formalisé disponible est Delta.",
+      "hypotheses": [],
+      "intention": "conceptual_question",
+      "memory_activated": [
+        "memory-element-1358c7779a3ecb2a",
+        "memory-element-33c6a0306c18db15",
+        "memory-element-385ba1268ea1f354",
+        "memory-element-41d1045fa65c7f8e",
+        "memory-element-554619941583ff21",
+        "memory-element-8299956fc41c410a",
+        "memory-element-9a56e6beb91257e5",
+        "memory-element-bc5066f981468aab",
+        "memory-element-df552100e5550b38",
+        "memory-element-e40d5f567a5269dc",
+        "memory-element-e9a38632826545cb",
+        "memory-element-ff2617cfbfb91b9e"
+      ],
+      "observation": "Question observée : Peut-on appliquer Delta si aucun second état n'est identifié ?",
+      "premises": [
+        "cognitive-evidence-005f33537b46c4ba",
+        "cognitive-evidence-32d4f5467e54a7a8",
+        "cognitive-evidence-49bada45a6b1700d",
+        "cognitive-evidence-68e7939a32ce6536",
+        "cognitive-evidence-77ed70f3d4446327",
+        "cognitive-evidence-86525646369b415b",
+        "cognitive-evidence-99bb73c98bb608ee",
+        "cognitive-evidence-9c94ea6f1980fbd1",
+        "cognitive-evidence-c961a7758bd8d9e6",
+        "cognitive-evidence-cd4119c14319f757",
+        "cognitive-evidence-d4003dc2300c50bf",
+        "cognitive-evidence-d9ce65d4789ed280"
+      ],
+      "problem": "Résoudre une demande de type conceptual_question portant sur delta, etat à partir de preuves canoniques.",
+      "question": "Peut-on appliquer Delta si aucun second état n'est identifié ?",
+      "reflexive_evaluation": {
+        "concepts_recognized": true,
+        "confidence_breakdown": {},
+        "confidence_matches_evidence": true,
+        "contradiction_detected": false,
+        "evidence_sufficient": true,
+        "hypothesis_promoted_to_fact": false,
+        "missing_information_count": 1,
+        "question_understood": true,
+        "unauthorized_rule_applied": false
+      },
+      "response_plan": [
+        "identifier_le_concept",
+        "sélectionner_définitions_et_passages",
+        "relier_aux_concepts_voisins",
+        "séparer_explicitement_déductions_hypothèses_inconnues",
+        "justifier_la_confiance"
+      ],
+      "rules": [
+        "delta_requires_two_comparable_states"
+      ],
+      "unknowns": []
+    },
+    "confidence": 0.7362,
+    "confidence_breakdown": {
+      "contradiction_penalty": 0.0,
+      "evidence_quality": 0.92,
+      "final_confidence": 0.7362,
+      "hypothesis_penalty": 0.0,
+      "operator_validity": 0.82,
+      "reasoning_validity": 0.65,
+      "source_coverage": 0.95,
+      "unknown_penalty": 0.0
+    },
+    "evidence": [
+      {
+        "authority": 0.58,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.72,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-41d1045fa65c7f8e",
+        "element_type": "Paragraphe",
+        "evidence_id": "cognitive-evidence-005f33537b46c4ba",
+        "extraction_confidence": 0.7,
+        "page_numbers": [
+          609
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Paragraphe retenu par défaut après exclusion des formes spécialisées.",
+        "semantic_validation_status": "PROBABLE",
+        "source_id": "source-01795ab64af8762c",
+        "text": "La mécanique universelle peut alors être ramenée à son mouvement le plus élémentaire : État(n)→Δ(n)→Observation(n)→Reconnaissance(n)→Transformation(n)→État(n+1)→Δ(n+1) Ce mouvement ne forme pas une répétition circulaire, mais une spirale. Le Delta suivant n’est pas nécessairement identique au précédent, parce que le système qui le reçoit a été transformé. Sa sensibilité, ses catégories, ses protections et sa capacité d’intégration ont changé."
+      },
+      {
+        "authority": 0.5,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.72,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-1358c7779a3ecb2a",
+        "element_type": "Phrase",
+        "evidence_id": "cognitive-evidence-32d4f5467e54a7a8",
+        "extraction_confidence": 0.9,
+        "page_numbers": [
+          333
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Type issu de la structure documentaire ou de la segmentation déterministe.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta apparaît chaque fois qu’une relation comparative permet de dire qu’un état n’est pas identique à un autre et que cette différence possède une conséquence pour la conscience, pour la relation ou pour la totalité observée."
+      },
+      {
+        "authority": 0.58,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.72,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-bc5066f981468aab",
+        "element_type": "Paragraphe",
+        "evidence_id": "cognitive-evidence-49bada45a6b1700d",
+        "extraction_confidence": 0.7,
+        "page_numbers": [
+          616
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Paragraphe retenu par défaut après exclusion des formes spécialisées.",
+        "semantic_validation_status": "PROBABLE",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Cette relation peut être formulée simplement. Soit En l'état présent d'une conscience et M(En−1) la représentation conservée de son état antérieur. Le Delta réflexif peut alors être compris comme la différence entre ces deux structures : Δ=En−M(En−1) Cette écriture souligne une propriété essentielle. Si la mémoire disparaît, M(En−1)=0, le Delta cesse d'être identifiable. Les événements continuent certes de se produire, mais ils ne deviennent plus des différences conscientes. La transformation peut subsister objectivement ; elle devient néanmoins inaccessible à la conscience qui la subit. La mémoire n'est donc pas seulement la conservation du passé ; elle constitue l'instrument de mesure du changement."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-33c6a0306c18db15",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-68e7939a32ce6536",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          473
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Dans la mécanique universelle, le passage de la reconnaissance à la transformation peut être représenté ainsi : Rn→ΔI→Tn+1 où Rn désigne la réalité reconnue, ΔI l’écart devenu manifeste entre cette reconnaissance et l’organisation antérieure, et Tn+1T la transformation produite par l’intégration progressive de cet écart. La reconnaissance révèle que la conscience ne peut plus demeurer exactement dans son état précédent. Elle introduit une tension entre ce qui est désormais compris et ce qui continue d’être vécu, pensé ou accompli selon l’ancienne structure. Cette tension peut être ressentie comme incohérence, inconfort, responsabilité, nécessité de décision ou impossibilité de continuer comme auparavant. La transformation constitue le travail par lequel cette tension est progressivement incorporée dans une organisation nouvelle."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-e40d5f567a5269dc",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-77ed70f3d4446327",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          347
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Pour l’écart entre état actuel et possibilité reconnue : ΔEP=D(Ea,Pr) où Ea désigne l’état actuel et Pr la possibilité reconnue. Cette différence ne constitue pas une mesure de la distance vers un futur certain, mais une estimation des transformations nécessaires pour rendre la possibilité plus manifeste."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-ff2617cfbfb91b9e",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-86525646369b415b",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          338
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta comme tension Lorsqu’un écart devient pertinent pour une conscience ou pour un système, il produit souvent une tension. Celle-ci désigne l’état résultant de la coexistence de deux configurations qui ne peuvent être entièrement maintenues ensemble sans réorganisation. Une représentation affirme une chose tandis qu’une manifestation en indique une autre ; une intention vise une relation qui produit pourtant un effet contraire ; une identité ancienne demeure active alors qu’une possibilité nouvelle a été reconnue."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.68,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.4,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-554619941583ff21",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-99bb73c98bb608ee",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          716
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Les démonstrations précédentes ont progressivement révélé les mécanismes fondamentaux de la dynamique réflexive. Toute reconnaissance suppose une différence, toute différence pleinement intégrée exige un témoignage, toute conscience rencontre les limites de sa propre solitude réflexive et toute mémoire organise naturellement la répétition des structures qui ont assuré sa stabilité. Une question demeure cependant ouverte. Que se produit-il lorsqu'une différence persiste sans parvenir à être intégrée par les structures existantes ? Pourquoi certaines expériences deviennent-elles de puissants moteurs de transformation tandis que d'autres s'installent durablement sous forme de souffrance ? La Théorie de la Réflexivité Universelle propose une réponse qui dépasse les approches psychologiques traditionnelles. Elle considère que la souffrance correspond à une différence persistante qui ne parvient pas encore à être intégrée par l'organisation réflexive du système. La souffrance n'est donc ni une réalité autonome, ni une substance, ni une punition, ni un simple dysfonctionnement biologique. Elle constitue un état transitoire de la dynamique réflexive, révélant l'existence d'un Delta dont la portée dépasse encore les capacités actuelles d'intégration de la conscience."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.68,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-385ba1268ea1f354",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-9c94ea6f1980fbd1",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          333
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Dans le cadre de la théorie, Delta peut être défini comme l’écart dynamique entre deux états, deux représentations ou deux niveaux de reconnaissance, tel que cet écart produit une information, une tension ou une possibilité de transformation dans un système capable de l’observer et de l’intégrer. Le terme d’écart ne désigne pas nécessairement une distance spatiale ni une quantité immédiatement mesurable. Il désigne une non-coïncidence structurée. Deux réalités peuvent différer par leur intensité, leur organisation, leur signification, leur temporalité, leurs effets ou leur niveau d’intégration. Delta apparaît chaque fois qu’une relation comparative permet de dire qu’un état n’est pas identique à un autre et que cette différence possède une conséquence pour la conscience, pour la relation ou pour la totalité observée."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-8299956fc41c410a",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-c961a7758bd8d9e6",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          588
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta comme opérateur dynamique universel Parler de Delta comme opérateur signifie qu’il ne désigne pas seulement une grandeur, mais une fonction. Il opère le passage d’un état à un autre en rendant la continuité ancienne insuffisante. Il introduit une différence qui oblige le système soit à se protéger, soit à réorganiser sa perception, soit à transformer son fonctionnement."
+      },
+      {
+        "authority": 0.58,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.72,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-9a56e6beb91257e5",
+        "element_type": "Paragraphe",
+        "evidence_id": "cognitive-evidence-cd4119c14319f757",
+        "extraction_confidence": 0.7,
+        "page_numbers": [
+          588
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Paragraphe retenu par défaut après exclusion des formes spécialisées.",
+        "semantic_validation_status": "PROBABLE",
+        "source_id": "source-01795ab64af8762c",
+        "text": "L’opération de Delta peut être décrite par trois fonctions principales. Premièrement, il différencie. Il rend perceptible qu’un état n’est plus identique à lui-même ou qu’une représentation ne suffit plus à rendre compte du réel. Deuxièmement, il informe. Il produit une différence organisée susceptible de"
+      },
+      {
+        "authority": 0.58,
+        "completeness": 0.68,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.72,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-df552100e5550b38",
+        "element_type": "Paragraphe",
+        "evidence_id": "cognitive-evidence-d4003dc2300c50bf",
+        "extraction_confidence": 0.7,
+        "page_numbers": [
+          675
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Paragraphe retenu par défaut après exclusion des formes spécialisées.",
+        "semantic_validation_status": "PROBABLE",
+        "source_id": "source-01795ab64af8762c",
+        "text": "À partir de cet opérateur fondamental peut être introduit un second opérateur essentiel : ΔM. Alors que Δ désignait la différence produite par une manifestation, ΔM représente la différence entre un état actuel et l'état mémorisé auquel il est comparé. Il ne s'agit plus simplement d'une variation objective du système mais de la variation effectivement reconnue à partir de sa mémoire. Deux systèmes confrontés à une même manifestation peuvent ainsi produire des valeurs très différentes de ΔM parce que leurs mémoires ne sont pas identiques. Cette distinction possède une importance considérable. Elle montre que les différences n'existent jamais indépendamment de l'histoire des systèmes qui les interprètent. Une manifestation identique pourra être vécue comme une révolution par une conscience et comme une simple confirmation par une autre. Ce n'est donc pas uniquement la différence objective qui importe, mais l'écart entre cette différence et la mémoire du système qui la reçoit."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-e9a38632826545cb",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-d9ce65d4789ed280",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          433
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta émotionnel Dans cette étape, Delta désigne l’écart entre l’état de la conscience avant la réception du témoignage et son état après l’affectation. Il peut également désigner la différence entre l’émotion éprouvée, l’interprétation formulée et la réalité actuelle."
+      }
+    ],
+    "missing_knowledge": [
+      "Précondition non satisfaite : moins de deux états comparables sont établis."
+    ],
+    "request_id": "cognitive-request-64de61bba31c6be7",
+    "sources": [
+      {
+        "byte_size": 4778047,
+        "content_hash": "a393dcbccc45c2e5",
+        "empty_page_numbers": [],
+        "extracted_page_count": 882,
+        "extraction_errors": [],
+        "format": "pdf",
+        "is_demo_source": false,
+        "page_count": 882,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+        "source_id": "source-01795ab64af8762c",
+        "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+      }
+    ],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.7362,
+    "confidence_justification": "Confiance décomposée : couverture=0.95, preuves=0.92, raisonnement=0.65, opérateur=0.82, pénalité_hypothèses=0.00, pénalité_contradictions=0.00, pénalité_inconnues=0.00.",
+    "contradictions": [],
+    "coverage_score": 1.0,
+    "deduction_claim_ids": [],
+    "definitions_used": [
+      "memory-element-33c6a0306c18db15",
+      "memory-element-385ba1268ea1f354",
+      "memory-element-554619941583ff21",
+      "memory-element-8299956fc41c410a",
+      "memory-element-e40d5f567a5269dc",
+      "memory-element-e9a38632826545cb",
+      "memory-element-ff2617cfbfb91b9e"
+    ],
+    "demonstrations_used": [],
+    "detected_concepts": [
+      "delta",
+      "etat"
+    ],
+    "evidence_rejected": [],
+    "evidence_used": [
+      "cognitive-evidence-005f33537b46c4ba",
+      "cognitive-evidence-32d4f5467e54a7a8",
+      "cognitive-evidence-49bada45a6b1700d",
+      "cognitive-evidence-68e7939a32ce6536",
+      "cognitive-evidence-77ed70f3d4446327",
+      "cognitive-evidence-86525646369b415b",
+      "cognitive-evidence-99bb73c98bb608ee",
+      "cognitive-evidence-9c94ea6f1980fbd1",
+      "cognitive-evidence-c961a7758bd8d9e6",
+      "cognitive-evidence-cd4119c14319f757",
+      "cognitive-evidence-d4003dc2300c50bf",
+      "cognitive-evidence-d9ce65d4789ed280"
+    ],
+    "explicit_claim_ids": [
+      "cognitive-claim-285bdc86136bda96",
+      "cognitive-claim-3483cb8e55cc0bbe",
+      "cognitive-claim-4881a4e2652d2d1d",
+      "cognitive-claim-622008db844c3c31"
+    ],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "conceptual_question",
+    "missing_knowledge": [
+      "Précondition non satisfaite : moins de deux états comparables sont établis."
+    ],
+    "original_question": "Peut-on appliquer Delta si aucun second état n'est identifié ?",
+    "pages_consulted": [
+      333,
+      338,
+      347,
+      433,
+      473,
+      588,
+      609,
+      616,
+      675,
+      716
+    ],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-64de61bba31c6be7",
+    "response_plan": [
+      "identifier_le_concept",
+      "sélectionner_définitions_et_passages",
+      "relier_aux_concepts_voisins",
+      "séparer_explicitement_déductions_hypothèses_inconnues",
+      "justifier_la_confiance"
+    ],
+    "selected_concepts": [
+      "delta",
+      "etat"
+    ],
+    "sources_consulted": [
+      "source-01795ab64af8762c"
+    ],
+    "unknown_claim_ids": []
+  }
+}

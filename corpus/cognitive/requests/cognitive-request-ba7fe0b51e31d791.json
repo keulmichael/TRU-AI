@@ -1,0 +1,176 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [],
+      "explicit_claims": [],
+      "hypotheses": [],
+      "missing_knowledge": [
+        "Aucun passage canonique ne soutient directement la réponse."
+      ],
+      "sources": [],
+      "summary": "TRU-AI reconnaît la question, mais ne dispose pas encore de preuves suffisantes dans sa mémoire canonique.",
+      "unknowns": [
+        {
+          "claim_id": "cognitive-claim-7723ecacc8e2b3a5",
+          "classification": "INCONNU",
+          "conclusion": null,
+          "confidence": 0.0,
+          "evidence_ids": [],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "La mémoire actuelle ne permet pas d'établir une réponse fiable."
+        }
+      ],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [],
+      "EXPLICITE": [],
+      "HYPOTHÈSE": [],
+      "INCONNU": [
+        {
+          "claim_id": "cognitive-claim-7723ecacc8e2b3a5",
+          "classification": "INCONNU",
+          "conclusion": null,
+          "confidence": 0.0,
+          "evidence_ids": [],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "La mémoire actuelle ne permet pas d'établir une réponse fiable."
+        }
+      ]
+    },
+    "cognitive_execution": {
+      "applicable_operators": [],
+      "applied_operators": [
+        {
+          "application_id": "operator-application-98ae160d63abe4f6",
+          "applied": false,
+          "confidence": 0.0,
+          "operator_id": "delta",
+          "output": null,
+          "premise_evidence_ids": [],
+          "refusal_reason": "Delta n'est pas suffisamment formalisé par les preuves sélectionnées.",
+          "rule": "delta_requires_formalized_operator"
+        }
+      ],
+      "comparisons": [
+        {
+          "compared_states": [
+            "question formulée : Quelles connaissances te manquent ?"
+          ],
+          "comparison_id": "cognitive-comparison-2a6c7819f7e28e48",
+          "delta_detected": null,
+          "differences": [],
+          "dimensions": [],
+          "limitations": [
+            "comparaison insuffisante pour appliquer Delta comme opérateur complet"
+          ],
+          "provenance": [],
+          "similarities": [],
+          "tru_meaning": null
+        }
+      ],
+      "concepts_recognized": [],
+      "concepts_rejected": [],
+      "confidence": 0.0,
+      "confidence_justification": "Aucune preuve explicite disponible.",
+      "context": [],
+      "contradictions": [],
+      "deductions": [],
+      "deltas_detected": [],
+      "evidence_selected": [],
+      "execution_id": "cognitive-execution-b002c8286ec0ffee",
+      "final_answer": "TRU-AI reconnaît la question, mais ne dispose pas encore de preuves suffisantes dans sa mémoire canonique.",
+      "hypotheses": [],
+      "intention": "conceptual_question",
+      "memory_activated": [],
+      "observation": "Question observée : Quelles connaissances te manquent ?",
+      "premises": [],
+      "problem": "Résoudre une demande de type conceptual_question portant sur concepts non reconnus à partir de preuves canoniques.",
+      "question": "Quelles connaissances te manquent ?",
+      "reflexive_evaluation": {
+        "concepts_recognized": false,
+        "confidence_breakdown": {},
+        "confidence_matches_evidence": true,
+        "contradiction_detected": false,
+        "evidence_sufficient": false,
+        "hypothesis_promoted_to_fact": false,
+        "missing_information_count": 1,
+        "question_understood": true,
+        "unauthorized_rule_applied": false
+      },
+      "response_plan": [
+        "identifier_le_concept",
+        "sélectionner_définitions_et_passages",
+        "relier_aux_concepts_voisins",
+        "séparer_explicitement_déductions_hypothèses_inconnues",
+        "justifier_la_confiance"
+      ],
+      "rules": [
+        "delta_requires_formalized_operator"
+      ],
+      "unknowns": [
+        "cognitive-claim-7723ecacc8e2b3a5"
+      ]
+    },
+    "confidence": 0.0,
+    "confidence_breakdown": {
+      "contradiction_penalty": 0.0,
+      "evidence_quality": 0.0,
+      "final_confidence": 0.0,
+      "hypothesis_penalty": 0.0,
+      "operator_validity": 0.82,
+      "reasoning_validity": 0.28,
+      "source_coverage": 0.95,
+      "unknown_penalty": 0.18
+    },
+    "evidence": [],
+    "missing_knowledge": [
+      "Aucun passage canonique ne soutient directement la réponse."
+    ],
+    "request_id": "cognitive-request-ba7fe0b51e31d791",
+    "sources": [],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.0,
+    "confidence_justification": "Aucune preuve explicite disponible.",
+    "contradictions": [],
+    "coverage_score": 0.0,
+    "deduction_claim_ids": [],
+    "definitions_used": [],
+    "demonstrations_used": [],
+    "detected_concepts": [],
+    "evidence_rejected": [],
+    "evidence_used": [],
+    "explicit_claim_ids": [],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "conceptual_question",
+    "missing_knowledge": [
+      "Aucun passage canonique ne soutient directement la réponse."
+    ],
+    "original_question": "Quelles connaissances te manquent ?",
+    "pages_consulted": [],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-ba7fe0b51e31d791",
+    "response_plan": [
+      "identifier_le_concept",
+      "sélectionner_définitions_et_passages",
+      "relier_aux_concepts_voisins",
+      "séparer_explicitement_déductions_hypothèses_inconnues",
+      "justifier_la_confiance"
+    ],
+    "selected_concepts": [],
+    "sources_consulted": [],
+    "unknown_claim_ids": [
+      "cognitive-claim-7723ecacc8e2b3a5"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRU-AI Graph Explorer</title>
+  <link rel="stylesheet" href="/explorer/static/explorer.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="toolbar">
+      <input id="search" placeholder="Search node">
+      <select id="depth">
+        <option value="1">Depth 1</option>
+        <option value="2" selected>Depth 2</option>
+        <option value="3">Depth 3</option>
+      </select>
+      <select id="direction">
+        <option value="both">Both</option>
+        <option value="outgoing">Outgoing</option>
+        <option value="incoming">Incoming</option>
+      </select>
+      <input id="predicate" placeholder="Predicate">
+      <button id="load">Load</button>
+    </section>
+    <section class="stats" id="stats">No graph loaded.</section>
+    <section class="canvas-wrap">
+      <svg id="graph" role="img" aria-label="TRU-AI graph"></svg>
+      <aside id="details">Select a node or edge.</aside>
+    </section>
+    <section class="pathbar">
+      <input id="pathStart" placeholder="Start node_id">
+      <input id="pathEnd" placeholder="End node_id">
+      <button id="findPath">Find path</button>
+      <span id="pathResult"></span>
+    </section>
+  </main>
+  <script src="/explorer/static/explorer.js"></script>
+</body>
+</html>

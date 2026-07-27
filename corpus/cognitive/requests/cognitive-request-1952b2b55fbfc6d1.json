@@ -1,0 +1,161 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [],
+      "explicit_claims": [
+        {
+          "claim_id": "cognitive-claim-be2f86375a744385",
+          "classification": "EXPLICITE",
+          "confidence": 0.78,
+          "evidence_ids": [
+            "cognitive-evidence-ff56c2b60da5ae8c"
+          ],
+          "text": "La Théorie de la Réflexivité Universelle propose une approche scientifique de la reconnaissance."
+        }
+      ],
+      "hypotheses": [
+        {
+          "claim_id": "cognitive-claim-430891b51a675075",
+          "classification": "HYPOTHÈSE",
+          "confidence": 0.45,
+          "evidence_ids": [
+            "cognitive-evidence-ff56c2b60da5ae8c"
+          ],
+          "text": "L'application au burn-out est interprétative si le traité ne le nomme pas explicitement ; elle ne constitue pas un diagnostic médical."
+        }
+      ],
+      "missing_knowledge": [],
+      "sources": [
+        {
+          "byte_size": 117,
+          "content_hash": "fb5ac2ea0a949c6c",
+          "empty_page_numbers": [],
+          "extracted_page_count": 1,
+          "extraction_errors": [],
+          "format": "markdown",
+          "is_demo_source": true,
+          "page_count": 1,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\raw\\001-introduction.md",
+          "source_id": "source-d037f46c932b7064",
+          "title": "Introduction"
+        }
+      ],
+      "summary": "TRU-AI analyse burn_out, tru en séparant les éléments explicitement soutenus, les déductions et les hypothèses.",
+      "unknowns": [],
+      "warnings": [
+        "Analyse conceptuelle uniquement ; aucun diagnostic médical n'est produit."
+      ]
+    },
+    "classifications": {
+      "DÉDUCTION": [],
+      "EXPLICITE": [
+        {
+          "claim_id": "cognitive-claim-be2f86375a744385",
+          "classification": "EXPLICITE",
+          "confidence": 0.78,
+          "evidence_ids": [
+            "cognitive-evidence-ff56c2b60da5ae8c"
+          ],
+          "text": "La Théorie de la Réflexivité Universelle propose une approche scientifique de la reconnaissance."
+        }
+      ],
+      "HYPOTHÈSE": [
+        {
+          "claim_id": "cognitive-claim-430891b51a675075",
+          "classification": "HYPOTHÈSE",
+          "confidence": 0.45,
+          "evidence_ids": [
+            "cognitive-evidence-ff56c2b60da5ae8c"
+          ],
+          "text": "L'application au burn-out est interprétative si le traité ne le nomme pas explicitement ; elle ne constitue pas un diagnostic médical."
+        }
+      ],
+      "INCONNU": []
+    },
+    "confidence": 0.43,
+    "evidence": [
+      {
+        "document_id": "memory-document-d625da0f5c352717",
+        "element_id": "memory-element-3b3ffe5cb5741624",
+        "element_type": "Paragraphe",
+        "evidence_id": "cognitive-evidence-ff56c2b60da5ae8c",
+        "page_numbers": [
+          1
+        ],
+        "relevance": 1.0,
+        "source_id": "source-d037f46c932b7064",
+        "text": "La Théorie de la Réflexivité Universelle propose une approche scientifique de la reconnaissance."
+      }
+    ],
+    "missing_knowledge": [],
+    "request_id": "cognitive-request-1952b2b55fbfc6d1",
+    "sources": [
+      {
+        "byte_size": 117,
+        "content_hash": "fb5ac2ea0a949c6c",
+        "empty_page_numbers": [],
+        "extracted_page_count": 1,
+        "extraction_errors": [],
+        "format": "markdown",
+        "is_demo_source": true,
+        "page_count": 1,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\raw\\001-introduction.md",
+        "source_id": "source-d037f46c932b7064",
+        "title": "Introduction"
+      }
+    ],
+    "warnings": [
+      "Analyse conceptuelle uniquement ; aucun diagnostic médical n'est produit."
+    ]
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.43,
+    "confidence_justification": "Confiance calculée à partir de 1 affirmation(s) explicite(s), 0 déduction(s), 1 hypothèse(s) et 0 inconnue(s).",
+    "contradictions": [],
+    "coverage_score": 1.0,
+    "deduction_claim_ids": [],
+    "definitions_used": [],
+    "demonstrations_used": [],
+    "detected_concepts": [
+      "burn_out",
+      "tru"
+    ],
+    "evidence_rejected": [],
+    "evidence_used": [
+      "cognitive-evidence-ff56c2b60da5ae8c"
+    ],
+    "explicit_claim_ids": [
+      "cognitive-claim-be2f86375a744385"
+    ],
+    "hypothesis_claim_ids": [
+      "cognitive-claim-430891b51a675075"
+    ],
+    "inferences_used": [],
+    "intent": "applied_analysis",
+    "missing_knowledge": [],
+    "original_question": "Analyse le burn-out selon la TRU.",
+    "pages_consulted": [
+      1
+    ],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-1952b2b55fbfc6d1",
+    "response_plan": [
+      "identifier_intention",
+      "sélectionner_concepts",
+      "sélectionner_preuves",
+      "classifier_affirmations",
+      "évaluer_confiance"
+    ],
+    "selected_concepts": [
+      "burn_out",
+      "tru"
+    ],
+    "sources_consulted": [
+      "source-d037f46c932b7064"
+    ],
+    "unknown_claim_ids": []
+  }
+}

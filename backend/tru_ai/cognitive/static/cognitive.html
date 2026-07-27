@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRU-AI</title>
+  <link rel="stylesheet" href="/cognitive/static/cognitive.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>TRU-AI</h1>
+        <p>Intelligence spécialisée fondée sur la Théorie de la Réflexivité Universelle.</p>
+      </div>
+      <nav>
+        <a href="/explorer">Explorer</a>
+        <a href="/docs">API</a>
+      </nav>
+    </header>
+
+    <section class="conversation" aria-label="Conversation avec TRU-AI">
+      <form id="ask-form" class="ask-form" data-endpoint="/cognitive/ask">
+        <label for="question">Question</label>
+        <div class="input-row">
+          <textarea id="question" rows="3" placeholder="Explique-moi Delta."></textarea>
+          <button type="submit">Interroger</button>
+        </div>
+      </form>
+
+      <section id="status" class="status">Mémoire cognitive en attente.</section>
+      <section id="answer" class="answer empty">Pose une question conceptuelle à TRU-AI.</section>
+      <details id="proof-panel" class="proofs">
+        <summary>Voir les preuves</summary>
+        <pre id="proofs">Aucune preuve chargée.</pre>
+      </details>
+      <details id="process-panel" class="proofs">
+        <summary>Voir le processus cognitif</summary>
+        <pre id="process">Aucun processus chargé.</pre>
+      </details>
+    </section>
+  </main>
+  <script src="/cognitive/static/cognitive.js"></script>
+</body>
+</html>

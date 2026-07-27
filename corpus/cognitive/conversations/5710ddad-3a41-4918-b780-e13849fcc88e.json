@@ -1,0 +1,455 @@
+{
+  "conversation_id": "5710ddad-3a41-4918-b780-e13849fcc88e",
+  "created_at": "2026-07-26T21:46:47.594184+00:00",
+  "last_request_id": "cognitive-request-4502ec753ae6c390",
+  "turn_count": 2,
+  "turns": [
+    {
+      "created_at": "2026-07-26T21:46:49.885274+00:00",
+      "follow_up_intent": null,
+      "intent": "applied_analysis",
+      "is_follow_up": false,
+      "question": "Analyse le burn-out selon la TRU.",
+      "request_id": "cognitive-request-4502ec753ae6c390",
+      "response": {
+        "answer": {
+          "deductions": [],
+          "explicit_claims": [
+            {
+              "claim_id": "cognitive-claim-4c1820cbe9ee2b4d",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-65808dfdec9151c2"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "La dynamique générale du blocage peut être représentée ainsi : Δ→P→B→Répétition où Δ désigne la différence rencontrée, P l’activation d’une protection, B le blocage du passage réflexif et la répétition le retour de manifestations analogues sous des formes parfois modifiées. Le mouvement complet aurait dû conduire de Delta à l’observation, puis à la reconnaissance et à la transformation. Dans la boucle bloquée, la protection absorbe ou détourne la différence avant qu’elle puisse être intégrée. Le système conserve alors sa forme générale tout en produisant périodiquement les symptômes de ce qu’il refuse de transformer."
+            },
+            {
+              "claim_id": "cognitive-claim-3b2ef0edf873ed3f",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-668dc05794db1b9a"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "L’universalité revendiquée par la théorie ne signifie pas que toutes les réalités accompliraient le processus de façon identique. Elle désigne la généralité possible de la structure : partout où une conscience ou un système capable de conserver des traces reçoit une différence significative, une dynamique comparable peut être observée. Les contenus, les rythmes, les formes de manifestation et les niveaux d’organisation varient, mais certaines relations fonctionnelles demeurent. Une différence doit devenir perceptible pour être observée ; une observation doit être conservée pour être comparée ; une comparaison doit produire un écart pour ouvrir une révision ; une reconnaissance doit affecter l’organisation pour devenir transformation ; une transformation doit se manifester pour être vérifiée. La mécanique universelle étudie cette architecture du mouvement sans supposer que tous les systèmes possèdent les mêmes capacités ni que chaque cycle atteigne son accomplissement."
+            },
+            {
+              "claim_id": "cognitive-claim-02b529c8fce281c3",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-9c94ea6f1980fbd1"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Dans le cadre de la théorie, Delta peut être défini comme l’écart dynamique entre deux états, deux représentations ou deux niveaux de reconnaissance, tel que cet écart produit une information, une tension ou une possibilité de transformation dans un système capable de l’observer et de l’intégrer. Le terme d’écart ne désigne pas nécessairement une distance spatiale ni une quantité immédiatement mesurable. Il désigne une non-coïncidence structurée. Deux réalités peuvent différer par leur intensité, leur organisation, leur signification, leur temporalité, leurs effets ou leur niveau d’intégration. Delta apparaît chaque fois qu’une relation comparative permet de dire qu’un état n’est pas identique à un autre et que cette différence possède une conséquence pour la conscience, pour la relation ou pour la totalité observée."
+            },
+            {
+              "claim_id": "cognitive-claim-591c4ddf5f235c7a",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-b814cc357d3ddbf8"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Dans la Théorie de la Réflexivité Universelle, la transformation ne désigne pas un simple changement observable. De nombreuses modifications demeurent superficielles et n'affectent pas réellement l'organisation profonde d'un système. Une transformation apparaît uniquement lorsqu'une reconnaissance suffisamment intégrée modifie durablement les relations qui structurent ce système. Elle ne concerne donc pas seulement les manifestations visibles mais l'architecture interne qui leur donne naissance. Une conscience peut accumuler de nombreuses informations sans véritablement se transformer. À l'inverse, une seule reconnaissance profonde peut réorganiser durablement sa manière d'observer, d'interpréter et d'agir. La transformation constitue ainsi le prolongement naturel de la reconnaissance. Elle représente le moment où la compréhension cesse d'être un contenu de la mémoire pour devenir une propriété de la structure elle-même."
+            }
+          ],
+          "hypotheses": [
+            {
+              "claim_id": "cognitive-claim-37029fabed218d09",
+              "classification": "HYPOTHÈSE",
+              "conclusion": null,
+              "confidence": 0.45,
+              "evidence_ids": [
+                "cognitive-evidence-178f0aaf45139c1f",
+                "cognitive-evidence-5738404f34a61b54",
+                "cognitive-evidence-58638452c5c8c904"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "L'application au burn-out est interprétative si le traité ne le nomme pas explicitement ; elle ne constitue pas un diagnostic médical."
+            }
+          ],
+          "missing_knowledge": [
+            "Précondition non satisfaite : moins de deux états comparables sont établis."
+          ],
+          "sources": [
+            {
+              "byte_size": 4778047,
+              "content_hash": "a393dcbccc45c2e5",
+              "empty_page_numbers": [],
+              "extracted_page_count": 882,
+              "extraction_errors": [],
+              "format": "pdf",
+              "is_demo_source": false,
+              "page_count": 882,
+              "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+              "source_id": "source-01795ab64af8762c",
+              "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+            }
+          ],
+          "summary": "TRU-AI analyse burn_out, delta, observation, reconnaissance, transformation, tru en séparant les éléments explicitement soutenus, les déductions et les hypothèses. L'opérateur formalisé disponible est Delta.",
+          "unknowns": [],
+          "warnings": [
+            "Analyse conceptuelle uniquement ; aucun diagnostic médical n'est produit."
+          ]
+        },
+        "classifications": {
+          "DÉDUCTION": [],
+          "EXPLICITE": [
+            {
+              "claim_id": "cognitive-claim-4c1820cbe9ee2b4d",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-65808dfdec9151c2"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "La dynamique générale du blocage peut être représentée ainsi : Δ→P→B→Répétition où Δ désigne la différence rencontrée, P l’activation d’une protection, B le blocage du passage réflexif et la répétition le retour de manifestations analogues sous des formes parfois modifiées. Le mouvement complet aurait dû conduire de Delta à l’observation, puis à la reconnaissance et à la transformation. Dans la boucle bloquée, la protection absorbe ou détourne la différence avant qu’elle puisse être intégrée. Le système conserve alors sa forme générale tout en produisant périodiquement les symptômes de ce qu’il refuse de transformer."
+            },
+            {
+              "claim_id": "cognitive-claim-3b2ef0edf873ed3f",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-668dc05794db1b9a"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "L’universalité revendiquée par la théorie ne signifie pas que toutes les réalités accompliraient le processus de façon identique. Elle désigne la généralité possible de la structure : partout où une conscience ou un système capable de conserver des traces reçoit une différence significative, une dynamique comparable peut être observée. Les contenus, les rythmes, les formes de manifestation et les niveaux d’organisation varient, mais certaines relations fonctionnelles demeurent. Une différence doit devenir perceptible pour être observée ; une observation doit être conservée pour être comparée ; une comparaison doit produire un écart pour ouvrir une révision ; une reconnaissance doit affecter l’organisation pour devenir transformation ; une transformation doit se manifester pour être vérifiée. La mécanique universelle étudie cette architecture du mouvement sans supposer que tous les systèmes possèdent les mêmes capacités ni que chaque cycle atteigne son accomplissement."
+            },
+            {
+              "claim_id": "cognitive-claim-02b529c8fce281c3",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-9c94ea6f1980fbd1"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Dans le cadre de la théorie, Delta peut être défini comme l’écart dynamique entre deux états, deux représentations ou deux niveaux de reconnaissance, tel que cet écart produit une information, une tension ou une possibilité de transformation dans un système capable de l’observer et de l’intégrer. Le terme d’écart ne désigne pas nécessairement une distance spatiale ni une quantité immédiatement mesurable. Il désigne une non-coïncidence structurée. Deux réalités peuvent différer par leur intensité, leur organisation, leur signification, leur temporalité, leurs effets ou leur niveau d’intégration. Delta apparaît chaque fois qu’une relation comparative permet de dire qu’un état n’est pas identique à un autre et que cette différence possède une conséquence pour la conscience, pour la relation ou pour la totalité observée."
+            },
+            {
+              "claim_id": "cognitive-claim-591c4ddf5f235c7a",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-b814cc357d3ddbf8"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Dans la Théorie de la Réflexivité Universelle, la transformation ne désigne pas un simple changement observable. De nombreuses modifications demeurent superficielles et n'affectent pas réellement l'organisation profonde d'un système. Une transformation apparaît uniquement lorsqu'une reconnaissance suffisamment intégrée modifie durablement les relations qui structurent ce système. Elle ne concerne donc pas seulement les manifestations visibles mais l'architecture interne qui leur donne naissance. Une conscience peut accumuler de nombreuses informations sans véritablement se transformer. À l'inverse, une seule reconnaissance profonde peut réorganiser durablement sa manière d'observer, d'interpréter et d'agir. La transformation constitue ainsi le prolongement naturel de la reconnaissance. Elle représente le moment où la compréhension cesse d'être un contenu de la mémoire pour devenir une propriété de la structure elle-même."
+            }
+          ],
+          "HYPOTHÈSE": [
+            {
+              "claim_id": "cognitive-claim-37029fabed218d09",
+              "classification": "HYPOTHÈSE",
+              "conclusion": null,
+              "confidence": 0.45,
+              "evidence_ids": [
+                "cognitive-evidence-178f0aaf45139c1f",
+                "cognitive-evidence-5738404f34a61b54",
+                "cognitive-evidence-58638452c5c8c904"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "L'application au burn-out est interprétative si le traité ne le nomme pas explicitement ; elle ne constitue pas un diagnostic médical."
+            }
+          ],
+          "INCONNU": []
+        },
+        "cognitive_execution": {
+          "applicable_operators": [
+            {
+              "conceptual_version": "v0.9.0-alpha",
+              "definitions": [
+                "Introduction — De la mécanique aux lois universelles Les quatre premières parties de ce traité ont progressivement construit l'architecture générale de la théorie de la réflexivité universelle. La première a posé le problème fondamental de la conscience en montrant que les grandes approches philosophiques, scientifiques et spirituelles décrivent généralement ses manifestations sans parvenir à expliquer le mécanisme par lequel une conscience devient capable de se reconnaître elle-même. La seconde a établi les axiomes fondamentaux qui gouvernent ce processus de reconnaissance. La troisième a défini avec précision le langage conceptuel indispensable à la théorie afin que chacun des termes employés possède une signification stable et non ambiguë. Enfin, la quatrième a mis en évidence la mécanique universelle du mouvement réflexif en montrant comment les manifestations, les événements, les relations, les témoignages, les émotions, la solitude, l'observation, la reconnaissance, la transformation, Delta, la protection et la mémoire s'articulent dans une dynamique unique de transformation progressive de la conscience.",
+                "L’opérateur Delta occupe une place centrale dans la Théorie de la Réflexivité Universelle parce qu’il formalise le point de départ du mouvement réflexif. La conscience observe une différence, l’esprit tente de la représenter, la mémoire la compare à des traces antérieures, la relation lui fournit des témoignages, la réflexivité inclut la position de l’observateur et la reconnaissance cherche à intégrer ce que l’écart révèle. Sans Delta, aucune révision ne serait nécessaire. Une représentation qui coïnciderait parfaitement et définitivement avec toute manifestation n’aurait aucun besoin de se transformer. Mais une telle coïncidence absolue ne correspond pas aux conditions ordinaires de l’expérience. Toute représentation est partielle, toute observation est située et toute reconnaissance demeure ouverte à des manifestations nouvelles. Delta ne constitue donc pas une anomalie accidentelle de la conscience ; il est la structure par laquelle la conscience devient capable d’apprendre qu’elle ne possède pas encore entièrement ce qu’elle cherche à comprendre."
+              ],
+              "inputs": [
+                "état ou configuration actuelle",
+                "possibilité, attente, prédiction ou configuration reconnue"
+              ],
+              "limitations": [
+                "Delta ne doit pas être appliqué si un seul état est établi.",
+                "Delta ne transforme pas une interprétation médicale en diagnostic."
+              ],
+              "name": "Delta",
+              "operator_id": "tru-operator-fd2ae29ef295f32e",
+              "outputs": [
+                "écart qualifié",
+                "orientation possible de transformation"
+              ],
+              "preconditions": [
+                "au moins deux états ou représentations comparables sont disponibles",
+                "l'écart est soutenu par des preuves textuelles ou une comparaison explicite"
+              ],
+              "source_evidence": [
+                "cognitive-evidence-178f0aaf45139c1f",
+                "cognitive-evidence-5738404f34a61b54",
+                "cognitive-evidence-58638452c5c8c904",
+                "cognitive-evidence-65808dfdec9151c2",
+                "cognitive-evidence-9c94ea6f1980fbd1",
+                "cognitive-evidence-ded10f8875315d33",
+                "cognitive-evidence-e2e13982b0a15015",
+                "cognitive-evidence-f72360cf0e893c25"
+              ],
+              "transformation": "Comparer deux états ou représentations pour rendre explicite l'écart pertinent."
+            }
+          ],
+          "applied_operators": [
+            {
+              "application_id": "operator-application-acf0cf3690dd59b9",
+              "applied": false,
+              "confidence": 0.0,
+              "operator_id": "tru-operator-fd2ae29ef295f32e",
+              "output": null,
+              "premise_evidence_ids": [
+                "cognitive-evidence-178f0aaf45139c1f",
+                "cognitive-evidence-5738404f34a61b54",
+                "cognitive-evidence-58638452c5c8c904",
+                "cognitive-evidence-65808dfdec9151c2",
+                "cognitive-evidence-9c94ea6f1980fbd1",
+                "cognitive-evidence-ded10f8875315d33",
+                "cognitive-evidence-e2e13982b0a15015",
+                "cognitive-evidence-f72360cf0e893c25"
+              ],
+              "refusal_reason": "Précondition non satisfaite : moins de deux états comparables sont établis.",
+              "rule": "delta_requires_two_comparable_states"
+            }
+          ],
+          "comparisons": [
+            {
+              "compared_states": [
+                "question formulée : Analyse le burn-out selon la TRU."
+              ],
+              "comparison_id": "cognitive-comparison-854e8d285a2bd358",
+              "delta_detected": null,
+              "differences": [],
+              "dimensions": [
+                "reconnaissance",
+                "tension entre état vécu et possibilité reconnue",
+                "transformation",
+                "écart"
+              ],
+              "limitations": [
+                "comparaison insuffisante pour appliquer Delta comme opérateur complet"
+              ],
+              "provenance": [
+                "cognitive-evidence-178f0aaf45139c1f",
+                "cognitive-evidence-5738404f34a61b54",
+                "cognitive-evidence-58638452c5c8c904",
+                "cognitive-evidence-65808dfdec9151c2",
+                "cognitive-evidence-668dc05794db1b9a",
+                "cognitive-evidence-9c94ea6f1980fbd1",
+                "cognitive-evidence-b814cc357d3ddbf8",
+                "cognitive-evidence-ba31b80c7e421760",
+                "cognitive-evidence-ded10f8875315d33",
+                "cognitive-evidence-e2e13982b0a15015",
+                "cognitive-evidence-e498c6a0b3df8dc6",
+                "cognitive-evidence-f72360cf0e893c25"
+              ],
+              "similarities": [
+                "la mémoire contient des éléments pertinents pour le concept demandé"
+              ],
+              "tru_meaning": null
+            }
+          ],
+          "concepts_recognized": [
+            "burn_out",
+            "delta",
+            "observation",
+            "reconnaissance",
+            "transformation",
+            "tru"
+          ],
+          "concepts_rejected": [],
+          "confidence": 0.6162,
+          "confidence_justification": "Confiance décomposée : couverture=0.95, preuves=0.92, raisonnement=0.65, opérateur=0.82, pénalité_hypothèses=0.12, pénalité_contradictions=0.00, pénalité_inconnues=0.00.",
+          "context": [],
+          "contradictions": [],
+          "deductions": [],
+          "deltas_detected": [],
+          "evidence_selected": [
+            "cognitive-evidence-178f0aaf45139c1f",
+            "cognitive-evidence-5738404f34a61b54",
+            "cognitive-evidence-58638452c5c8c904",
+            "cognitive-evidence-65808dfdec9151c2",
+            "cognitive-evidence-668dc05794db1b9a",
+            "cognitive-evidence-9c94ea6f1980fbd1",
+            "cognitive-evidence-b814cc357d3ddbf8",
+            "cognitive-evidence-ba31b80c7e421760",
+            "cognitive-evidence-ded10f8875315d33",
+            "cognitive-evidence-e2e13982b0a15015",
+            "cognitive-evidence-e498c6a0b3df8dc6",
+            "cognitive-evidence-f72360cf0e893c25"
+          ],
+          "execution_id": "cognitive-execution-c64b707f0f872529",
+          "final_answer": "TRU-AI analyse burn_out, delta, observation, reconnaissance, transformation, tru en séparant les éléments explicitement soutenus, les déductions et les hypothèses. L'opérateur formalisé disponible est Delta.",
+          "hypotheses": [
+            "cognitive-claim-37029fabed218d09"
+          ],
+          "intention": "applied_analysis",
+          "memory_activated": [
+            "memory-element-119b69fac0bec97d",
+            "memory-element-2745f96b52162dec",
+            "memory-element-2ecdf97a967e604e",
+            "memory-element-36be2b7173015c43",
+            "memory-element-385ba1268ea1f354",
+            "memory-element-38cce07eb4366da1",
+            "memory-element-71b04e8638b2491e",
+            "memory-element-72a650d8596918cb",
+            "memory-element-73998f4851690128",
+            "memory-element-cab49dabfe57c3c2",
+            "memory-element-dabfd320d6992c5c",
+            "memory-element-f392db8c2fbea16c"
+          ],
+          "observation": "Question observée : Analyse le burn-out selon la TRU.",
+          "premises": [
+            "cognitive-evidence-178f0aaf45139c1f",
+            "cognitive-evidence-5738404f34a61b54",
+            "cognitive-evidence-58638452c5c8c904",
+            "cognitive-evidence-65808dfdec9151c2",
+            "cognitive-evidence-668dc05794db1b9a",
+            "cognitive-evidence-9c94ea6f1980fbd1",
+            "cognitive-evidence-b814cc357d3ddbf8",
+            "cognitive-evidence-ba31b80c7e421760",
+            "cognitive-evidence-ded10f8875315d33",
+            "cognitive-evidence-e2e13982b0a15015",
+            "cognitive-evidence-e498c6a0b3df8dc6",
+            "cognitive-evidence-f72360cf0e893c25"
+          ],
+          "problem": "Résoudre une demande de type applied_analysis portant sur burn_out, delta, observation, reconnaissance, transformation, tru à partir de preuves canoniques.",
+          "question": "Analyse le burn-out selon la TRU.",
+          "reflexive_evaluation": {
+            "concepts_recognized": true,
+            "confidence_breakdown": {},
+            "confidence_matches_evidence": true,
+            "contradiction_detected": false,
+            "evidence_sufficient": true,
+            "hypothesis_promoted_to_fact": false,
+            "missing_information_count": 1,
+            "question_understood": true,
+            "unauthorized_rule_applied": false
+          },
+          "response_plan": [
+            "rappeler_les_preuves_explicitement_disponibles",
+            "identifier_les_concepts_applicables",
+            "séparer_déductions_et_hypothèses",
+            "signaler_les_limites_non_médicales",
+            "justifier_la_confiance"
+          ],
+          "rules": [
+            "delta_requires_two_comparable_states"
+          ],
+          "unknowns": []
+        },
+        "confidence": 0.6162,
+        "confidence_breakdown": {
+          "contradiction_penalty": 0.0,
+          "evidence_quality": 0.92,
+          "final_confidence": 0.6162,
+          "hypothesis_penalty": 0.12,
+          "operator_validity": 0.82,
+          "reasoning_validity": 0.65,
+          "source_coverage": 0.95,
+          "unknown_penalty": 0.0
+        },
+        "evidence": [],
+        "missing_knowledge": [
+          "Précondition non satisfaite : moins de deux états comparables sont établis."
+        ],
+        "request_id": "cognitive-request-4502ec753ae6c390",
+        "sources": [
+          {
+            "byte_size": 4778047,
+            "content_hash": "a393dcbccc45c2e5",
+            "empty_page_numbers": [],
+            "extracted_page_count": 882,
+            "extraction_errors": [],
+            "format": "pdf",
+            "is_demo_source": false,
+            "page_count": 882,
+            "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+            "source_id": "source-01795ab64af8762c",
+            "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+          }
+        ],
+        "warnings": [
+          "Analyse conceptuelle uniquement ; aucun diagnostic médical n'est produit."
+        ]
+      },
+      "turn_index": 1
+    },
+    {
+      "created_at": "2026-07-26T21:46:49.914704+00:00",
+      "follow_up_intent": "missing_knowledge_review",
+      "intent": "missing_knowledge_review",
+      "is_follow_up": true,
+      "question": "Quelles connaissances te manquent ?",
+      "request_id": "cognitive-request-4502ec753ae6c390",
+      "response": {
+        "answer": {
+          "missing_knowledge": [
+            "Précondition non satisfaite : moins de deux états comparables sont établis."
+          ],
+          "summary": "Voici les connaissances manquantes ou les éléments qui n'ont pas pu être établis.",
+          "unknowns": [],
+          "warnings": [
+            "Analyse conceptuelle uniquement ; aucun diagnostic médical n'est produit."
+          ]
+        },
+        "based_on_question": "Analyse le burn-out selon la TRU.",
+        "based_on_request_id": "cognitive-request-4502ec753ae6c390",
+        "confidence": 0.6162,
+        "confidence_breakdown": {
+          "contradiction_penalty": 0.0,
+          "evidence_quality": 0.92,
+          "final_confidence": 0.6162,
+          "hypothesis_penalty": 0.12,
+          "operator_validity": 0.82,
+          "reasoning_validity": 0.65,
+          "source_coverage": 0.95,
+          "unknown_penalty": 0.0
+        },
+        "conversation_id": "5710ddad-3a41-4918-b780-e13849fcc88e",
+        "follow_up_intent": "missing_knowledge_review",
+        "intent": "missing_knowledge_review",
+        "is_follow_up": true,
+        "question": "Quelles connaissances te manquent ?",
+        "request_id": "cognitive-request-4502ec753ae6c390",
+        "warnings": [
+          "Analyse conceptuelle uniquement ; aucun diagnostic médical n'est produit."
+        ]
+      },
+      "turn_index": 2
+    }
+  ],
+  "updated_at": "2026-07-26T21:46:49.914716+00:00"
+}

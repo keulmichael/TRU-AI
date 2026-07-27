@@ -1,0 +1,137 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [],
+      "explicit_claims": [
+        {
+          "claim_id": "cognitive-claim-be2f86375a744385",
+          "classification": "EXPLICITE",
+          "confidence": 0.78,
+          "evidence_ids": [
+            "cognitive-evidence-ff56c2b60da5ae8c"
+          ],
+          "text": "La Théorie de la Réflexivité Universelle propose une approche scientifique de la reconnaissance."
+        }
+      ],
+      "hypotheses": [],
+      "missing_knowledge": [],
+      "sources": [
+        {
+          "byte_size": 117,
+          "content_hash": "fb5ac2ea0a949c6c",
+          "empty_page_numbers": [],
+          "extracted_page_count": 1,
+          "extraction_errors": [],
+          "format": "markdown",
+          "is_demo_source": true,
+          "page_count": 1,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\raw\\001-introduction.md",
+          "source_id": "source-d037f46c932b7064",
+          "title": "Introduction"
+        }
+      ],
+      "summary": "TRU-AI explique delta, reconnaissance, tru à partir des formulations explicites disponibles, puis signale les déductions et limites.",
+      "unknowns": [],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [],
+      "EXPLICITE": [
+        {
+          "claim_id": "cognitive-claim-be2f86375a744385",
+          "classification": "EXPLICITE",
+          "confidence": 0.78,
+          "evidence_ids": [
+            "cognitive-evidence-ff56c2b60da5ae8c"
+          ],
+          "text": "La Théorie de la Réflexivité Universelle propose une approche scientifique de la reconnaissance."
+        }
+      ],
+      "HYPOTHÈSE": [],
+      "INCONNU": []
+    },
+    "confidence": 0.53,
+    "evidence": [
+      {
+        "document_id": "memory-document-d625da0f5c352717",
+        "element_id": "memory-element-3b3ffe5cb5741624",
+        "element_type": "Paragraphe",
+        "evidence_id": "cognitive-evidence-ff56c2b60da5ae8c",
+        "page_numbers": [
+          1
+        ],
+        "relevance": 1.0,
+        "source_id": "source-d037f46c932b7064",
+        "text": "La Théorie de la Réflexivité Universelle propose une approche scientifique de la reconnaissance."
+      }
+    ],
+    "missing_knowledge": [],
+    "request_id": "cognitive-request-3028277cb006ab77",
+    "sources": [
+      {
+        "byte_size": 117,
+        "content_hash": "fb5ac2ea0a949c6c",
+        "empty_page_numbers": [],
+        "extracted_page_count": 1,
+        "extraction_errors": [],
+        "format": "markdown",
+        "is_demo_source": true,
+        "page_count": 1,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\raw\\001-introduction.md",
+        "source_id": "source-d037f46c932b7064",
+        "title": "Introduction"
+      }
+    ],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.53,
+    "confidence_justification": "Confiance calculée à partir de 1 affirmation(s) explicite(s), 0 déduction(s), 0 hypothèse(s) et 0 inconnue(s).",
+    "contradictions": [],
+    "coverage_score": 1.0,
+    "deduction_claim_ids": [],
+    "definitions_used": [],
+    "demonstrations_used": [],
+    "detected_concepts": [
+      "delta",
+      "reconnaissance",
+      "tru"
+    ],
+    "evidence_rejected": [],
+    "evidence_used": [
+      "cognitive-evidence-ff56c2b60da5ae8c"
+    ],
+    "explicit_claim_ids": [
+      "cognitive-claim-be2f86375a744385"
+    ],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "concept_explanation",
+    "missing_knowledge": [],
+    "original_question": "Explique-moi Delta.",
+    "pages_consulted": [
+      1
+    ],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-3028277cb006ab77",
+    "response_plan": [
+      "identifier_intention",
+      "sélectionner_concepts",
+      "sélectionner_preuves",
+      "classifier_affirmations",
+      "évaluer_confiance"
+    ],
+    "selected_concepts": [
+      "delta",
+      "reconnaissance",
+      "tru"
+    ],
+    "sources_consulted": [
+      "source-d037f46c932b7064"
+    ],
+    "unknown_claim_ids": []
+  }
+}

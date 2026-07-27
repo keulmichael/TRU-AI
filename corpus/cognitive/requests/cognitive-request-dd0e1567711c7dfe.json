@@ -1,0 +1,203 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [
+        {
+          "claim_id": "cognitive-claim-8905bb9d59d7460a",
+          "classification": "DÉDUCTION",
+          "confidence": 0.68,
+          "evidence_ids": [
+            "cognitive-evidence-8f72ad26e3f4e7c8",
+            "cognitive-evidence-ff56c2b60da5ae8c"
+          ],
+          "text": "Les passages retenus situent le concept dans un réseau de relations plutôt que comme une notion isolée."
+        }
+      ],
+      "explicit_claims": [
+        {
+          "claim_id": "cognitive-claim-82a01d24338f23fa",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-8f72ad26e3f4e7c8"
+          ],
+          "text": "Toute conscience est capable d'observer."
+        }
+      ],
+      "hypotheses": [],
+      "missing_knowledge": [],
+      "sources": [
+        {
+          "byte_size": 60,
+          "content_hash": "1b2991974904ed4c",
+          "empty_page_numbers": [],
+          "extracted_page_count": 1,
+          "extraction_errors": [],
+          "format": "markdown",
+          "is_demo_source": true,
+          "page_count": 1,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\raw\\101-premier-axiome.md",
+          "source_id": "source-255c92cc10c4837f",
+          "title": "Premier axiome"
+        },
+        {
+          "byte_size": 117,
+          "content_hash": "fb5ac2ea0a949c6c",
+          "empty_page_numbers": [],
+          "extracted_page_count": 1,
+          "extraction_errors": [],
+          "format": "markdown",
+          "is_demo_source": true,
+          "page_count": 1,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\raw\\001-introduction.md",
+          "source_id": "source-d037f46c932b7064",
+          "title": "Introduction"
+        }
+      ],
+      "summary": "TRU-AI explique delta, reconnaissance, tru à partir des formulations explicites disponibles, puis signale les déductions et limites.",
+      "unknowns": [],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [
+        {
+          "claim_id": "cognitive-claim-8905bb9d59d7460a",
+          "classification": "DÉDUCTION",
+          "confidence": 0.68,
+          "evidence_ids": [
+            "cognitive-evidence-8f72ad26e3f4e7c8",
+            "cognitive-evidence-ff56c2b60da5ae8c"
+          ],
+          "text": "Les passages retenus situent le concept dans un réseau de relations plutôt que comme une notion isolée."
+        }
+      ],
+      "EXPLICITE": [
+        {
+          "claim_id": "cognitive-claim-82a01d24338f23fa",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-8f72ad26e3f4e7c8"
+          ],
+          "text": "Toute conscience est capable d'observer."
+        }
+      ],
+      "HYPOTHÈSE": [],
+      "INCONNU": []
+    },
+    "confidence": 0.61,
+    "evidence": [
+      {
+        "document_id": "memory-document-5fa9aa7c3894f59f",
+        "element_id": "memory-element-b41b3c183c608c21",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-8f72ad26e3f4e7c8",
+        "page_numbers": [
+          1
+        ],
+        "relevance": 1.0,
+        "source_id": "source-255c92cc10c4837f",
+        "text": "Toute conscience est capable d'observer."
+      },
+      {
+        "document_id": "memory-document-d625da0f5c352717",
+        "element_id": "memory-element-3b3ffe5cb5741624",
+        "element_type": "Paragraphe",
+        "evidence_id": "cognitive-evidence-ff56c2b60da5ae8c",
+        "page_numbers": [
+          1
+        ],
+        "relevance": 1.0,
+        "source_id": "source-d037f46c932b7064",
+        "text": "La Théorie de la Réflexivité Universelle propose une approche scientifique de la reconnaissance."
+      }
+    ],
+    "missing_knowledge": [],
+    "request_id": "cognitive-request-dd0e1567711c7dfe",
+    "sources": [
+      {
+        "byte_size": 60,
+        "content_hash": "1b2991974904ed4c",
+        "empty_page_numbers": [],
+        "extracted_page_count": 1,
+        "extraction_errors": [],
+        "format": "markdown",
+        "is_demo_source": true,
+        "page_count": 1,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\raw\\101-premier-axiome.md",
+        "source_id": "source-255c92cc10c4837f",
+        "title": "Premier axiome"
+      },
+      {
+        "byte_size": 117,
+        "content_hash": "fb5ac2ea0a949c6c",
+        "empty_page_numbers": [],
+        "extracted_page_count": 1,
+        "extraction_errors": [],
+        "format": "markdown",
+        "is_demo_source": true,
+        "page_count": 1,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\raw\\001-introduction.md",
+        "source_id": "source-d037f46c932b7064",
+        "title": "Introduction"
+      }
+    ],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.61,
+    "confidence_justification": "Confiance calculée à partir de 1 affirmation(s) explicite(s), 1 déduction(s), 0 hypothèse(s) et 0 inconnue(s).",
+    "contradictions": [],
+    "coverage_score": 1.0,
+    "deduction_claim_ids": [
+      "cognitive-claim-8905bb9d59d7460a"
+    ],
+    "definitions_used": [
+      "memory-element-b41b3c183c608c21"
+    ],
+    "demonstrations_used": [],
+    "detected_concepts": [
+      "delta",
+      "reconnaissance",
+      "tru"
+    ],
+    "evidence_rejected": [],
+    "evidence_used": [
+      "cognitive-evidence-8f72ad26e3f4e7c8",
+      "cognitive-evidence-ff56c2b60da5ae8c"
+    ],
+    "explicit_claim_ids": [
+      "cognitive-claim-82a01d24338f23fa"
+    ],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "concept_explanation",
+    "missing_knowledge": [],
+    "original_question": "Explique-moi Delta.",
+    "pages_consulted": [
+      1
+    ],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-dd0e1567711c7dfe",
+    "response_plan": [
+      "identifier_intention",
+      "sélectionner_concepts",
+      "sélectionner_preuves",
+      "classifier_affirmations",
+      "évaluer_confiance"
+    ],
+    "selected_concepts": [
+      "delta",
+      "reconnaissance",
+      "tru"
+    ],
+    "sources_consulted": [
+      "source-255c92cc10c4837f",
+      "source-d037f46c932b7064"
+    ],
+    "unknown_claim_ids": []
+  }
+}

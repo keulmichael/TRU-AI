@@ -1,0 +1,30 @@
+{
+  "edge_count": 2,
+  "explanation_count": 0,
+  "generated_at": "2026-07-24T07:58:33.990488+00:00",
+  "index_file_count": 5,
+  "inferred_edge_count": 0,
+  "node_count": 4,
+  "output_paths": {
+    "edge_explanation_index": "C:\\Sites\\Projects\\TRU-AI\\corpus\\exploration\\edge_explanation_index.json",
+    "incoming_index": "C:\\Sites\\Projects\\TRU-AI\\corpus\\exploration\\incoming_index.json",
+    "manifest": "C:\\Sites\\Projects\\TRU-AI\\corpus\\exploration\\exploration_manifest.json",
+    "node_index": "C:\\Sites\\Projects\\TRU-AI\\corpus\\exploration\\node_index.json",
+    "outgoing_index": "C:\\Sites\\Projects\\TRU-AI\\corpus\\exploration\\outgoing_index.json",
+    "predicate_index": "C:\\Sites\\Projects\\TRU-AI\\corpus\\exploration\\predicate_index.json"
+  },
+  "predicate_count": 2,
+  "source_edge_count": 2,
+  "source_paths": {
+    "graph_inferred_edges": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_inferred\\edges.jsonl",
+    "graph_inferred_nodes": "C:\\Sites\\Projects\\TRU-AI\\corpus\\graph_inferred\\nodes.jsonl",
+    "reasoning_explanations": "C:\\Sites\\Projects\\TRU-AI\\corpus\\reasoning\\explanations.jsonl",
+    "reasoning_proof_trees": "C:\\Sites\\Projects\\TRU-AI\\corpus\\reasoning\\proof_trees.jsonl"
+  },
+  "validation": {
+    "errors": [],
+    "valid": true,
+    "warnings": []
+  },
+  "version": "v0.8.8.0"
+}

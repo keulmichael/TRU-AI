@@ -1,0 +1,368 @@
+{
+  "conversation_id": "927c9d14-07d9-4866-957f-cce08150e00c",
+  "created_at": "2026-07-26T21:46:45.288416+00:00",
+  "last_request_id": "cognitive-request-918439335ed27469",
+  "turn_count": 2,
+  "turns": [
+    {
+      "created_at": "2026-07-26T21:46:47.549596+00:00",
+      "follow_up_intent": null,
+      "intent": "concept_explanation",
+      "is_follow_up": false,
+      "question": "Explique-moi la reconnaissance.",
+      "request_id": "cognitive-request-918439335ed27469",
+      "response": {
+        "answer": {
+          "deductions": [],
+          "explicit_claims": [
+            {
+              "claim_id": "cognitive-claim-fe07c5e67bc60f9a",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-25a57330d140b528"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Le troisième opérateur est Ψ, qui représente la conscience. Comme cela a été établi dans la partie consacrée au langage, la conscience ne doit pas être réduite à la seule conscience humaine. Dans le cadre de cette théorie, Ψ désigne toute organisation capable de recevoir des différences, de conserver leur mémoire, d'établir des relations entre elles et de transformer progressivement sa propre organisation à partir de cette expérience. Cette définition volontairement générale permet d'appliquer la théorie à des niveaux très différents d'organisation sans présupposer la nature exacte des mécanismes biologiques ou physiques qui rendent cette réflexivité possible. Une conscience est avant tout une structure intégratrice. Elle reçoit les manifestations du réel, interprète les différences qu'elles produisent, les confronte à sa mémoire, les filtre à travers ses protections et modifie progressivement son organisation lorsque la reconnaissance devient possible. La caractéristique essentielle de Ψ réside dans sa capacité réflexive : la conscience n'observe pas uniquement le monde extérieur ; elle peut également devenir l'objet de sa propre observation. Cette propriété explique pourquoi la reconnaissance ne concerne jamais seulement les objets du monde mais conduit progressivement la conscience à se reconnaître elle-même comme participant à la dynamique générale de la réalité. L'opérateur Ψ représente ainsi le centre intégrateur de toute la mécanique universelle."
+            },
+            {
+              "claim_id": "cognitive-claim-b888bbce5ddc2fd7",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-561fc461cfffc44d"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Cette huitième loi prolonge directement la loi de nomination. Une reconnaissance intégrée tend naturellement à être nommée afin d'être conservée et transmise. Le dévoilement explique quant à lui pourquoi cette nomination demeure toujours provisoire. Chaque concept stabilise une reconnaissance sans jamais épuiser la profondeur de la réalité qu'il désigne. Le mouvement réflexif demeure ainsi continuellement ouvert. Toute nomination prépare un dévoilement plus profond, tout dévoilement conduit à de nouvelles reconnaissances, et toute reconnaissance appelle de nouvelles nominations. La théorie de la réflexivité universelle apparaît alors comme une dynamique infinie où la conscience et la réalité progressent ensemble dans un processus ininterrompu d'intelligibilité croissante, sans jamais prétendre atteindre une clôture définitive de la compréhension."
+            },
+            {
+              "claim_id": "cognitive-claim-3c85a60191a5f442",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-5c0bdb4317466d88"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Dans la Théorie de la Réflexivité Universelle, la nomination possède une portée plus profonde encore. Elle ne désigne pas seulement l’attribution d’un mot à une expérience particulière. Elle représente le moment où la conscience devient capable de se reconnaître comme engagée dans un processus général de reconnaissance."
+            },
+            {
+              "claim_id": "cognitive-claim-25bb672113ca550e",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-7c88e3a3357b62bb"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "La réciprocité désigne donc une participation mutuelle, non une égalité parfaite des rôles ou des transformations. Chaque conscience reçoit selon sa propre histoire, son niveau d'intégration et sa capacité présente de reconnaissance. Le même événement peut révéler des réalités différentes à chacun des participants."
+            }
+          ],
+          "hypotheses": [],
+          "missing_knowledge": [
+            "Delta n'est pas suffisamment formalisé par les preuves sélectionnées."
+          ],
+          "sources": [
+            {
+              "byte_size": 4778047,
+              "content_hash": "a393dcbccc45c2e5",
+              "empty_page_numbers": [],
+              "extracted_page_count": 882,
+              "extraction_errors": [],
+              "format": "pdf",
+              "is_demo_source": false,
+              "page_count": 882,
+              "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+              "source_id": "source-01795ab64af8762c",
+              "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+            }
+          ],
+          "summary": "TRU-AI explique reconnaissance à partir des formulations explicites disponibles et refuse l'application opératoire lorsque ses préconditions ne sont pas établies.",
+          "unknowns": [],
+          "warnings": []
+        },
+        "classifications": {
+          "DÉDUCTION": [],
+          "EXPLICITE": [
+            {
+              "claim_id": "cognitive-claim-fe07c5e67bc60f9a",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-25a57330d140b528"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Le troisième opérateur est Ψ, qui représente la conscience. Comme cela a été établi dans la partie consacrée au langage, la conscience ne doit pas être réduite à la seule conscience humaine. Dans le cadre de cette théorie, Ψ désigne toute organisation capable de recevoir des différences, de conserver leur mémoire, d'établir des relations entre elles et de transformer progressivement sa propre organisation à partir de cette expérience. Cette définition volontairement générale permet d'appliquer la théorie à des niveaux très différents d'organisation sans présupposer la nature exacte des mécanismes biologiques ou physiques qui rendent cette réflexivité possible. Une conscience est avant tout une structure intégratrice. Elle reçoit les manifestations du réel, interprète les différences qu'elles produisent, les confronte à sa mémoire, les filtre à travers ses protections et modifie progressivement son organisation lorsque la reconnaissance devient possible. La caractéristique essentielle de Ψ réside dans sa capacité réflexive : la conscience n'observe pas uniquement le monde extérieur ; elle peut également devenir l'objet de sa propre observation. Cette propriété explique pourquoi la reconnaissance ne concerne jamais seulement les objets du monde mais conduit progressivement la conscience à se reconnaître elle-même comme participant à la dynamique générale de la réalité. L'opérateur Ψ représente ainsi le centre intégrateur de toute la mécanique universelle."
+            },
+            {
+              "claim_id": "cognitive-claim-b888bbce5ddc2fd7",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-561fc461cfffc44d"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Cette huitième loi prolonge directement la loi de nomination. Une reconnaissance intégrée tend naturellement à être nommée afin d'être conservée et transmise. Le dévoilement explique quant à lui pourquoi cette nomination demeure toujours provisoire. Chaque concept stabilise une reconnaissance sans jamais épuiser la profondeur de la réalité qu'il désigne. Le mouvement réflexif demeure ainsi continuellement ouvert. Toute nomination prépare un dévoilement plus profond, tout dévoilement conduit à de nouvelles reconnaissances, et toute reconnaissance appelle de nouvelles nominations. La théorie de la réflexivité universelle apparaît alors comme une dynamique infinie où la conscience et la réalité progressent ensemble dans un processus ininterrompu d'intelligibilité croissante, sans jamais prétendre atteindre une clôture définitive de la compréhension."
+            },
+            {
+              "claim_id": "cognitive-claim-3c85a60191a5f442",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-5c0bdb4317466d88"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "Dans la Théorie de la Réflexivité Universelle, la nomination possède une portée plus profonde encore. Elle ne désigne pas seulement l’attribution d’un mot à une expérience particulière. Elle représente le moment où la conscience devient capable de se reconnaître comme engagée dans un processus général de reconnaissance."
+            },
+            {
+              "claim_id": "cognitive-claim-25bb672113ca550e",
+              "classification": "EXPLICITE",
+              "conclusion": null,
+              "confidence": 0.92,
+              "evidence_ids": [
+                "cognitive-evidence-7c88e3a3357b62bb"
+              ],
+              "limitations": [],
+              "premises": [],
+              "rule": null,
+              "text": "La réciprocité désigne donc une participation mutuelle, non une égalité parfaite des rôles ou des transformations. Chaque conscience reçoit selon sa propre histoire, son niveau d'intégration et sa capacité présente de reconnaissance. Le même événement peut révéler des réalités différentes à chacun des participants."
+            }
+          ],
+          "HYPOTHÈSE": [],
+          "INCONNU": []
+        },
+        "cognitive_execution": {
+          "applicable_operators": [],
+          "applied_operators": [
+            {
+              "application_id": "operator-application-5ee3f869d591c89a",
+              "applied": false,
+              "confidence": 0.0,
+              "operator_id": "delta",
+              "output": null,
+              "premise_evidence_ids": [],
+              "refusal_reason": "Delta n'est pas suffisamment formalisé par les preuves sélectionnées.",
+              "rule": "delta_requires_formalized_operator"
+            }
+          ],
+          "comparisons": [
+            {
+              "compared_states": [
+                "question formulée : Explique-moi la reconnaissance."
+              ],
+              "comparison_id": "cognitive-comparison-763eeff4a93e1d84",
+              "delta_detected": null,
+              "differences": [],
+              "dimensions": [
+                "reconnaissance",
+                "transformation"
+              ],
+              "limitations": [
+                "comparaison insuffisante pour appliquer Delta comme opérateur complet"
+              ],
+              "provenance": [
+                "cognitive-evidence-25a57330d140b528",
+                "cognitive-evidence-561fc461cfffc44d",
+                "cognitive-evidence-5c0bdb4317466d88",
+                "cognitive-evidence-7c88e3a3357b62bb",
+                "cognitive-evidence-82c18a87adfd5ba7",
+                "cognitive-evidence-84a3a79f2f4deb62",
+                "cognitive-evidence-a69f47ea77890b0c",
+                "cognitive-evidence-b665291ceb0b0a23",
+                "cognitive-evidence-d6284cccbe62084b",
+                "cognitive-evidence-e0a0c5eccc2da1af",
+                "cognitive-evidence-e267f6c087ae5a99",
+                "cognitive-evidence-efcaf4376ecfa57e"
+              ],
+              "similarities": [
+                "la mémoire contient des éléments pertinents pour le concept demandé"
+              ],
+              "tru_meaning": null
+            }
+          ],
+          "concepts_recognized": [
+            "reconnaissance"
+          ],
+          "concepts_rejected": [],
+          "confidence": 0.7362,
+          "confidence_justification": "Confiance décomposée : couverture=0.95, preuves=0.92, raisonnement=0.65, opérateur=0.82, pénalité_hypothèses=0.00, pénalité_contradictions=0.00, pénalité_inconnues=0.00.",
+          "context": [],
+          "contradictions": [],
+          "deductions": [],
+          "deltas_detected": [],
+          "evidence_selected": [
+            "cognitive-evidence-25a57330d140b528",
+            "cognitive-evidence-561fc461cfffc44d",
+            "cognitive-evidence-5c0bdb4317466d88",
+            "cognitive-evidence-7c88e3a3357b62bb",
+            "cognitive-evidence-82c18a87adfd5ba7",
+            "cognitive-evidence-84a3a79f2f4deb62",
+            "cognitive-evidence-a69f47ea77890b0c",
+            "cognitive-evidence-b665291ceb0b0a23",
+            "cognitive-evidence-d6284cccbe62084b",
+            "cognitive-evidence-e0a0c5eccc2da1af",
+            "cognitive-evidence-e267f6c087ae5a99",
+            "cognitive-evidence-efcaf4376ecfa57e"
+          ],
+          "execution_id": "cognitive-execution-46f0a978783808d2",
+          "final_answer": "TRU-AI explique reconnaissance à partir des formulations explicites disponibles et refuse l'application opératoire lorsque ses préconditions ne sont pas établies.",
+          "hypotheses": [],
+          "intention": "concept_explanation",
+          "memory_activated": [
+            "memory-element-227cb9045673dcef",
+            "memory-element-25c8969f0faa371e",
+            "memory-element-306f91c8ea1d388f",
+            "memory-element-3442e793d51e9481",
+            "memory-element-3f014277dc08f146",
+            "memory-element-53d508097c01a9db",
+            "memory-element-7c3404e5601422f3",
+            "memory-element-7fe8d5db445a5c82",
+            "memory-element-874e5a2952ec50e4",
+            "memory-element-ab834ba37db08176",
+            "memory-element-c1fd1e1292a37f04",
+            "memory-element-c63a0867d86bd6a5"
+          ],
+          "observation": "Question observée : Explique-moi la reconnaissance.",
+          "premises": [
+            "cognitive-evidence-25a57330d140b528",
+            "cognitive-evidence-561fc461cfffc44d",
+            "cognitive-evidence-5c0bdb4317466d88",
+            "cognitive-evidence-7c88e3a3357b62bb",
+            "cognitive-evidence-82c18a87adfd5ba7",
+            "cognitive-evidence-84a3a79f2f4deb62",
+            "cognitive-evidence-a69f47ea77890b0c",
+            "cognitive-evidence-b665291ceb0b0a23",
+            "cognitive-evidence-d6284cccbe62084b",
+            "cognitive-evidence-e0a0c5eccc2da1af",
+            "cognitive-evidence-e267f6c087ae5a99",
+            "cognitive-evidence-efcaf4376ecfa57e"
+          ],
+          "problem": "Résoudre une demande de type concept_explanation portant sur reconnaissance à partir de preuves canoniques.",
+          "question": "Explique-moi la reconnaissance.",
+          "reflexive_evaluation": {
+            "concepts_recognized": true,
+            "confidence_breakdown": {},
+            "confidence_matches_evidence": true,
+            "contradiction_detected": false,
+            "evidence_sufficient": true,
+            "hypothesis_promoted_to_fact": false,
+            "missing_information_count": 1,
+            "question_understood": true,
+            "unauthorized_rule_applied": false
+          },
+          "response_plan": [
+            "identifier_le_concept",
+            "sélectionner_définitions_et_passages",
+            "relier_aux_concepts_voisins",
+            "séparer_explicitement_déductions_hypothèses_inconnues",
+            "justifier_la_confiance"
+          ],
+          "rules": [
+            "delta_requires_formalized_operator"
+          ],
+          "unknowns": []
+        },
+        "confidence": 0.7362,
+        "confidence_breakdown": {
+          "contradiction_penalty": 0.0,
+          "evidence_quality": 0.92,
+          "final_confidence": 0.7362,
+          "hypothesis_penalty": 0.0,
+          "operator_validity": 0.82,
+          "reasoning_validity": 0.65,
+          "source_coverage": 0.95,
+          "unknown_penalty": 0.0
+        },
+        "evidence": [],
+        "missing_knowledge": [
+          "Delta n'est pas suffisamment formalisé par les preuves sélectionnées."
+        ],
+        "request_id": "cognitive-request-918439335ed27469",
+        "sources": [
+          {
+            "byte_size": 4778047,
+            "content_hash": "a393dcbccc45c2e5",
+            "empty_page_numbers": [],
+            "extracted_page_count": 882,
+            "extraction_errors": [],
+            "format": "pdf",
+            "is_demo_source": false,
+            "page_count": 882,
+            "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+            "source_id": "source-01795ab64af8762c",
+            "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+          }
+        ],
+        "warnings": []
+      },
+      "turn_index": 1
+    },
+    {
+      "created_at": "2026-07-26T21:46:47.569916+00:00",
+      "follow_up_intent": "confidence_review",
+      "intent": "confidence_review",
+      "is_follow_up": true,
+      "question": "Quel est ton niveau de confiance ?",
+      "request_id": "cognitive-request-918439335ed27469",
+      "response": {
+        "answer": {
+          "confidence": 0.7362,
+          "confidence_breakdown": {
+            "contradiction_penalty": 0.0,
+            "evidence_quality": 0.92,
+            "final_confidence": 0.7362,
+            "hypothesis_penalty": 0.0,
+            "operator_validity": 0.82,
+            "reasoning_validity": 0.65,
+            "source_coverage": 0.95,
+            "unknown_penalty": 0.0
+          },
+          "confidence_justification": "Confiance décomposée : couverture=0.95, preuves=0.92, raisonnement=0.65, opérateur=0.82, pénalité_hypothèses=0.00, pénalité_contradictions=0.00, pénalité_inconnues=0.00.",
+          "coverage_score": null,
+          "summary": "Voici l'évaluation du niveau de confiance de la réponse précédente."
+        },
+        "based_on_question": "Explique-moi la reconnaissance.",
+        "based_on_request_id": "cognitive-request-918439335ed27469",
+        "confidence": 0.7362,
+        "confidence_breakdown": {
+          "contradiction_penalty": 0.0,
+          "evidence_quality": 0.92,
+          "final_confidence": 0.7362,
+          "hypothesis_penalty": 0.0,
+          "operator_validity": 0.82,
+          "reasoning_validity": 0.65,
+          "source_coverage": 0.95,
+          "unknown_penalty": 0.0
+        },
+        "conversation_id": "927c9d14-07d9-4866-957f-cce08150e00c",
+        "follow_up_intent": "confidence_review",
+        "intent": "confidence_review",
+        "is_follow_up": true,
+        "question": "Quel est ton niveau de confiance ?",
+        "request_id": "cognitive-request-918439335ed27469",
+        "warnings": []
+      },
+      "turn_index": 2
+    }
+  ],
+  "updated_at": "2026-07-26T21:46:47.569928+00:00"
+}

@@ -1,0 +1,176 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [],
+      "explicit_claims": [],
+      "hypotheses": [],
+      "missing_knowledge": [
+        "Aucun passage canonique ne soutient directement la réponse."
+      ],
+      "sources": [],
+      "summary": "TRU-AI reconnaît la question, mais ne dispose pas encore de preuves suffisantes dans sa mémoire canonique.",
+      "unknowns": [
+        {
+          "claim_id": "cognitive-claim-7723ecacc8e2b3a5",
+          "classification": "INCONNU",
+          "conclusion": null,
+          "confidence": 0.0,
+          "evidence_ids": [],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "La mémoire actuelle ne permet pas d'établir une réponse fiable."
+        }
+      ],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [],
+      "EXPLICITE": [],
+      "HYPOTHÈSE": [],
+      "INCONNU": [
+        {
+          "claim_id": "cognitive-claim-7723ecacc8e2b3a5",
+          "classification": "INCONNU",
+          "conclusion": null,
+          "confidence": 0.0,
+          "evidence_ids": [],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "La mémoire actuelle ne permet pas d'établir une réponse fiable."
+        }
+      ]
+    },
+    "cognitive_execution": {
+      "applicable_operators": [],
+      "applied_operators": [
+        {
+          "application_id": "operator-application-05f5eb78449019d6",
+          "applied": false,
+          "confidence": 0.0,
+          "operator_id": "delta",
+          "output": null,
+          "premise_evidence_ids": [],
+          "refusal_reason": "Delta n'est pas suffisamment formalisé par les preuves sélectionnées.",
+          "rule": "delta_requires_formalized_operator"
+        }
+      ],
+      "comparisons": [
+        {
+          "compared_states": [
+            "question formulée : Ces définitions se contredisent-elles ?"
+          ],
+          "comparison_id": "cognitive-comparison-99ad29fa64396a71",
+          "delta_detected": null,
+          "differences": [],
+          "dimensions": [],
+          "limitations": [
+            "comparaison insuffisante pour appliquer Delta comme opérateur complet"
+          ],
+          "provenance": [],
+          "similarities": [],
+          "tru_meaning": null
+        }
+      ],
+      "concepts_recognized": [],
+      "concepts_rejected": [],
+      "confidence": 0.0,
+      "confidence_justification": "Aucune preuve explicite disponible.",
+      "context": [],
+      "contradictions": [],
+      "deductions": [],
+      "deltas_detected": [],
+      "evidence_selected": [],
+      "execution_id": "cognitive-execution-9e60b9b0e4a7c2ab",
+      "final_answer": "TRU-AI reconnaît la question, mais ne dispose pas encore de preuves suffisantes dans sa mémoire canonique.",
+      "hypotheses": [],
+      "intention": "conceptual_question",
+      "memory_activated": [],
+      "observation": "Question observée : Ces définitions se contredisent-elles ?",
+      "premises": [],
+      "problem": "Résoudre une demande de type conceptual_question portant sur concepts non reconnus à partir de preuves canoniques.",
+      "question": "Ces définitions se contredisent-elles ?",
+      "reflexive_evaluation": {
+        "concepts_recognized": false,
+        "confidence_breakdown": {},
+        "confidence_matches_evidence": true,
+        "contradiction_detected": false,
+        "evidence_sufficient": false,
+        "hypothesis_promoted_to_fact": false,
+        "missing_information_count": 1,
+        "question_understood": true,
+        "unauthorized_rule_applied": false
+      },
+      "response_plan": [
+        "identifier_le_concept",
+        "sélectionner_définitions_et_passages",
+        "relier_aux_concepts_voisins",
+        "séparer_explicitement_déductions_hypothèses_inconnues",
+        "justifier_la_confiance"
+      ],
+      "rules": [
+        "delta_requires_formalized_operator"
+      ],
+      "unknowns": [
+        "cognitive-claim-7723ecacc8e2b3a5"
+      ]
+    },
+    "confidence": 0.0,
+    "confidence_breakdown": {
+      "contradiction_penalty": 0.0,
+      "evidence_quality": 0.0,
+      "final_confidence": 0.0,
+      "hypothesis_penalty": 0.0,
+      "operator_validity": 0.82,
+      "reasoning_validity": 0.28,
+      "source_coverage": 0.95,
+      "unknown_penalty": 0.18
+    },
+    "evidence": [],
+    "missing_knowledge": [
+      "Aucun passage canonique ne soutient directement la réponse."
+    ],
+    "request_id": "cognitive-request-6448d3aac51f9e5e",
+    "sources": [],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.0,
+    "confidence_justification": "Aucune preuve explicite disponible.",
+    "contradictions": [],
+    "coverage_score": 0.0,
+    "deduction_claim_ids": [],
+    "definitions_used": [],
+    "demonstrations_used": [],
+    "detected_concepts": [],
+    "evidence_rejected": [],
+    "evidence_used": [],
+    "explicit_claim_ids": [],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "conceptual_question",
+    "missing_knowledge": [
+      "Aucun passage canonique ne soutient directement la réponse."
+    ],
+    "original_question": "Ces définitions se contredisent-elles ?",
+    "pages_consulted": [],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-6448d3aac51f9e5e",
+    "response_plan": [
+      "identifier_le_concept",
+      "sélectionner_définitions_et_passages",
+      "relier_aux_concepts_voisins",
+      "séparer_explicitement_déductions_hypothèses_inconnues",
+      "justifier_la_confiance"
+    ],
+    "selected_concepts": [],
+    "sources_consulted": [],
+    "unknown_claim_ids": [
+      "cognitive-claim-7723ecacc8e2b3a5"
+    ]
+  }
+}

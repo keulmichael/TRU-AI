@@ -1,0 +1,242 @@
+[
+  {
+    "case_id": "semantic-case-001",
+    "page": 337,
+    "text": "Delta désigne l'écart entre la configuration présente et la configuration devenue concevable.",
+    "expected_classification": "Définition",
+    "justification": "Marqueur définitoire explicite avec Delta comme sujet.",
+    "concepts": ["delta", "écart", "configuration"]
+  },
+  {
+    "case_id": "semantic-case-002",
+    "page": 350,
+    "text": "Delta désigne la distance vivante entre ce qui est et ce qui est représenté.",
+    "expected_classification": "Définition",
+    "justification": "Formulation directe de la signification de Delta.",
+    "concepts": ["delta", "représentation"]
+  },
+  {
+    "case_id": "semantic-case-003",
+    "page": 334,
+    "text": "L'opérateur Delta occupe une place centrale dans la dynamique de transformation.",
+    "expected_classification": "Opérateur",
+    "justification": "Delta est explicitement qualifié d'opérateur.",
+    "concepts": ["delta", "transformation"]
+  },
+  {
+    "case_id": "semantic-case-004",
+    "page": 626,
+    "text": "Observation : la reconnaissance transforme la relation à l'état observé.",
+    "expected_classification": "Observation",
+    "justification": "Le marqueur Observation est structurel et explicite.",
+    "concepts": ["observation", "reconnaissance"]
+  },
+  {
+    "case_id": "semantic-case-005",
+    "page": 0,
+    "text": "La reconnaissance est importante.",
+    "expected_classification": "Paragraphe",
+    "justification": "Occurrence conceptuelle sans marqueur opératoire ou définitoire.",
+    "concepts": ["reconnaissance"]
+  },
+  {
+    "case_id": "semantic-case-006",
+    "page": 0,
+    "text": "Axiome Delta : toute observation transforme la compréhension d'un état.",
+    "expected_classification": "Axiome",
+    "justification": "Marqueur Axiome explicite.",
+    "concepts": ["delta", "observation"]
+  },
+  {
+    "case_id": "semantic-case-007",
+    "page": 0,
+    "text": "Cette proposition relie observation, reconnaissance et transformation.",
+    "expected_classification": "Proposition",
+    "justification": "Marqueur Proposition explicite.",
+    "concepts": ["observation", "reconnaissance", "transformation"]
+  },
+  {
+    "case_id": "semantic-case-008",
+    "page": 0,
+    "text": "Démonstration : si l'observation diffère de la prédiction, il s'ensuit un écart.",
+    "expected_classification": "Démonstration",
+    "justification": "Marqueur Démonstration explicite.",
+    "concepts": ["observation", "écart"]
+  },
+  {
+    "case_id": "semantic-case-009",
+    "page": 0,
+    "text": "Par exemple, une attente non réalisée peut révéler un écart.",
+    "expected_classification": "Exemple",
+    "justification": "Marqueur Par exemple explicite.",
+    "concepts": ["écart"]
+  },
+  {
+    "case_id": "semantic-case-010",
+    "page": 0,
+    "text": "Hypothèse : le phénomène peut être interprété comme une tension réflexive.",
+    "expected_classification": "Hypothèse",
+    "justification": "Marqueur Hypothèse explicite.",
+    "concepts": ["hypothèse", "tension"]
+  },
+  {
+    "case_id": "semantic-case-011",
+    "page": 0,
+    "text": "Observer un phénomène ne suffit pas à formaliser un opérateur.",
+    "expected_classification": "Paragraphe",
+    "justification": "Verbe cognitif sans statut opératoire TRU.",
+    "concepts": ["observation"]
+  },
+  {
+    "case_id": "semantic-case-012",
+    "page": 0,
+    "text": "La comparaison aide la compréhension.",
+    "expected_classification": "Paragraphe",
+    "justification": "Simple processus général, pas opérateur formalisé.",
+    "concepts": ["comparaison"]
+  },
+  {
+    "case_id": "semantic-case-013",
+    "page": 0,
+    "text": "Delta n'est pas une mesure d'écart entre deux états.",
+    "expected_classification": "Définition",
+    "justification": "Proposition négative sur la propriété mesure/écart, utile pour contradiction réelle.",
+    "concepts": ["delta", "écart"]
+  },
+  {
+    "case_id": "semantic-case-014",
+    "page": 0,
+    "text": "Delta mesure l'écart entre deux états.",
+    "expected_classification": "Opérateur",
+    "justification": "Formulation opératoire de Delta.",
+    "concepts": ["delta", "écart"]
+  },
+  {
+    "case_id": "semantic-case-015",
+    "page": 0,
+    "text": "Delta évolue entre une définition d'écart et une définition de distance vivante.",
+    "expected_classification": "Paragraphe",
+    "justification": "Évolution conceptuelle, pas contradiction par elle-même.",
+    "concepts": ["delta"]
+  },
+  {
+    "case_id": "semantic-case-016",
+    "page": 0,
+    "text": "La transformation suppose une reconnaissance préalable.",
+    "expected_classification": "Paragraphe",
+    "justification": "Relation conceptuelle sans marqueur fort.",
+    "concepts": ["transformation", "reconnaissance"]
+  },
+  {
+    "case_id": "semantic-case-017",
+    "page": 0,
+    "text": "Postulat : la reconnaissance rend une différence signifiante.",
+    "expected_classification": "Axiome",
+    "justification": "Postulat est assimilé à un axiome.",
+    "concepts": ["reconnaissance"]
+  },
+  {
+    "case_id": "semantic-case-018",
+    "page": 0,
+    "text": "Il s'ensuit que l'écart devient interprétable.",
+    "expected_classification": "Démonstration",
+    "justification": "Connecteur déductif fort.",
+    "concepts": ["écart"]
+  },
+  {
+    "case_id": "semantic-case-019",
+    "page": 0,
+    "text": "La notion peut être interprétée comme une hypothèse de travail.",
+    "expected_classification": "Hypothèse",
+    "justification": "Marqueur interprétatif explicite.",
+    "concepts": ["hypothèse"]
+  },
+  {
+    "case_id": "semantic-case-020",
+    "page": 0,
+    "text": "Exemple : deux états comparés révèlent une différence.",
+    "expected_classification": "Exemple",
+    "justification": "Marqueur Exemple explicite.",
+    "concepts": ["comparaison"]
+  },
+  {
+    "case_id": "semantic-case-021",
+    "page": 0,
+    "text": "Le mot observation apparaît dans une phrase ordinaire.",
+    "expected_classification": "Paragraphe",
+    "justification": "Occurrence lexicale seule.",
+    "concepts": ["observation"]
+  },
+  {
+    "case_id": "semantic-case-022",
+    "page": 0,
+    "text": "Reconnaissance, comparaison et transformation sont mentionnées ensemble.",
+    "expected_classification": "Paragraphe",
+    "justification": "Liste de concepts, non preuve opératoire.",
+    "concepts": ["reconnaissance", "comparaison", "transformation"]
+  },
+  {
+    "case_id": "semantic-case-023",
+    "page": 0,
+    "text": "Appliquer Delta exige deux états comparables.",
+    "expected_classification": "Opérateur",
+    "justification": "Condition d'application explicite de Delta.",
+    "concepts": ["delta"]
+  },
+  {
+    "case_id": "semantic-case-024",
+    "page": 0,
+    "text": "La réponse médicale au burn-out n'est pas fournie par la TRU.",
+    "expected_classification": "Paragraphe",
+    "justification": "Limite externe, pas diagnostic.",
+    "concepts": ["burn_out", "tru"]
+  },
+  {
+    "case_id": "semantic-case-025",
+    "page": 0,
+    "text": "La TRU affirme directement que le burn-out est une maladie.",
+    "expected_classification": "non-exemple",
+    "justification": "Assertion médicale externe non soutenue dans les fixtures.",
+    "concepts": ["burn_out"]
+  },
+  {
+    "case_id": "semantic-case-026",
+    "page": 0,
+    "text": "Delta désigne un écart et Delta mesure un écart peuvent être complémentaires.",
+    "expected_classification": "tension_apparente",
+    "justification": "Deux formulations compatibles si portée différente.",
+    "concepts": ["delta"]
+  },
+  {
+    "case_id": "semantic-case-027",
+    "page": 0,
+    "text": "Delta mesure l'écart ; Delta ne mesure pas l'écart.",
+    "expected_classification": "contradiction_confirmée",
+    "justification": "Même sujet, même propriété, polarités incompatibles.",
+    "concepts": ["delta", "écart"]
+  },
+  {
+    "case_id": "semantic-case-028",
+    "page": 0,
+    "text": "Une définition peut évoluer sans se contredire.",
+    "expected_classification": "Paragraphe",
+    "justification": "Évolution conceptuelle possible.",
+    "concepts": ["définition"]
+  },
+  {
+    "case_id": "semantic-case-029",
+    "page": 0,
+    "text": "Cette phrase contient le verbe appliquer sans opérateur identifié.",
+    "expected_classification": "Paragraphe",
+    "justification": "Action linguistique sans opérateur TRU.",
+    "concepts": []
+  },
+  {
+    "case_id": "semantic-case-030",
+    "page": 0,
+    "text": "Le calcul de Delta compare un état actuel et un état reconnu possible.",
+    "expected_classification": "Opérateur",
+    "justification": "Formulation exécutable de Delta avec deux états.",
+    "concepts": ["delta", "comparaison"]
+  }
+]

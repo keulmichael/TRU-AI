@@ -1,0 +1,530 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [
+        {
+          "claim_id": "cognitive-claim-5842bd226847d492",
+          "classification": "DÉDUCTION",
+          "confidence": 0.68,
+          "evidence_ids": [
+            "cognitive-evidence-081c6cde3dcf9d32",
+            "cognitive-evidence-1b4fee89ae37f6bd",
+            "cognitive-evidence-239641f95f9ff9a9",
+            "cognitive-evidence-3d0f05611c5afe8a"
+          ],
+          "text": "Les passages retenus situent le concept dans un réseau de relations plutôt que comme une notion isolée."
+        }
+      ],
+      "explicit_claims": [
+        {
+          "claim_id": "cognitive-claim-c0bf2281bfe6d39e",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-081c6cde3dcf9d32"
+          ],
+          "text": "Le silence remplit une fonction comparable. Il ne désigne pas seulement l’absence de paroles, mais la suspension du besoin de produire immédiatement une explication. Dans le silence, la conscience peut observer la formation de ses propres pensées avant de les fixer dans un discours. Elle découvre parfois que certaines paroles répétées ne correspondaient pas exactement à son expérience, mais servaient à maintenir une représentation stable."
+        },
+        {
+          "claim_id": "cognitive-claim-e123d0fcc3de1f01",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-1b4fee89ae37f6bd"
+          ],
+          "text": "Cette organisation correspond à la fonction générale de l’intégration. De même que la conscience relie ses expériences dans une compréhension plus vaste, la théorie relie ses concepts dans une architecture intelligible. Nommer permet de conserver les distinctions tout en montrant leur appartenance à un même mouvement."
+        },
+        {
+          "claim_id": "cognitive-claim-ec5612a1ed76fec5",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-239641f95f9ff9a9"
+          ],
+          "text": "La relation à la culture La culture désigne l’ensemble des formes symboliques, des pratiques, des valeurs, des récits et des institutions transmis au sein d’une collectivité. La conscience ne rencontre jamais le monde sans médiation culturelle. Elle apprend ce qui mérite l’attention, comment organiser le temps, quelles relations sont possibles et quelles identités sont reconnues."
+        },
+        {
+          "claim_id": "cognitive-claim-4da43f8c07b3b0d4",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-3d0f05611c5afe8a"
+          ],
+          "text": "La polysémie symbolique La polysémie désigne la capacité d’un symbole à accueillir plusieurs significations. Cette pluralité ne constitue pas un défaut de précision, mais l’une de ses propriétés fondamentales. Le symbole relie plusieurs niveaux du réel, plusieurs époques ou plusieurs dimensions de l’expérience ; il ne peut donc être enfermé dans une équivalence unique."
+        }
+      ],
+      "hypotheses": [],
+      "missing_knowledge": [
+        "Delta n'est pas suffisamment formalisé par les preuves sélectionnées."
+      ],
+      "sources": [
+        {
+          "byte_size": 4778047,
+          "content_hash": "a393dcbccc45c2e5",
+          "empty_page_numbers": [],
+          "extracted_page_count": 882,
+          "extraction_errors": [],
+          "format": "pdf",
+          "is_demo_source": false,
+          "page_count": 882,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+          "source_id": "source-01795ab64af8762c",
+          "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+        }
+      ],
+      "summary": "TRU-AI explique la question à partir des formulations explicites disponibles, puis applique le cycle comparaison-opérateur lorsque ses préconditions sont satisfaites.",
+      "unknowns": [],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [
+        {
+          "claim_id": "cognitive-claim-5842bd226847d492",
+          "classification": "DÉDUCTION",
+          "confidence": 0.68,
+          "evidence_ids": [
+            "cognitive-evidence-081c6cde3dcf9d32",
+            "cognitive-evidence-1b4fee89ae37f6bd",
+            "cognitive-evidence-239641f95f9ff9a9",
+            "cognitive-evidence-3d0f05611c5afe8a"
+          ],
+          "text": "Les passages retenus situent le concept dans un réseau de relations plutôt que comme une notion isolée."
+        }
+      ],
+      "EXPLICITE": [
+        {
+          "claim_id": "cognitive-claim-c0bf2281bfe6d39e",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-081c6cde3dcf9d32"
+          ],
+          "text": "Le silence remplit une fonction comparable. Il ne désigne pas seulement l’absence de paroles, mais la suspension du besoin de produire immédiatement une explication. Dans le silence, la conscience peut observer la formation de ses propres pensées avant de les fixer dans un discours. Elle découvre parfois que certaines paroles répétées ne correspondaient pas exactement à son expérience, mais servaient à maintenir une représentation stable."
+        },
+        {
+          "claim_id": "cognitive-claim-e123d0fcc3de1f01",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-1b4fee89ae37f6bd"
+          ],
+          "text": "Cette organisation correspond à la fonction générale de l’intégration. De même que la conscience relie ses expériences dans une compréhension plus vaste, la théorie relie ses concepts dans une architecture intelligible. Nommer permet de conserver les distinctions tout en montrant leur appartenance à un même mouvement."
+        },
+        {
+          "claim_id": "cognitive-claim-ec5612a1ed76fec5",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-239641f95f9ff9a9"
+          ],
+          "text": "La relation à la culture La culture désigne l’ensemble des formes symboliques, des pratiques, des valeurs, des récits et des institutions transmis au sein d’une collectivité. La conscience ne rencontre jamais le monde sans médiation culturelle. Elle apprend ce qui mérite l’attention, comment organiser le temps, quelles relations sont possibles et quelles identités sont reconnues."
+        },
+        {
+          "claim_id": "cognitive-claim-4da43f8c07b3b0d4",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-3d0f05611c5afe8a"
+          ],
+          "text": "La polysémie symbolique La polysémie désigne la capacité d’un symbole à accueillir plusieurs significations. Cette pluralité ne constitue pas un défaut de précision, mais l’une de ses propriétés fondamentales. Le symbole relie plusieurs niveaux du réel, plusieurs époques ou plusieurs dimensions de l’expérience ; il ne peut donc être enfermé dans une équivalence unique."
+        }
+      ],
+      "HYPOTHÈSE": [],
+      "INCONNU": []
+    },
+    "cognitive_execution": {
+      "applicable_operators": [],
+      "applied_operators": [
+        {
+          "application_id": "operator-application-8abdf4df6952b0e5",
+          "applied": false,
+          "confidence": 0.0,
+          "operator_id": "delta",
+          "output": null,
+          "premise_evidence_ids": [],
+          "refusal_reason": "Delta n'est pas suffisamment formalisé par les preuves sélectionnées.",
+          "rule": "delta_requires_formalized_operator"
+        }
+      ],
+      "comparisons": [
+        {
+          "compared_states": [
+            "mémoire TRU sélectionnée"
+          ],
+          "comparison_id": "cognitive-comparison-64843ff867b7e749",
+          "delta_detected": null,
+          "differences": [],
+          "dimensions": [
+            "reconnaissance",
+            "transformation"
+          ],
+          "limitations": [
+            "comparaison insuffisante pour appliquer Delta comme opérateur complet"
+          ],
+          "provenance": [
+            "cognitive-evidence-081c6cde3dcf9d32",
+            "cognitive-evidence-1b4fee89ae37f6bd",
+            "cognitive-evidence-239641f95f9ff9a9",
+            "cognitive-evidence-3d0f05611c5afe8a",
+            "cognitive-evidence-46296c11a0c71162",
+            "cognitive-evidence-4a3624530968d879",
+            "cognitive-evidence-82c18a87adfd5ba7",
+            "cognitive-evidence-8678fc81d918b131",
+            "cognitive-evidence-af3d3c7c341f71a3",
+            "cognitive-evidence-d6284cccbe62084b",
+            "cognitive-evidence-d7322a40ee7fa37d",
+            "cognitive-evidence-ee12c40974b95f66"
+          ],
+          "similarities": [
+            "la mémoire contient des éléments pertinents pour le concept demandé"
+          ],
+          "tru_meaning": null
+        }
+      ],
+      "concepts_recognized": [],
+      "concepts_rejected": [],
+      "confidence": 0.8,
+      "confidence_justification": "Confiance calculée avec 4 affirmation(s) explicite(s), 1 déduction(s), 0 hypothèse(s), 0 inconnue(s), 0 opérateur(s) appliqué(s), 0 contradiction(s) et 1 source(s) de production.",
+      "context": [],
+      "contradictions": [],
+      "deductions": [
+        "cognitive-claim-5842bd226847d492"
+      ],
+      "deltas_detected": [],
+      "evidence_selected": [
+        "cognitive-evidence-081c6cde3dcf9d32",
+        "cognitive-evidence-1b4fee89ae37f6bd",
+        "cognitive-evidence-239641f95f9ff9a9",
+        "cognitive-evidence-3d0f05611c5afe8a",
+        "cognitive-evidence-46296c11a0c71162",
+        "cognitive-evidence-4a3624530968d879",
+        "cognitive-evidence-82c18a87adfd5ba7",
+        "cognitive-evidence-8678fc81d918b131",
+        "cognitive-evidence-af3d3c7c341f71a3",
+        "cognitive-evidence-d6284cccbe62084b",
+        "cognitive-evidence-d7322a40ee7fa37d",
+        "cognitive-evidence-ee12c40974b95f66"
+      ],
+      "execution_id": "cognitive-execution-9e08b303a555b65c",
+      "final_answer": "TRU-AI explique la question à partir des formulations explicites disponibles, puis applique le cycle comparaison-opérateur lorsque ses préconditions sont satisfaites.",
+      "hypotheses": [],
+      "intention": "hypothesis_review",
+      "memory_activated": [
+        "memory-element-07b069e011b04fd0",
+        "memory-element-0943eb74eeaae9ae",
+        "memory-element-42b5e08d06bcba9f",
+        "memory-element-4339ee744f4e929e",
+        "memory-element-528f8b1074979cb1",
+        "memory-element-59c20ad6da911ed6",
+        "memory-element-705056773896264d",
+        "memory-element-7fe8d5db445a5c82",
+        "memory-element-a86377ef34d4b1da",
+        "memory-element-ad864334b850ee2c",
+        "memory-element-c63a0867d86bd6a5",
+        "memory-element-e56858a9e213cfef"
+      ],
+      "observation": "Question observée : Quelles hypoth?ses fais-tu ?",
+      "premises": [
+        "cognitive-evidence-081c6cde3dcf9d32",
+        "cognitive-evidence-1b4fee89ae37f6bd",
+        "cognitive-evidence-239641f95f9ff9a9",
+        "cognitive-evidence-3d0f05611c5afe8a",
+        "cognitive-evidence-46296c11a0c71162",
+        "cognitive-evidence-4a3624530968d879",
+        "cognitive-evidence-82c18a87adfd5ba7",
+        "cognitive-evidence-8678fc81d918b131",
+        "cognitive-evidence-af3d3c7c341f71a3",
+        "cognitive-evidence-d6284cccbe62084b",
+        "cognitive-evidence-d7322a40ee7fa37d",
+        "cognitive-evidence-ee12c40974b95f66"
+      ],
+      "problem": "Résoudre une demande de type hypothesis_review portant sur concepts non reconnus à partir de preuves canoniques.",
+      "question": "Quelles hypoth?ses fais-tu ?",
+      "reflexive_evaluation": {
+        "concepts_recognized": false,
+        "confidence_matches_evidence": true,
+        "contradiction_detected": false,
+        "evidence_sufficient": true,
+        "hypothesis_promoted_to_fact": false,
+        "missing_information_count": 1,
+        "question_understood": true,
+        "unauthorized_rule_applied": false
+      },
+      "response_plan": [
+        "identifier_le_concept",
+        "sélectionner_définitions_et_passages",
+        "relier_aux_concepts_voisins",
+        "séparer_explicitement_déductions_hypothèses_inconnues",
+        "justifier_la_confiance"
+      ],
+      "rules": [
+        "delta_requires_formalized_operator"
+      ],
+      "unknowns": []
+    },
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-ad864334b850ee2c",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-081c6cde3dcf9d32",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          41
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Le silence remplit une fonction comparable. Il ne désigne pas seulement l’absence de paroles, mais la suspension du besoin de produire immédiatement une explication. Dans le silence, la conscience peut observer la formation de ses propres pensées avant de les fixer dans un discours. Elle découvre parfois que certaines paroles répétées ne correspondaient pas exactement à son expérience, mais servaient à maintenir une représentation stable."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-a86377ef34d4b1da",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-1b4fee89ae37f6bd",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          83
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Cette organisation correspond à la fonction générale de l’intégration. De même que la conscience relie ses expériences dans une compréhension plus vaste, la théorie relie ses concepts dans une architecture intelligible. Nommer permet de conserver les distinctions tout en montrant leur appartenance à un même mouvement."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-e56858a9e213cfef",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-239641f95f9ff9a9",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          167
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La relation à la culture La culture désigne l’ensemble des formes symboliques, des pratiques, des valeurs, des récits et des institutions transmis au sein d’une collectivité. La conscience ne rencontre jamais le monde sans médiation culturelle. Elle apprend ce qui mérite l’attention, comment organiser le temps, quelles relations sont possibles et quelles identités sont reconnues."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-4339ee744f4e929e",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-3d0f05611c5afe8a",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          138
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La polysémie symbolique La polysémie désigne la capacité d’un symbole à accueillir plusieurs significations. Cette pluralité ne constitue pas un défaut de précision, mais l’une de ses propriétés fondamentales. Le symbole relie plusieurs niveaux du réel, plusieurs époques ou plusieurs dimensions de l’expérience ; il ne peut donc être enfermé dans une équivalence unique."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-42b5e08d06bcba9f",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-46296c11a0c71162",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          99
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Une conception strictement substantielle peut aussi masquer les variations et les degrés de la conscience. Si elle est définie comme une entité identique à elle-même, il devient plus difficile de rendre compte de ses fluctuations, de ses états altérés, de son développement ou de ses pertes"
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-705056773896264d",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-4a3624530968d879",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          108
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La réalité connue et la réalité inconnue La réalité connue correspond à la part du réel pour laquelle une conscience ou une communauté dispose de représentations suffisamment stables, vérifiées et opératoires. Cette connaissance reste toujours située dans un domaine et selon un certain niveau de précision. Savoir qu’un phénomène existe ne signifie pas connaître entièrement ses causes, son histoire ou toutes ses conséquences."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-7fe8d5db445a5c82",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-82c18a87adfd5ba7",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          101
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La réalité La Théorie de la Réflexivité Universelle ne peut définir la reconnaissance sans préciser ce qui est reconnu. Une conscience ne se rapporte jamais uniquement à ses propres représentations : elle rencontre des phénomènes, des résistances, des transformations et des relations qui ne dépendent pas entièrement de ce qu’elle souhaite, imagine ou croit. La réalité désigne ce champ de contraintes et de possibilités à partir duquel l’expérience devient possible. Elle constitue le terme auquel la conscience tente de s’ajuster, même lorsqu’elle n’y accède que de manière partielle, indirecte ou déformée."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-07b069e011b04fd0",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-8678fc81d918b131",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          120
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La manifestation comme critère partiel de la transformation La transformation désigne une modification de l’organisation de la conscience, d’une relation ou d’un système. Parce qu’elle concerne une structure qui n’est pas toujours directement accessible, elle doit être reconnue à travers ses manifestations. Une transformation qui ne produit aucun effet discernable demeure difficile à distinguer d’une intention, d’une croyance ou d’une déclaration."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-59c20ad6da911ed6",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-af3d3c7c341f71a3",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          109
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La réalité inconnue ne désigne pas seulement ce dont la conscience ignore l’existence. Elle comprend également ce qu’elle soupçonne sans pouvoir encore le déterminer, ce qu’elle observe sans parvenir à l’expliquer et ce que ses instruments actuels ne permettent pas de percevoir."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-c63a0867d86bd6a5",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-d6284cccbe62084b",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          85
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La Théorie de la Réflexivité Universelle s’inscrit dans cette démarche lorsqu’elle distingue conscience et reconnaissance. La conscience désigne la présence à l’expérience, tandis que la reconnaissance décrit le processus par lequel cette présence devient progressivement capable de se saisir elle-même, d’intégrer ses médiations et de se manifester consciemment. Sans cette distinction, le problème central de la théorie resterait masqué."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-0943eb74eeaae9ae",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-d7322a40ee7fa37d",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          176
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Dans la Théorie de la Réflexivité Universelle, la réflexivité peut être définie comme la capacité d’une conscience à prendre pour objet ses propres opérations, ses états et les effets qu’elle produit, afin de réviser progressivement son rapport à elle-même, aux autres et au réel. Cette définition distingue immédiatement la réflexivité d’une simple attention dirigée vers soi. Il ne suffit pas de penser à sa personne, de décrire son caractère ou d’énumérer ses émotions pour entrer dans un véritable processus réflexif. La réflexivité porte sur la manière dont les contenus sont produits, organisés, interprétés et manifestés. Elle ne demande pas seulement ce que la conscience éprouve, mais comment elle en vient à l’éprouver, quelles représentations orientent son expérience, quelles informations elle sélectionne, quelles contradictions elle évite et quels effets ses réponses produisent dans le monde partagé."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-528f8b1074979cb1",
+        "element_type": "Démonstration",
+        "evidence_id": "cognitive-evidence-ee12c40974b95f66",
+        "extraction_confidence": 0.84,
+        "page_numbers": [
+          400
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "L’événement agit donc comme révélateur de la structure relationnelle. Il montre quelles relations étaient suffisamment fortes pour transmettre ses conséquences, quelles dépendances demeuraient cachées et quelles solidarités ou oppositions existaient déjà à l’état potentiel. Une crise révèle souvent plus clairement les relations qu’une période de stabilité, car elle oblige chaque terme à manifester sa position."
+      }
+    ],
+    "missing_knowledge": [
+      "Delta n'est pas suffisamment formalisé par les preuves sélectionnées."
+    ],
+    "request_id": "cognitive-request-6003d23d01779c6a",
+    "sources": [
+      {
+        "byte_size": 4778047,
+        "content_hash": "a393dcbccc45c2e5",
+        "empty_page_numbers": [],
+        "extracted_page_count": 882,
+        "extraction_errors": [],
+        "format": "pdf",
+        "is_demo_source": false,
+        "page_count": 882,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+        "source_id": "source-01795ab64af8762c",
+        "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+      }
+    ],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.8,
+    "confidence_justification": "Confiance calculée avec 4 affirmation(s) explicite(s), 1 déduction(s), 0 hypothèse(s), 0 inconnue(s), 0 opérateur(s) appliqué(s), 0 contradiction(s) et 1 source(s) de production.",
+    "contradictions": [],
+    "coverage_score": 1.0,
+    "deduction_claim_ids": [
+      "cognitive-claim-5842bd226847d492"
+    ],
+    "definitions_used": [
+      "memory-element-07b069e011b04fd0",
+      "memory-element-0943eb74eeaae9ae",
+      "memory-element-42b5e08d06bcba9f",
+      "memory-element-4339ee744f4e929e",
+      "memory-element-59c20ad6da911ed6",
+      "memory-element-705056773896264d",
+      "memory-element-7fe8d5db445a5c82",
+      "memory-element-a86377ef34d4b1da",
+      "memory-element-ad864334b850ee2c",
+      "memory-element-c63a0867d86bd6a5",
+      "memory-element-e56858a9e213cfef"
+    ],
+    "demonstrations_used": [
+      "memory-element-528f8b1074979cb1"
+    ],
+    "detected_concepts": [],
+    "evidence_rejected": [],
+    "evidence_used": [
+      "cognitive-evidence-081c6cde3dcf9d32",
+      "cognitive-evidence-1b4fee89ae37f6bd",
+      "cognitive-evidence-239641f95f9ff9a9",
+      "cognitive-evidence-3d0f05611c5afe8a",
+      "cognitive-evidence-46296c11a0c71162",
+      "cognitive-evidence-4a3624530968d879",
+      "cognitive-evidence-82c18a87adfd5ba7",
+      "cognitive-evidence-8678fc81d918b131",
+      "cognitive-evidence-af3d3c7c341f71a3",
+      "cognitive-evidence-d6284cccbe62084b",
+      "cognitive-evidence-d7322a40ee7fa37d",
+      "cognitive-evidence-ee12c40974b95f66"
+    ],
+    "explicit_claim_ids": [
+      "cognitive-claim-4da43f8c07b3b0d4",
+      "cognitive-claim-c0bf2281bfe6d39e",
+      "cognitive-claim-e123d0fcc3de1f01",
+      "cognitive-claim-ec5612a1ed76fec5"
+    ],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "hypothesis_review",
+    "missing_knowledge": [
+      "Delta n'est pas suffisamment formalisé par les preuves sélectionnées."
+    ],
+    "original_question": "Quelles hypoth?ses fais-tu ?",
+    "pages_consulted": [
+      41,
+      83,
+      85,
+      99,
+      101,
+      108,
+      109,
+      120,
+      138,
+      167,
+      176,
+      400
+    ],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-6003d23d01779c6a",
+    "response_plan": [
+      "identifier_le_concept",
+      "sélectionner_définitions_et_passages",
+      "relier_aux_concepts_voisins",
+      "séparer_explicitement_déductions_hypothèses_inconnues",
+      "justifier_la_confiance"
+    ],
+    "selected_concepts": [],
+    "sources_consulted": [
+      "source-01795ab64af8762c"
+    ],
+    "unknown_claim_ids": []
+  }
+}

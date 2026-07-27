@@ -1,0 +1,530 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [
+        {
+          "claim_id": "cognitive-claim-0c8d326c6bdc7fde",
+          "classification": "DÉDUCTION",
+          "confidence": 0.68,
+          "evidence_ids": [
+            "cognitive-evidence-239641f95f9ff9a9",
+            "cognitive-evidence-2e53b8d22f0fd29f",
+            "cognitive-evidence-37bc2da49897736e",
+            "cognitive-evidence-489d65650684a354"
+          ],
+          "text": "Les passages retenus situent le concept dans un réseau de relations plutôt que comme une notion isolée."
+        }
+      ],
+      "explicit_claims": [
+        {
+          "claim_id": "cognitive-claim-ec5612a1ed76fec5",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-239641f95f9ff9a9"
+          ],
+          "text": "La relation à la culture La culture désigne l’ensemble des formes symboliques, des pratiques, des valeurs, des récits et des institutions transmis au sein d’une collectivité. La conscience ne rencontre jamais le monde sans médiation culturelle. Elle apprend ce qui mérite l’attention, comment organiser le temps, quelles relations sont possibles et quelles identités sont reconnues."
+        },
+        {
+          "claim_id": "cognitive-claim-fede4ef84083936a",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-37bc2da49897736e"
+          ],
+          "text": "Le caché, l’implicite et l’invisible Le caché désigne ce qui n’est pas directement accessible parce qu’une médiation, un obstacle ou une opération de dissimulation s’interpose entre la réalité et la conscience. Il peut s’agir d’une information retenue, d’une intention non déclarée, d’un événement soustrait à l’observation ou d’une dimension de soi maintenue hors du champ conscient. Le caché possède parfois un caractère volontaire : une personne choisit de ne pas révéler une motivation, une institution protège une pratique ou une conscience détourne son attention d’un contenu menaçant. Mais il peut également être produit par la structure même de l’expérience. Une cause demeure cachée parce qu’elle se situe à un autre niveau que ses effets, un processus reste invisible parce qu’il se déploie sur une durée trop longue ou une relation échappe à l’observation parce que ses termes ne sont jamais examinés ensemble."
+        },
+        {
+          "claim_id": "cognitive-claim-c6bcd5e488eae910",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-489d65650684a354"
+          ],
+          "text": "Conscience, intelligence et connaissance La conscience doit également être distinguée de l’intelligence. L’intelligence désigne la capacité de résoudre des problèmes, d’établir des relations, de produire des stratégies ou de s’adapter à des situations nouvelles. Ces opérations peuvent accompagner la conscience, mais elles ne lui sont pas identiques. Une grande capacité de calcul ou de raisonnement n’implique pas nécessairement une présence plus profonde à l’expérience ni une meilleure compréhension de soi."
+        },
+        {
+          "claim_id": "cognitive-claim-910dce4c67cd830a",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-61b68de24e6af8ab"
+          ],
+          "text": "La présence à l’expérience Être conscient signifie d’abord que quelque chose est présent pour une réalité vivante. Une lumière, une douleur, une image, une pensée ou une présence humaine ne sont pas seulement des phénomènes qui existent ; ils deviennent les contenus d’un champ d’expérience. La conscience ne doit cependant pas être confondue avec la présence objective d’un phénomène. Un son peut se produire sans être entendu, une image se trouver devant les yeux sans être remarquée, une tension corporelle agir durablement sans accéder à une représentation claire. La conscience désigne la présence vécue du phénomène, non sa simple existence."
+        }
+      ],
+      "hypotheses": [],
+      "missing_knowledge": [
+        "Delta n'est pas suffisamment formalisé par les preuves sélectionnées."
+      ],
+      "sources": [
+        {
+          "byte_size": 4778047,
+          "content_hash": "a393dcbccc45c2e5",
+          "empty_page_numbers": [],
+          "extracted_page_count": 882,
+          "extraction_errors": [],
+          "format": "pdf",
+          "is_demo_source": false,
+          "page_count": 882,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+          "source_id": "source-01795ab64af8762c",
+          "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+        }
+      ],
+      "summary": "TRU-AI explique la question à partir des formulations explicites disponibles, puis applique le cycle comparaison-opérateur lorsque ses préconditions sont satisfaites.",
+      "unknowns": [],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [
+        {
+          "claim_id": "cognitive-claim-0c8d326c6bdc7fde",
+          "classification": "DÉDUCTION",
+          "confidence": 0.68,
+          "evidence_ids": [
+            "cognitive-evidence-239641f95f9ff9a9",
+            "cognitive-evidence-2e53b8d22f0fd29f",
+            "cognitive-evidence-37bc2da49897736e",
+            "cognitive-evidence-489d65650684a354"
+          ],
+          "text": "Les passages retenus situent le concept dans un réseau de relations plutôt que comme une notion isolée."
+        }
+      ],
+      "EXPLICITE": [
+        {
+          "claim_id": "cognitive-claim-ec5612a1ed76fec5",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-239641f95f9ff9a9"
+          ],
+          "text": "La relation à la culture La culture désigne l’ensemble des formes symboliques, des pratiques, des valeurs, des récits et des institutions transmis au sein d’une collectivité. La conscience ne rencontre jamais le monde sans médiation culturelle. Elle apprend ce qui mérite l’attention, comment organiser le temps, quelles relations sont possibles et quelles identités sont reconnues."
+        },
+        {
+          "claim_id": "cognitive-claim-fede4ef84083936a",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-37bc2da49897736e"
+          ],
+          "text": "Le caché, l’implicite et l’invisible Le caché désigne ce qui n’est pas directement accessible parce qu’une médiation, un obstacle ou une opération de dissimulation s’interpose entre la réalité et la conscience. Il peut s’agir d’une information retenue, d’une intention non déclarée, d’un événement soustrait à l’observation ou d’une dimension de soi maintenue hors du champ conscient. Le caché possède parfois un caractère volontaire : une personne choisit de ne pas révéler une motivation, une institution protège une pratique ou une conscience détourne son attention d’un contenu menaçant. Mais il peut également être produit par la structure même de l’expérience. Une cause demeure cachée parce qu’elle se situe à un autre niveau que ses effets, un processus reste invisible parce qu’il se déploie sur une durée trop longue ou une relation échappe à l’observation parce que ses termes ne sont jamais examinés ensemble."
+        },
+        {
+          "claim_id": "cognitive-claim-c6bcd5e488eae910",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-489d65650684a354"
+          ],
+          "text": "Conscience, intelligence et connaissance La conscience doit également être distinguée de l’intelligence. L’intelligence désigne la capacité de résoudre des problèmes, d’établir des relations, de produire des stratégies ou de s’adapter à des situations nouvelles. Ces opérations peuvent accompagner la conscience, mais elles ne lui sont pas identiques. Une grande capacité de calcul ou de raisonnement n’implique pas nécessairement une présence plus profonde à l’expérience ni une meilleure compréhension de soi."
+        },
+        {
+          "claim_id": "cognitive-claim-910dce4c67cd830a",
+          "classification": "EXPLICITE",
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-61b68de24e6af8ab"
+          ],
+          "text": "La présence à l’expérience Être conscient signifie d’abord que quelque chose est présent pour une réalité vivante. Une lumière, une douleur, une image, une pensée ou une présence humaine ne sont pas seulement des phénomènes qui existent ; ils deviennent les contenus d’un champ d’expérience. La conscience ne doit cependant pas être confondue avec la présence objective d’un phénomène. Un son peut se produire sans être entendu, une image se trouver devant les yeux sans être remarquée, une tension corporelle agir durablement sans accéder à une représentation claire. La conscience désigne la présence vécue du phénomène, non sa simple existence."
+        }
+      ],
+      "HYPOTHÈSE": [],
+      "INCONNU": []
+    },
+    "cognitive_execution": {
+      "applicable_operators": [],
+      "applied_operators": [
+        {
+          "application_id": "operator-application-9099f37dc0d6bf6e",
+          "applied": false,
+          "confidence": 0.0,
+          "operator_id": "delta",
+          "output": null,
+          "premise_evidence_ids": [],
+          "refusal_reason": "Delta n'est pas suffisamment formalisé par les preuves sélectionnées.",
+          "rule": "delta_requires_formalized_operator"
+        }
+      ],
+      "comparisons": [
+        {
+          "compared_states": [
+            "mémoire TRU sélectionnée"
+          ],
+          "comparison_id": "cognitive-comparison-705ff49a9502a131",
+          "delta_detected": null,
+          "differences": [],
+          "dimensions": [
+            "reconnaissance",
+            "transformation"
+          ],
+          "limitations": [
+            "comparaison insuffisante pour appliquer Delta comme opérateur complet"
+          ],
+          "provenance": [
+            "cognitive-evidence-239641f95f9ff9a9",
+            "cognitive-evidence-2e53b8d22f0fd29f",
+            "cognitive-evidence-37bc2da49897736e",
+            "cognitive-evidence-489d65650684a354",
+            "cognitive-evidence-61b68de24e6af8ab",
+            "cognitive-evidence-84a3a79f2f4deb62",
+            "cognitive-evidence-a3b34c2b09a5fe3d",
+            "cognitive-evidence-b1ca3403d4dad00e",
+            "cognitive-evidence-ce458a329b0abcb3",
+            "cognitive-evidence-d7322a40ee7fa37d",
+            "cognitive-evidence-e6ec96ef2ee3112d",
+            "cognitive-evidence-e9de4a232a72d47d"
+          ],
+          "similarities": [
+            "la mémoire contient des éléments pertinents pour le concept demandé"
+          ],
+          "tru_meaning": null
+        }
+      ],
+      "concepts_recognized": [],
+      "concepts_rejected": [],
+      "confidence": 0.8,
+      "confidence_justification": "Confiance calculée avec 4 affirmation(s) explicite(s), 1 déduction(s), 0 hypothèse(s), 0 inconnue(s), 0 opérateur(s) appliqué(s), 0 contradiction(s) et 1 source(s) de production.",
+      "context": [],
+      "contradictions": [],
+      "deductions": [
+        "cognitive-claim-0c8d326c6bdc7fde"
+      ],
+      "deltas_detected": [],
+      "evidence_selected": [
+        "cognitive-evidence-239641f95f9ff9a9",
+        "cognitive-evidence-2e53b8d22f0fd29f",
+        "cognitive-evidence-37bc2da49897736e",
+        "cognitive-evidence-489d65650684a354",
+        "cognitive-evidence-61b68de24e6af8ab",
+        "cognitive-evidence-84a3a79f2f4deb62",
+        "cognitive-evidence-a3b34c2b09a5fe3d",
+        "cognitive-evidence-b1ca3403d4dad00e",
+        "cognitive-evidence-ce458a329b0abcb3",
+        "cognitive-evidence-d7322a40ee7fa37d",
+        "cognitive-evidence-e6ec96ef2ee3112d",
+        "cognitive-evidence-e9de4a232a72d47d"
+      ],
+      "execution_id": "cognitive-execution-219492a928e1d6cf",
+      "final_answer": "TRU-AI explique la question à partir des formulations explicites disponibles, puis applique le cycle comparaison-opérateur lorsque ses préconditions sont satisfaites.",
+      "hypotheses": [],
+      "intention": "conceptual_question",
+      "memory_activated": [
+        "memory-element-0943eb74eeaae9ae",
+        "memory-element-0947225945ffc7d8",
+        "memory-element-227cb9045673dcef",
+        "memory-element-3514dad36e8a2e67",
+        "memory-element-39706adcd2b63ba0",
+        "memory-element-3d9efbde64e9c3c0",
+        "memory-element-53b49fbf2e31a5fb",
+        "memory-element-86c5fbbb7d5a2808",
+        "memory-element-8c704824468b30bd",
+        "memory-element-a1a5653176497946",
+        "memory-element-be5e6d364cfeb973",
+        "memory-element-e56858a9e213cfef"
+      ],
+      "observation": "Question observée : Quelles sont tes preuves ?",
+      "premises": [
+        "cognitive-evidence-239641f95f9ff9a9",
+        "cognitive-evidence-2e53b8d22f0fd29f",
+        "cognitive-evidence-37bc2da49897736e",
+        "cognitive-evidence-489d65650684a354",
+        "cognitive-evidence-61b68de24e6af8ab",
+        "cognitive-evidence-84a3a79f2f4deb62",
+        "cognitive-evidence-a3b34c2b09a5fe3d",
+        "cognitive-evidence-b1ca3403d4dad00e",
+        "cognitive-evidence-ce458a329b0abcb3",
+        "cognitive-evidence-d7322a40ee7fa37d",
+        "cognitive-evidence-e6ec96ef2ee3112d",
+        "cognitive-evidence-e9de4a232a72d47d"
+      ],
+      "problem": "Résoudre une demande de type conceptual_question portant sur concepts non reconnus à partir de preuves canoniques.",
+      "question": "Quelles sont tes preuves ?",
+      "reflexive_evaluation": {
+        "concepts_recognized": false,
+        "confidence_matches_evidence": true,
+        "contradiction_detected": false,
+        "evidence_sufficient": true,
+        "hypothesis_promoted_to_fact": false,
+        "missing_information_count": 1,
+        "question_understood": true,
+        "unauthorized_rule_applied": false
+      },
+      "response_plan": [
+        "identifier_le_concept",
+        "sélectionner_définitions_et_passages",
+        "relier_aux_concepts_voisins",
+        "séparer_explicitement_déductions_hypothèses_inconnues",
+        "justifier_la_confiance"
+      ],
+      "rules": [
+        "delta_requires_formalized_operator"
+      ],
+      "unknowns": []
+    },
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-e56858a9e213cfef",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-239641f95f9ff9a9",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          167
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La relation à la culture La culture désigne l’ensemble des formes symboliques, des pratiques, des valeurs, des récits et des institutions transmis au sein d’une collectivité. La conscience ne rencontre jamais le monde sans médiation culturelle. Elle apprend ce qui mérite l’attention, comment organiser le temps, quelles relations sont possibles et quelles identités sont reconnues."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-39706adcd2b63ba0",
+        "element_type": "Démonstration",
+        "evidence_id": "cognitive-evidence-2e53b8d22f0fd29f",
+        "extraction_confidence": 0.84,
+        "page_numbers": [
+          523
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Le blocage ne doit donc pas être affronté seulement par l’accumulation d’informations. Un système peut disposer de nombreuses preuves tout en restant incapable de les intégrer. Il faut comprendre ce que la reconnaissance lui ferait perdre et quelles nouvelles continuités pourraient remplacer l’ancienne."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-86c5fbbb7d5a2808",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-37bc2da49897736e",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          241
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Le caché, l’implicite et l’invisible Le caché désigne ce qui n’est pas directement accessible parce qu’une médiation, un obstacle ou une opération de dissimulation s’interpose entre la réalité et la conscience. Il peut s’agir d’une information retenue, d’une intention non déclarée, d’un événement soustrait à l’observation ou d’une dimension de soi maintenue hors du champ conscient. Le caché possède parfois un caractère volontaire : une personne choisit de ne pas révéler une motivation, une institution protège une pratique ou une conscience détourne son attention d’un contenu menaçant. Mais il peut également être produit par la structure même de l’expérience. Une cause demeure cachée parce qu’elle se situe à un autre niveau que ses effets, un processus reste invisible parce qu’il se déploie sur une durée trop longue ou une relation échappe à l’observation parce que ses termes ne sont jamais examinés ensemble."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-be5e6d364cfeb973",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-489d65650684a354",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          96
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Conscience, intelligence et connaissance La conscience doit également être distinguée de l’intelligence. L’intelligence désigne la capacité de résoudre des problèmes, d’établir des relations, de produire des stratégies ou de s’adapter à des situations nouvelles. Ces opérations peuvent accompagner la conscience, mais elles ne lui sont pas identiques. Une grande capacité de calcul ou de raisonnement n’implique pas nécessairement une présence plus profonde à l’expérience ni une meilleure compréhension de soi."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-0947225945ffc7d8",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-61b68de24e6af8ab",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          92
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La présence à l’expérience Être conscient signifie d’abord que quelque chose est présent pour une réalité vivante. Une lumière, une douleur, une image, une pensée ou une présence humaine ne sont pas seulement des phénomènes qui existent ; ils deviennent les contenus d’un champ d’expérience. La conscience ne doit cependant pas être confondue avec la présence objective d’un phénomène. Un son peut se produire sans être entendu, une image se trouver devant les yeux sans être remarquée, une tension corporelle agir durablement sans accéder à une représentation claire. La conscience désigne la présence vécue du phénomène, non sa simple existence."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-227cb9045673dcef",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-84a3a79f2f4deb62",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          188
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Dans cette perspective, la reconnaissance peut être définie comme le processus réflexif par lequel une conscience identifie une réalité, en comprend suffisamment la structure et les relations, l’intègre à son organisation et se transforme en conséquence de cette intégration. Cette définition met l’accent sur le caractère dynamique de la reconnaissance. Une réalité n’est pas reconnue une fois pour toutes par le simple fait d’avoir été nommée. Elle devient progressivement reconnaissable à mesure que ses manifestations sont observées, que ses relations sont comprises, que les représentations antérieures sont révisées et que les effets de cette compréhension apparaissent dans la manière de vivre, de décider et d’entrer en relation."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-3d9efbde64e9c3c0",
+        "element_type": "Démonstration",
+        "evidence_id": "cognitive-evidence-a3b34c2b09a5fe3d",
+        "extraction_confidence": 0.84,
+        "page_numbers": [
+          359
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La protection ne s'oppose donc pas à la reconnaissance comme un principe étranger. Elle en constitue une condition. Sans protection, aucune continuité ne permettrait la transformation. Mais cette condition devient obstacle lorsqu'elle cherche à préserver non plus l'intégrité de la conscience, mais les formes anciennes par lesquelles cette intégrité avait autrefois été maintenue. La fonction de la réflexivité est précisément de distinguer ces deux dimensions. Elle demande quelles protections demeurent nécessaires, lesquelles sont devenues inadéquates et quelles nouvelles formes de sécurité permettront leur réorganisation."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-53b49fbf2e31a5fb",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-b1ca3403d4dad00e",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          101
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La réalité comme ensemble de structures, de relations et de processus Une structure désigne une organisation relativement stable entre plusieurs éléments. Elle ne se réduit pas à leur juxtaposition, car la manière dont ils sont reliés produit des propriétés particulières."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-8c704824468b30bd",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-ce458a329b0abcb3",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          122
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Le phénomène désigne ce qui apparaît dans un champ d’expérience. Il insiste moins sur l’affirmation objective que sur la manière dont une réalité se donne à percevoir. Une lumière, une douleur, un mouvement collectif ou une modification de comportement sont des phénomènes dès lors qu’ils apparaissent à une conscience ou à un instrument d’observation. Le phénomène constitue donc la forme perceptible d’une réalité, sans préjuger immédiatement de sa cause ou de sa signification."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-0943eb74eeaae9ae",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-d7322a40ee7fa37d",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          176
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "Dans la Théorie de la Réflexivité Universelle, la réflexivité peut être définie comme la capacité d’une conscience à prendre pour objet ses propres opérations, ses états et les effets qu’elle produit, afin de réviser progressivement son rapport à elle-même, aux autres et au réel. Cette définition distingue immédiatement la réflexivité d’une simple attention dirigée vers soi. Il ne suffit pas de penser à sa personne, de décrire son caractère ou d’énumérer ses émotions pour entrer dans un véritable processus réflexif. La réflexivité porte sur la manière dont les contenus sont produits, organisés, interprétés et manifestés. Elle ne demande pas seulement ce que la conscience éprouve, mais comment elle en vient à l’éprouver, quelles représentations orientent son expérience, quelles informations elle sélectionne, quelles contradictions elle évite et quels effets ses réponses produisent dans le monde partagé."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-3514dad36e8a2e67",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-e6ec96ef2ee3112d",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          128
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "L’événement et sa signification L’événement désigne ce qui introduit une différence ; sa signification désigne la place que cette différence reçoit dans une structure de compréhension. Les deux ne sont pas identiques. Un événement peut se produire avant que sa signification soit connue, et plusieurs significations peuvent lui être attribuées selon les perspectives ou les moments."
+      },
+      {
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-a1a5653176497946",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-e9de4a232a72d47d",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          177
+        ],
+        "relevance": 1.0,
+        "source_id": "source-01795ab64af8762c",
+        "text": "La réflexivité, l’introspection et l’auto-observation L’introspection désigne l’attention portée à l’expérience intérieure. Elle permet d’observer des pensées, des émotions, des sensations, des souvenirs ou des intentions qui ne sont pas directement accessibles à autrui. Elle constitue donc une dimension importante de la réflexivité, mais elle ne lui est pas identique. Une personne peut observer son monde intérieur sans examiner la manière dont elle l’interprète ni les effets qu’il produit. Elle peut constater une tristesse, une peur ou un désir sans interroger les représentations qui les accompagnent, les relations qui les activent ou les comportements qu’ils organisent."
+      }
+    ],
+    "missing_knowledge": [
+      "Delta n'est pas suffisamment formalisé par les preuves sélectionnées."
+    ],
+    "request_id": "cognitive-request-2392ece3651043ac",
+    "sources": [
+      {
+        "byte_size": 4778047,
+        "content_hash": "a393dcbccc45c2e5",
+        "empty_page_numbers": [],
+        "extracted_page_count": 882,
+        "extraction_errors": [],
+        "format": "pdf",
+        "is_demo_source": false,
+        "page_count": 882,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+        "source_id": "source-01795ab64af8762c",
+        "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+      }
+    ],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.8,
+    "confidence_justification": "Confiance calculée avec 4 affirmation(s) explicite(s), 1 déduction(s), 0 hypothèse(s), 0 inconnue(s), 0 opérateur(s) appliqué(s), 0 contradiction(s) et 1 source(s) de production.",
+    "contradictions": [],
+    "coverage_score": 1.0,
+    "deduction_claim_ids": [
+      "cognitive-claim-0c8d326c6bdc7fde"
+    ],
+    "definitions_used": [
+      "memory-element-0943eb74eeaae9ae",
+      "memory-element-0947225945ffc7d8",
+      "memory-element-227cb9045673dcef",
+      "memory-element-3514dad36e8a2e67",
+      "memory-element-53b49fbf2e31a5fb",
+      "memory-element-86c5fbbb7d5a2808",
+      "memory-element-8c704824468b30bd",
+      "memory-element-a1a5653176497946",
+      "memory-element-be5e6d364cfeb973",
+      "memory-element-e56858a9e213cfef"
+    ],
+    "demonstrations_used": [
+      "memory-element-39706adcd2b63ba0",
+      "memory-element-3d9efbde64e9c3c0"
+    ],
+    "detected_concepts": [],
+    "evidence_rejected": [],
+    "evidence_used": [
+      "cognitive-evidence-239641f95f9ff9a9",
+      "cognitive-evidence-2e53b8d22f0fd29f",
+      "cognitive-evidence-37bc2da49897736e",
+      "cognitive-evidence-489d65650684a354",
+      "cognitive-evidence-61b68de24e6af8ab",
+      "cognitive-evidence-84a3a79f2f4deb62",
+      "cognitive-evidence-a3b34c2b09a5fe3d",
+      "cognitive-evidence-b1ca3403d4dad00e",
+      "cognitive-evidence-ce458a329b0abcb3",
+      "cognitive-evidence-d7322a40ee7fa37d",
+      "cognitive-evidence-e6ec96ef2ee3112d",
+      "cognitive-evidence-e9de4a232a72d47d"
+    ],
+    "explicit_claim_ids": [
+      "cognitive-claim-910dce4c67cd830a",
+      "cognitive-claim-c6bcd5e488eae910",
+      "cognitive-claim-ec5612a1ed76fec5",
+      "cognitive-claim-fede4ef84083936a"
+    ],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "conceptual_question",
+    "missing_knowledge": [
+      "Delta n'est pas suffisamment formalisé par les preuves sélectionnées."
+    ],
+    "original_question": "Quelles sont tes preuves ?",
+    "pages_consulted": [
+      92,
+      96,
+      101,
+      122,
+      128,
+      167,
+      176,
+      177,
+      188,
+      241,
+      359,
+      523
+    ],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-2392ece3651043ac",
+    "response_plan": [
+      "identifier_le_concept",
+      "sélectionner_définitions_et_passages",
+      "relier_aux_concepts_voisins",
+      "séparer_explicitement_déductions_hypothèses_inconnues",
+      "justifier_la_confiance"
+    ],
+    "selected_concepts": [],
+    "sources_consulted": [
+      "source-01795ab64af8762c"
+    ],
+    "unknown_claim_ids": []
+  }
+}

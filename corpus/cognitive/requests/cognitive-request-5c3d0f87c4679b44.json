@@ -1,0 +1,699 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [],
+      "explicit_claims": [
+        {
+          "claim_id": "cognitive-claim-61a13c8df11cd22f",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-26d5884b64dfd285"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Delta désigne alors l’écart entre la configuration présente et la configuration devenue concevable."
+        },
+        {
+          "claim_id": "cognitive-claim-965f4a38b98f5ecc",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-3779cefa03be15a8"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Delta dans la solitude Dans cette étape, Delta prend plusieurs formes. Il désigne d’abord l’écart entre l’émotion immédiate et la compréhension encore insuffisante de sa cause. Il désigne ensuite la différence entre les manifestations présentes et les mémoires réactivées, entre l’impulsion d’action et la réponse choisie, entre le témoignage reçu et l’interprétation qui lui a été attribuée."
+        },
+        {
+          "claim_id": "cognitive-claim-753781a0c9d12e90",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-4333001a90b78124"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Les synchronicités peuvent également être comprises à partir de cette loi. Elles ne doivent pas être interprétées comme des ruptures des lois naturelles ni comme des preuves immédiates d'une causalité mystérieuse. Dans la théorie de la réflexivité universelle, une synchronicité désigne une convergence remarquable entre plusieurs manifestations indépendantes qui, ensemble, rendent une différence particulièrement visible pour une conscience donnée. Ce caractère remarquable ne réside pas uniquement dans la simultanéité des événements mais dans leur capacité commune à produire un Delta suffisamment significatif pour favoriser une nouvelle reconnaissance. La synchronicité constitue ainsi une propriété émergente du réseau des manifestations plutôt qu'une catégorie particulière de causalité."
+        },
+        {
+          "claim_id": "cognitive-claim-398cf02ca2456e15",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-45eab1ba730ce081"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Delta relationnel Dans le passage de l’événement à la relation, Delta prend une forme distribuée. Il ne désigne plus seulement la différence entre deux états temporels, mais les écarts qui apparaissent entre plusieurs termes."
+        }
+      ],
+      "hypotheses": [],
+      "missing_knowledge": [
+        "Précondition non satisfaite : moins de deux états comparables sont établis."
+      ],
+      "sources": [
+        {
+          "byte_size": 4778047,
+          "content_hash": "a393dcbccc45c2e5",
+          "empty_page_numbers": [],
+          "extracted_page_count": 882,
+          "extraction_errors": [],
+          "format": "pdf",
+          "is_demo_source": false,
+          "page_count": 882,
+          "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+          "source_id": "source-01795ab64af8762c",
+          "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+        }
+      ],
+      "summary": "TRU-AI explique delta à partir des formulations explicites disponibles et refuse l'application opératoire lorsque ses préconditions ne sont pas établies. L'opérateur formalisé disponible est Delta.",
+      "unknowns": [],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [],
+      "EXPLICITE": [
+        {
+          "claim_id": "cognitive-claim-61a13c8df11cd22f",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-26d5884b64dfd285"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Delta désigne alors l’écart entre la configuration présente et la configuration devenue concevable."
+        },
+        {
+          "claim_id": "cognitive-claim-965f4a38b98f5ecc",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-3779cefa03be15a8"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Delta dans la solitude Dans cette étape, Delta prend plusieurs formes. Il désigne d’abord l’écart entre l’émotion immédiate et la compréhension encore insuffisante de sa cause. Il désigne ensuite la différence entre les manifestations présentes et les mémoires réactivées, entre l’impulsion d’action et la réponse choisie, entre le témoignage reçu et l’interprétation qui lui a été attribuée."
+        },
+        {
+          "claim_id": "cognitive-claim-753781a0c9d12e90",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-4333001a90b78124"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Les synchronicités peuvent également être comprises à partir de cette loi. Elles ne doivent pas être interprétées comme des ruptures des lois naturelles ni comme des preuves immédiates d'une causalité mystérieuse. Dans la théorie de la réflexivité universelle, une synchronicité désigne une convergence remarquable entre plusieurs manifestations indépendantes qui, ensemble, rendent une différence particulièrement visible pour une conscience donnée. Ce caractère remarquable ne réside pas uniquement dans la simultanéité des événements mais dans leur capacité commune à produire un Delta suffisamment significatif pour favoriser une nouvelle reconnaissance. La synchronicité constitue ainsi une propriété émergente du réseau des manifestations plutôt qu'une catégorie particulière de causalité."
+        },
+        {
+          "claim_id": "cognitive-claim-398cf02ca2456e15",
+          "classification": "EXPLICITE",
+          "conclusion": null,
+          "confidence": 0.92,
+          "evidence_ids": [
+            "cognitive-evidence-45eab1ba730ce081"
+          ],
+          "limitations": [],
+          "premises": [],
+          "rule": null,
+          "text": "Delta relationnel Dans le passage de l’événement à la relation, Delta prend une forme distribuée. Il ne désigne plus seulement la différence entre deux états temporels, mais les écarts qui apparaissent entre plusieurs termes."
+        }
+      ],
+      "HYPOTHÈSE": [],
+      "INCONNU": []
+    },
+    "cognitive_execution": {
+      "applicable_operators": [
+        {
+          "conceptual_version": "v0.9.0-alpha",
+          "definitions": [
+            "Delta dans la solitude Dans cette étape, Delta prend plusieurs formes. Il désigne d’abord l’écart entre l’émotion immédiate et la compréhension encore insuffisante de sa cause. Il désigne ensuite la différence entre les manifestations présentes et les mémoires réactivées, entre l’impulsion d’action et la réponse choisie, entre le témoignage reçu et l’interprétation qui lui a été attribuée.",
+            "Delta désigne alors l’écart entre la configuration présente et la configuration devenue concevable.",
+            "L’écart entre intention et manifestation Une intention appartient à l’organisation intérieure d’une conscience. Elle désigne une orientation, un projet, une finalité ou une volonté dirigée vers un effet anticipé. La manifestation désigne ce qui devient effectivement observable dans les actes, les paroles, les relations et les conséquences. Delta apparaît lorsque l’intention déclarée ou vécue ne coïncide pas avec ce qui se manifeste.",
+            "Mais elle reste partielle parce qu’elle dépend d’un point de vue, d’un langage, d’une finalité et d’un niveau d’analyse. Delta désigne précisément la différence résiduelle entre le modèle et les manifestations qu’il prétend organiser."
+          ],
+          "inputs": [
+            "état ou configuration actuelle",
+            "possibilité, attente, prédiction ou configuration reconnue"
+          ],
+          "limitations": [
+            "Delta ne doit pas être appliqué si un seul état est établi.",
+            "Delta ne transforme pas une interprétation médicale en diagnostic."
+          ],
+          "name": "Delta",
+          "operator_id": "tru-operator-b6203dade529f7e8",
+          "outputs": [
+            "écart qualifié",
+            "orientation possible de transformation"
+          ],
+          "preconditions": [
+            "au moins deux états ou représentations comparables sont disponibles",
+            "l'écart est soutenu par des preuves textuelles ou une comparaison explicite"
+          ],
+          "source_evidence": [
+            "cognitive-evidence-26d5884b64dfd285",
+            "cognitive-evidence-3779cefa03be15a8",
+            "cognitive-evidence-4333001a90b78124",
+            "cognitive-evidence-45eab1ba730ce081",
+            "cognitive-evidence-6810a9f17f02ec9c",
+            "cognitive-evidence-812220e386f7cb08",
+            "cognitive-evidence-86525646369b415b",
+            "cognitive-evidence-8987cb6af55ca977",
+            "cognitive-evidence-9c94ea6f1980fbd1",
+            "cognitive-evidence-9cd7eb700c135891",
+            "cognitive-evidence-f99f7ca0deb32bec"
+          ],
+          "transformation": "Comparer deux états ou représentations pour rendre explicite l'écart pertinent."
+        }
+      ],
+      "applied_operators": [
+        {
+          "application_id": "operator-application-c2cfaa789e64f54b",
+          "applied": false,
+          "confidence": 0.0,
+          "operator_id": "tru-operator-b6203dade529f7e8",
+          "output": null,
+          "premise_evidence_ids": [
+            "cognitive-evidence-26d5884b64dfd285",
+            "cognitive-evidence-3779cefa03be15a8",
+            "cognitive-evidence-4333001a90b78124",
+            "cognitive-evidence-45eab1ba730ce081",
+            "cognitive-evidence-6810a9f17f02ec9c",
+            "cognitive-evidence-812220e386f7cb08",
+            "cognitive-evidence-86525646369b415b",
+            "cognitive-evidence-8987cb6af55ca977",
+            "cognitive-evidence-9c94ea6f1980fbd1",
+            "cognitive-evidence-9cd7eb700c135891",
+            "cognitive-evidence-f99f7ca0deb32bec"
+          ],
+          "refusal_reason": "Précondition non satisfaite : moins de deux états comparables sont établis.",
+          "rule": "delta_requires_two_comparable_states"
+        }
+      ],
+      "comparisons": [
+        {
+          "compared_states": [
+            "question formulée : Le trait? donne-t-il plusieurs d?finitions de Delta ?"
+          ],
+          "comparison_id": "cognitive-comparison-d076ec7936394254",
+          "delta_detected": null,
+          "differences": [],
+          "dimensions": [
+            "reconnaissance",
+            "transformation",
+            "écart"
+          ],
+          "limitations": [
+            "comparaison insuffisante pour appliquer Delta comme opérateur complet"
+          ],
+          "provenance": [
+            "cognitive-evidence-26d5884b64dfd285",
+            "cognitive-evidence-3779cefa03be15a8",
+            "cognitive-evidence-4333001a90b78124",
+            "cognitive-evidence-45eab1ba730ce081",
+            "cognitive-evidence-6810a9f17f02ec9c",
+            "cognitive-evidence-812220e386f7cb08",
+            "cognitive-evidence-86525646369b415b",
+            "cognitive-evidence-8987cb6af55ca977",
+            "cognitive-evidence-9c94ea6f1980fbd1",
+            "cognitive-evidence-9cd7eb700c135891",
+            "cognitive-evidence-f99f7ca0deb32bec",
+            "cognitive-evidence-fbc62a8fc766a4b5"
+          ],
+          "similarities": [
+            "la mémoire contient des éléments pertinents pour le concept demandé"
+          ],
+          "tru_meaning": null
+        }
+      ],
+      "concepts_recognized": [
+        "delta"
+      ],
+      "concepts_rejected": [],
+      "confidence": 0.7362,
+      "confidence_justification": "Confiance décomposée : couverture=0.95, preuves=0.92, raisonnement=0.65, opérateur=0.82, pénalité_hypothèses=0.00, pénalité_contradictions=0.00, pénalité_inconnues=0.00.",
+      "context": [],
+      "contradictions": [],
+      "deductions": [],
+      "deltas_detected": [],
+      "evidence_selected": [
+        "cognitive-evidence-26d5884b64dfd285",
+        "cognitive-evidence-3779cefa03be15a8",
+        "cognitive-evidence-4333001a90b78124",
+        "cognitive-evidence-45eab1ba730ce081",
+        "cognitive-evidence-6810a9f17f02ec9c",
+        "cognitive-evidence-812220e386f7cb08",
+        "cognitive-evidence-86525646369b415b",
+        "cognitive-evidence-8987cb6af55ca977",
+        "cognitive-evidence-9c94ea6f1980fbd1",
+        "cognitive-evidence-9cd7eb700c135891",
+        "cognitive-evidence-f99f7ca0deb32bec",
+        "cognitive-evidence-fbc62a8fc766a4b5"
+      ],
+      "execution_id": "cognitive-execution-2f943353a50b23f8",
+      "final_answer": "TRU-AI explique delta à partir des formulations explicites disponibles et refuse l'application opératoire lorsque ses préconditions ne sont pas établies. L'opérateur formalisé disponible est Delta.",
+      "hypotheses": [],
+      "intention": "conceptual_question",
+      "memory_activated": [
+        "memory-element-1d9cb06420d5d5df",
+        "memory-element-1fc7f3f044f245f8",
+        "memory-element-21a127c6197ad1f9",
+        "memory-element-385ba1268ea1f354",
+        "memory-element-719d339de1c1e2cc",
+        "memory-element-7448d54a9ab55f50",
+        "memory-element-80ce6f2bc404e59e",
+        "memory-element-9a195e82a7c07d44",
+        "memory-element-c2ad5c21119ac38e",
+        "memory-element-c42a0ed6f30192e8",
+        "memory-element-dc12818428191bdc",
+        "memory-element-ff2617cfbfb91b9e"
+      ],
+      "observation": "Question observée : Le trait? donne-t-il plusieurs d?finitions de Delta ?",
+      "premises": [
+        "cognitive-evidence-26d5884b64dfd285",
+        "cognitive-evidence-3779cefa03be15a8",
+        "cognitive-evidence-4333001a90b78124",
+        "cognitive-evidence-45eab1ba730ce081",
+        "cognitive-evidence-6810a9f17f02ec9c",
+        "cognitive-evidence-812220e386f7cb08",
+        "cognitive-evidence-86525646369b415b",
+        "cognitive-evidence-8987cb6af55ca977",
+        "cognitive-evidence-9c94ea6f1980fbd1",
+        "cognitive-evidence-9cd7eb700c135891",
+        "cognitive-evidence-f99f7ca0deb32bec",
+        "cognitive-evidence-fbc62a8fc766a4b5"
+      ],
+      "problem": "Résoudre une demande de type conceptual_question portant sur delta à partir de preuves canoniques.",
+      "question": "Le trait? donne-t-il plusieurs d?finitions de Delta ?",
+      "reflexive_evaluation": {
+        "concepts_recognized": true,
+        "confidence_breakdown": {},
+        "confidence_matches_evidence": true,
+        "contradiction_detected": false,
+        "evidence_sufficient": true,
+        "hypothesis_promoted_to_fact": false,
+        "missing_information_count": 1,
+        "question_understood": true,
+        "unauthorized_rule_applied": false
+      },
+      "response_plan": [
+        "identifier_le_concept",
+        "sélectionner_définitions_et_passages",
+        "relier_aux_concepts_voisins",
+        "séparer_explicitement_déductions_hypothèses_inconnues",
+        "justifier_la_confiance"
+      ],
+      "rules": [
+        "delta_requires_two_comparable_states"
+      ],
+      "unknowns": []
+    },
+    "confidence": 0.7362,
+    "confidence_breakdown": {
+      "contradiction_penalty": 0.0,
+      "evidence_quality": 0.92,
+      "final_confidence": 0.7362,
+      "hypothesis_penalty": 0.0,
+      "operator_validity": 0.82,
+      "reasoning_validity": 0.65,
+      "source_coverage": 0.95,
+      "unknown_penalty": 0.0
+    },
+    "evidence": [
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-dc12818428191bdc",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-26d5884b64dfd285",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          337
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta désigne alors l’écart entre la configuration présente et la configuration devenue concevable."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-1fc7f3f044f245f8",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-3779cefa03be15a8",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          445
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta dans la solitude Dans cette étape, Delta prend plusieurs formes. Il désigne d’abord l’écart entre l’émotion immédiate et la compréhension encore insuffisante de sa cause. Il désigne ensuite la différence entre les manifestations présentes et les mémoires réactivées, entre l’impulsion d’action et la réponse choisie, entre le témoignage reçu et l’interprétation qui lui a été attribuée."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-80ce6f2bc404e59e",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-4333001a90b78124",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          660
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Les synchronicités peuvent également être comprises à partir de cette loi. Elles ne doivent pas être interprétées comme des ruptures des lois naturelles ni comme des preuves immédiates d'une causalité mystérieuse. Dans la théorie de la réflexivité universelle, une synchronicité désigne une convergence remarquable entre plusieurs manifestations indépendantes qui, ensemble, rendent une différence particulièrement visible pour une conscience donnée. Ce caractère remarquable ne réside pas uniquement dans la simultanéité des événements mais dans leur capacité commune à produire un Delta suffisamment significatif pour favoriser une nouvelle reconnaissance. La synchronicité constitue ainsi une propriété émergente du réseau des manifestations plutôt qu'une catégorie particulière de causalité."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-1d9cb06420d5d5df",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-45eab1ba730ce081",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          407
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta relationnel Dans le passage de l’événement à la relation, Delta prend une forme distribuée. Il ne désigne plus seulement la différence entre deux états temporels, mais les écarts qui apparaissent entre plusieurs termes."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.68,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-c2ad5c21119ac38e",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-6810a9f17f02ec9c",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          447
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "L’observation peut être définie comme l’opération par laquelle une conscience rend perceptibles et différenciables des manifestations internes ou externes, en maintenant une distance suffisante pour les comparer, les situer et les examiner sans les confondre immédiatement avec leur interprétation. Elle constitue le premier acte explicitement réflexif de la mécanique universelle. Les étapes précédentes ont préparé sa possibilité : la manifestation a introduit une différence, l’événement l’a inscrite dans le temps, la relation l’a distribuée, le témoignage l’a transmise, l’émotion lui a donné une valeur vécue et la solitude a créé l’espace nécessaire à sa décantation. Avec l’observation, la conscience commence à reprendre activement le processus dont elle était jusque-là principalement le lieu d’affectation. Elle ne se contente plus de recevoir les conséquences de Delta ; elle commence à identifier Delta comme différence."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-719d339de1c1e2cc",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-812220e386f7cb08",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          341
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Les phénomènes complexes exigent souvent plusieurs dimensions. Delta peut alors être représenté comme un vecteur : =(Δ1,Δ2,Δ3,…,Δn)Δ⃗Δ⃗\u0003 Chaque composante correspond à un niveau différent : cognitif, émotionnel, corporel, relationnel, comportemental ou collectif. Une transformation peut réduire l’écart sur une dimension et l’augmenter sur une autre. Une mesure globale qui fusionnerait immédiatement toutes les composantes risquerait de masquer ces déplacements."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-ff2617cfbfb91b9e",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-86525646369b415b",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          338
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Delta comme tension Lorsqu’un écart devient pertinent pour une conscience ou pour un système, il produit souvent une tension. Celle-ci désigne l’état résultant de la coexistence de deux configurations qui ne peuvent être entièrement maintenues ensemble sans réorganisation. Une représentation affirme une chose tandis qu’une manifestation en indique une autre ; une intention vise une relation qui produit pourtant un effet contraire ; une identité ancienne demeure active alors qu’une possibilité nouvelle a été reconnue."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-7448d54a9ab55f50",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-8987cb6af55ca977",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          669
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Le concept constitue l'unité fondamentale de compréhension. Il désigne une réalité identifiable et lui donne une définition stable. Des notions telles que conscience, manifestation, témoignage, Delta, mémoire, protection, relation ou reconnaissance appartiennent à ce premier niveau. Les concepts permettent de nommer les éléments constitutifs de la théorie et de construire un langage commun."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.68,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-385ba1268ea1f354",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-9c94ea6f1980fbd1",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          333
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Dans le cadre de la théorie, Delta peut être défini comme l’écart dynamique entre deux états, deux représentations ou deux niveaux de reconnaissance, tel que cet écart produit une information, une tension ou une possibilité de transformation dans un système capable de l’observer et de l’intégrer. Le terme d’écart ne désigne pas nécessairement une distance spatiale ni une quantité immédiatement mesurable. Il désigne une non-coïncidence structurée. Deux réalités peuvent différer par leur intensité, leur organisation, leur signification, leur temporalité, leurs effets ou leur niveau d’intégration. Delta apparaît chaque fois qu’une relation comparative permet de dire qu’un état n’est pas identique à un autre et que cette différence possède une conséquence pour la conscience, pour la relation ou pour la totalité observée."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-c42a0ed6f30192e8",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-9cd7eb700c135891",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          335
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Mais elle reste partielle parce qu’elle dépend d’un point de vue, d’un langage, d’une finalité et d’un niveau d’analyse. Delta désigne précisément la différence résiduelle entre le modèle et les manifestations qu’il prétend organiser."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.86,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.18,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-9a195e82a7c07d44",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-f99f7ca0deb32bec",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          336
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "L’écart entre intention et manifestation Une intention appartient à l’organisation intérieure d’une conscience. Elle désigne une orientation, un projet, une finalité ou une volonté dirigée vers un effet anticipé. La manifestation désigne ce qui devient effectivement observable dans les actes, les paroles, les relations et les conséquences. Delta apparaît lorsque l’intention déclarée ou vécue ne coïncide pas avec ce qui se manifeste."
+      },
+      {
+        "authority": 0.95,
+        "completeness": 0.68,
+        "conceptual_proximity": 1.0,
+        "context_loss_risk": 0.4,
+        "directness": 0.95,
+        "document_id": "memory-document-7cd519eb8f9ffb28",
+        "element_id": "memory-element-21a127c6197ad1f9",
+        "element_type": "Définition",
+        "evidence_id": "cognitive-evidence-fbc62a8fc766a4b5",
+        "extraction_confidence": 0.92,
+        "page_numbers": [
+          240
+        ],
+        "redundancy": 0.0,
+        "relevance": 1.0,
+        "semantic_justification": "Marqueur définitoire explicite détecté.",
+        "semantic_validation_status": "CONFIRMÉ",
+        "source_id": "source-01795ab64af8762c",
+        "text": "Le dévoilement Toute réalité ne se donne pas immédiatement dans la totalité de sa structure. Certaines dimensions apparaissent directement, d’autres demeurent implicites, recouvertes par les habitudes de perception, dissimulées par les conditions de la situation ou rendues inaccessibles par les limites de la conscience qui les reçoit. Une manifestation peut être présente sans être comprise, répétée sans être reconnue, visible sans que sa signification devienne perceptible. Le dévoilement désigne le processus par lequel cet écart se réduit progressivement. Ce qui était là sans être véritablement vu, ce qui agissait sans être identifié ou ce qui se manifestait sous une forme fragmentaire entre dans un champ de perception plus distinct, devient susceptible d’observation et commence à participer à une compréhension organisée. Le dévoilement ne crée donc pas nécessairement la réalité qu’il rend perceptible. Il transforme les conditions de son accessibilité. Il fait passer une structure de l’implicite vers l’explicite, de l’indifférencié vers le discernable et de l’incompréhensible vers une forme pouvant être reliée à d’autres manifestations."
+      }
+    ],
+    "missing_knowledge": [
+      "Précondition non satisfaite : moins de deux états comparables sont établis."
+    ],
+    "request_id": "cognitive-request-5c3d0f87c4679b44",
+    "sources": [
+      {
+        "byte_size": 4778047,
+        "content_hash": "a393dcbccc45c2e5",
+        "empty_page_numbers": [],
+        "extracted_page_count": 882,
+        "extraction_errors": [],
+        "format": "pdf",
+        "is_demo_source": false,
+        "page_count": 882,
+        "path": "C:\\Sites\\Projects\\TRU-AI\\corpus\\sources\\TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE.pdf",
+        "source_id": "source-01795ab64af8762c",
+        "title": "TRAITÉ DE LA THÉORIE DE LA RÉFLEXIVITÉ UNIVERSELLE"
+      }
+    ],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.7362,
+    "confidence_justification": "Confiance décomposée : couverture=0.95, preuves=0.92, raisonnement=0.65, opérateur=0.82, pénalité_hypothèses=0.00, pénalité_contradictions=0.00, pénalité_inconnues=0.00.",
+    "contradictions": [],
+    "coverage_score": 1.0,
+    "deduction_claim_ids": [],
+    "definitions_used": [
+      "memory-element-1d9cb06420d5d5df",
+      "memory-element-1fc7f3f044f245f8",
+      "memory-element-21a127c6197ad1f9",
+      "memory-element-385ba1268ea1f354",
+      "memory-element-719d339de1c1e2cc",
+      "memory-element-7448d54a9ab55f50",
+      "memory-element-80ce6f2bc404e59e",
+      "memory-element-9a195e82a7c07d44",
+      "memory-element-c2ad5c21119ac38e",
+      "memory-element-c42a0ed6f30192e8",
+      "memory-element-dc12818428191bdc",
+      "memory-element-ff2617cfbfb91b9e"
+    ],
+    "demonstrations_used": [],
+    "detected_concepts": [
+      "delta"
+    ],
+    "evidence_rejected": [],
+    "evidence_used": [
+      "cognitive-evidence-26d5884b64dfd285",
+      "cognitive-evidence-3779cefa03be15a8",
+      "cognitive-evidence-4333001a90b78124",
+      "cognitive-evidence-45eab1ba730ce081",
+      "cognitive-evidence-6810a9f17f02ec9c",
+      "cognitive-evidence-812220e386f7cb08",
+      "cognitive-evidence-86525646369b415b",
+      "cognitive-evidence-8987cb6af55ca977",
+      "cognitive-evidence-9c94ea6f1980fbd1",
+      "cognitive-evidence-9cd7eb700c135891",
+      "cognitive-evidence-f99f7ca0deb32bec",
+      "cognitive-evidence-fbc62a8fc766a4b5"
+    ],
+    "explicit_claim_ids": [
+      "cognitive-claim-398cf02ca2456e15",
+      "cognitive-claim-61a13c8df11cd22f",
+      "cognitive-claim-753781a0c9d12e90",
+      "cognitive-claim-965f4a38b98f5ecc"
+    ],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "conceptual_question",
+    "missing_knowledge": [
+      "Précondition non satisfaite : moins de deux états comparables sont établis."
+    ],
+    "original_question": "Le trait? donne-t-il plusieurs d?finitions de Delta ?",
+    "pages_consulted": [
+      240,
+      333,
+      335,
+      336,
+      337,
+      338,
+      341,
+      407,
+      445,
+      447,
+      660,
+      669
+    ],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-5c3d0f87c4679b44",
+    "response_plan": [
+      "identifier_le_concept",
+      "sélectionner_définitions_et_passages",
+      "relier_aux_concepts_voisins",
+      "séparer_explicitement_déductions_hypothèses_inconnues",
+      "justifier_la_confiance"
+    ],
+    "selected_concepts": [
+      "delta"
+    ],
+    "sources_consulted": [
+      "source-01795ab64af8762c"
+    ],
+    "unknown_claim_ids": []
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "response": {
+    "answer": {
+      "deductions": [],
+      "explicit_claims": [],
+      "hypotheses": [],
+      "missing_knowledge": [
+        "Aucun passage canonique ne soutient directement la réponse."
+      ],
+      "sources": [],
+      "summary": "TRU-AI reconnaît la question, mais ne dispose pas encore de preuves suffisantes dans sa mémoire canonique.",
+      "unknowns": [
+        {
+          "claim_id": "cognitive-claim-7723ecacc8e2b3a5",
+          "classification": "INCONNU",
+          "confidence": 0.0,
+          "evidence_ids": [],
+          "text": "La mémoire actuelle ne permet pas d'établir une réponse fiable."
+        }
+      ],
+      "warnings": []
+    },
+    "classifications": {
+      "DÉDUCTION": [],
+      "EXPLICITE": [],
+      "HYPOTHÈSE": [],
+      "INCONNU": [
+        {
+          "claim_id": "cognitive-claim-7723ecacc8e2b3a5",
+          "classification": "INCONNU",
+          "confidence": 0.0,
+          "evidence_ids": [],
+          "text": "La mémoire actuelle ne permet pas d'établir une réponse fiable."
+        }
+      ]
+    },
+    "confidence": 0.0,
+    "evidence": [],
+    "missing_knowledge": [
+      "Aucun passage canonique ne soutient directement la réponse."
+    ],
+    "request_id": "cognitive-request-00192eeebf1fe23c",
+    "sources": [],
+    "warnings": []
+  },
+  "trace": {
+    "axioms_used": [],
+    "chapters_consulted": [],
+    "confidence": 0.0,
+    "confidence_justification": "Aucune preuve explicite disponible.",
+    "contradictions": [],
+    "coverage_score": 0.0,
+    "deduction_claim_ids": [],
+    "definitions_used": [],
+    "demonstrations_used": [],
+    "detected_concepts": [],
+    "evidence_rejected": [],
+    "evidence_used": [],
+    "explicit_claim_ids": [],
+    "hypothesis_claim_ids": [],
+    "inferences_used": [],
+    "intent": "hypothesis_review",
+    "missing_knowledge": [
+      "Aucun passage canonique ne soutient directement la réponse."
+    ],
+    "original_question": "Quelles hypoth?ses fais-tu ?",
+    "pages_consulted": [],
+    "propositions_used": [],
+    "relations_used": [],
+    "request_id": "cognitive-request-00192eeebf1fe23c",
+    "response_plan": [
+      "identifier_intention",
+      "sélectionner_concepts",
+      "sélectionner_preuves",
+      "classifier_affirmations",
+      "évaluer_confiance"
+    ],
+    "selected_concepts": [],
+    "sources_consulted": [],
+    "unknown_claim_ids": [
+      "cognitive-claim-7723ecacc8e2b3a5"
+    ]
+  }
+}
