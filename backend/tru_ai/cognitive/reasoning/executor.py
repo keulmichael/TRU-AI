@@ -89,6 +89,7 @@ class ReasoningExecutor:
             recognition_meanings=tuple(state.recognition_meanings),
             recognition_gaps=tuple(state.recognition_gaps),
             theory_graph=state.theory_graph,
+            theory=state.theory,
             theory_comparisons=tuple(state.theory_comparisons),
             theory_evolution=state.theory_evolution,
             scientific_predictions=tuple(state.scientific_predictions),

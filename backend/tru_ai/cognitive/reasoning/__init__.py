@@ -14,7 +14,7 @@ from tru_ai.cognitive.reasoning.engines import (
     ReasoningEngine,
     ReasoningExecutionState,
     SynthesisEngine,
-    TheoryConstructionEngine, TheoryComparisonEngine, TheoryEvolutionEngine,
+    TheoryBuilderEngine, TheoryConstructionEngine, TheoryComparisonEngine, TheoryEvolutionEngine,
     PredictionEngine, ScientificGapEngine,
 )
 from tru_ai.cognitive.reasoning.executor import ReasoningExecutor
@@ -43,6 +43,7 @@ from tru_ai.cognitive.reasoning.models import (
     ReasoningStep,
     TruthStatus,
     TheoryClaimStatus, TheoryClaim, TheoryGraph, TheoryComparison, TheoryEvolution,
+    Theory, TheoryEvidence, TheoryMaturity, TheoryProposition, TheoryPropositionRole, TheoryRevision,
     ScientificPrediction, ScientificGap,
 )
 from tru_ai.cognitive.reasoning.planner import ReasoningPlanner
@@ -91,7 +92,9 @@ __all__ = [
     "SynthesisEngine",
     "TruthStatus",
     "TheoryClaimStatus", "TheoryClaim", "TheoryGraph", "TheoryComparison",
+    "Theory", "TheoryEvidence", "TheoryMaturity", "TheoryProposition",
+    "TheoryPropositionRole", "TheoryRevision",
     "TheoryEvolution", "ScientificPrediction", "ScientificGap",
-    "TheoryConstructionEngine", "TheoryComparisonEngine",
+    "TheoryBuilderEngine", "TheoryConstructionEngine", "TheoryComparisonEngine",
     "TheoryEvolutionEngine", "PredictionEngine", "ScientificGapEngine",
 ]

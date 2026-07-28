@@ -1,14 +1,12 @@
 9.0
-
-Scientific Reasoning
+✓ Scientific Reasoning
 
 447 tests
 
 --------------------------------
 
 9.1
-
-Theory Builder
+✓ Theory Builder
 
 447 tests
 
@@ -16,6 +14,4 @@ Theory Builder
 
 9.2
 
-Theory Evolution
-
-En développement
+En préparation

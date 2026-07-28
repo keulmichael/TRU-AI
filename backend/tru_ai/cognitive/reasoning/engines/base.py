@@ -18,7 +18,7 @@ from tru_ai.cognitive.reasoning.models import (
     ReasoningStage,
     ReasoningStep,
     TruthStatus,
-    TheoryGraph, TheoryComparison, TheoryEvolution, ScientificPrediction, ScientificGap,
+    Theory, TheoryGraph, TheoryComparison, TheoryEvolution, ScientificPrediction, ScientificGap,
 )
 
 
@@ -61,6 +61,7 @@ class ReasoningExecutionState:
     )
     recognition_gaps: list[RecognitionGap] = field(default_factory=list)
     theory_graph: TheoryGraph = field(default_factory=TheoryGraph)
+    theory: Theory = field(default_factory=Theory)
     theory_comparisons: list[TheoryComparison] = field(default_factory=list)
     theory_evolution: TheoryEvolution = field(default_factory=TheoryEvolution)
     scientific_predictions: list[ScientificPrediction] = field(default_factory=list)

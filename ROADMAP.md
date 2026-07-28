@@ -1,11 +1,25 @@
-Version actuelle
+9.2
+Theory Evolution
+- Versioning
+- History
+- Snapshots
+- Evolution Engine
 
-9.1
+9.3
+Prediction Engine
+- Scientific prediction
+- Confidence
+- Scenario simulation
 
-Versions à venir
+9.4
+Falsification Engine
+- Contradiction detection
+- Theory validation
 
-9.2 Theory Evolution
-9.3 Prediction Engine
-9.4 Falsification Engine
-9.5 Scientific Memory
-10.0 Autonomous Scientific Research
+9.5
+Scientific Memory
+- Long-term knowledge
+- Theory repository
+
+10.0
+Autonomous Scientific Research

@@ -454,6 +454,106 @@ class TheoryGraph:
         }
 
 
+
+
+class TheoryPropositionRole(StrEnum):
+    AXIOM = "axiom"
+    PROPOSITION = "proposition"
+    HYPOTHESIS = "hypothesis"
+
+
+@dataclass(frozen=True)
+class TheoryEvidence:
+    evidence_id: str
+    description: str
+    source: str | None = None
+    strength: float = 1.0
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class TheoryProposition:
+    proposition_id: str
+    text: str
+    role: TheoryPropositionRole = TheoryPropositionRole.PROPOSITION
+    status: TheoryClaimStatus = TheoryClaimStatus.UNSUPPORTED
+    evidence_ids: tuple[str, ...] = ()
+    limitations: tuple[str, ...] = ()
+    confidence: float = 0.0
+    source_claim_ids: tuple[str, ...] = ()
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "proposition_id": self.proposition_id,
+            "text": self.text,
+            "role": self.role.value,
+            "status": self.status.value,
+            "evidence_ids": list(self.evidence_ids),
+            "limitations": list(self.limitations),
+            "confidence": self.confidence,
+            "source_claim_ids": list(self.source_claim_ids),
+        }
+
+
+@dataclass(frozen=True)
+class TheoryRevision:
+    revision_id: str
+    action: str
+    proposition_id: str
+    description: str
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class TheoryMaturity:
+    score: float = 0.0
+    level: str = "embryonic"
+    supported_ratio: float = 0.0
+    evidence_coverage: float = 0.0
+    contradiction_ratio: float = 0.0
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class Theory:
+    theory_id: str = "current-theory"
+    title: str = "Théorie courante"
+    domain: str | None = None
+    propositions: tuple[TheoryProposition, ...] = ()
+    evidence: tuple[TheoryEvidence, ...] = ()
+    revisions: tuple[TheoryRevision, ...] = ()
+    contradictions: tuple[str, ...] = ()
+    maturity: TheoryMaturity = field(default_factory=TheoryMaturity)
+
+    @property
+    def axioms(self) -> tuple[TheoryProposition, ...]:
+        return tuple(p for p in self.propositions if p.role is TheoryPropositionRole.AXIOM)
+
+    @property
+    def hypotheses(self) -> tuple[TheoryProposition, ...]:
+        return tuple(p for p in self.propositions if p.role is TheoryPropositionRole.HYPOTHESIS)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "theory_id": self.theory_id,
+            "title": self.title,
+            "domain": self.domain,
+            "propositions": [p.to_dict() for p in self.propositions],
+            "axioms": [p.to_dict() for p in self.axioms],
+            "hypotheses": [p.to_dict() for p in self.hypotheses],
+            "evidence": [e.to_dict() for e in self.evidence],
+            "revisions": [r.to_dict() for r in self.revisions],
+            "contradictions": list(self.contradictions),
+            "maturity": self.maturity.to_dict(),
+        }
+
+
 @dataclass(frozen=True)
 class TheoryComparison:
     compared_theory_id: str
@@ -543,6 +643,7 @@ class ReasoningResult:
     recognition_meanings: tuple[RecognitionMeaning, ...] = ()
     recognition_gaps: tuple[RecognitionGap, ...] = ()
     theory_graph: TheoryGraph = field(default_factory=TheoryGraph)
+    theory: Theory = field(default_factory=Theory)
     theory_comparisons: tuple[TheoryComparison, ...] = ()
     theory_evolution: TheoryEvolution = field(default_factory=TheoryEvolution)
     scientific_predictions: tuple[ScientificPrediction, ...] = ()
@@ -583,6 +684,7 @@ class ReasoningResult:
                 gap.to_dict() for gap in self.recognition_gaps
             ],
             "theory_graph": self.theory_graph.to_dict(),
+            "theory": self.theory.to_dict(),
             "theory_comparisons": [item.to_dict() for item in self.theory_comparisons],
             "theory_evolution": self.theory_evolution.to_dict(),
             "scientific_predictions": [item.to_dict() for item in self.scientific_predictions],
