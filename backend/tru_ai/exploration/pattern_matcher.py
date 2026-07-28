@@ -21,10 +21,12 @@ class ExplorationPatternMatcher:
         pattern: GraphPattern,
     ) -> tuple[PatternMatch, ...]:
         self.validate(pattern)
-        partials = [({}, tuple(), 1.0)]
+        partials: list[tuple[dict[str, str], tuple[str, ...], float]] = [
+            ({}, tuple(), 1.0)
+        ]
 
         for constraint in pattern.constraints:
-            next_partials = []
+            next_partials: list[tuple[dict[str, str], tuple[str, ...], float]] = []
             candidate_edges = self.candidate_edges(
                 constraint
             )

@@ -39,7 +39,7 @@ class ExplorationPathfinder:
         if limit < 1:
             raise ValueError("limit doit être positif.")
 
-        queue = deque(
+        queue: deque[tuple[str, tuple[str, ...], tuple[str, ...]]] = deque(
             [(start_node_id, tuple(), (start_node_id,))]
         )
         paths: list[GraphPath] = []

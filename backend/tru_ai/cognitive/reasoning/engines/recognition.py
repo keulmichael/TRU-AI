@@ -281,7 +281,8 @@ class RecognitionEngine:
         for key, relation in relation_index.items():
             source_id, target_id, relation_type = key
             reverse = relation_index.get((target_id, source_id, relation_type))
-            canonical = tuple(sorted((source_id, target_id))) + (relation_type,)
+            first_id, second_id = sorted((source_id, target_id))
+            canonical = (first_id, second_id, relation_type)
             if reverse is None or canonical in seen_pairs:
                 continue
             seen_pairs.add(canonical)

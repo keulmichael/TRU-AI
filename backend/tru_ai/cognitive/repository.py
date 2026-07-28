@@ -100,7 +100,7 @@ class CognitiveRepository:
         """
         now = self._utc_now()
 
-        conversation = {
+        conversation: dict[str, Any] = {
             "conversation_id": conversation_id,
             "created_at": now,
             "updated_at": now,

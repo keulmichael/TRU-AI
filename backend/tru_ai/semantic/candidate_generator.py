@@ -80,7 +80,8 @@ class SemanticCandidateGenerator:
                     )
                 )
 
-                candidate_ids.add(pair)
+                first_id, second_id = pair
+                candidate_ids.add((first_id, second_id))
 
         return [
             (
