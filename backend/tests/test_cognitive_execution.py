@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from tru_ai.cognitive.core import CognitiveCore
-from tru_ai.cognitive.operators import DeltaOperatorEngine
 from tru_ai.memory.builder import CanonicalMemoryBuilder
 
 

@@ -17,9 +17,6 @@ from tru_ai.exploration.pattern_matcher import (
 from tru_ai.exploration.repository import (
     ExplorationRepository,
 )
-from tru_ai.exploration.validator import (
-    ExplorationValidator,
-)
 
 
 router = APIRouter(

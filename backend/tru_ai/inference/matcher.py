@@ -5,7 +5,6 @@ from dataclasses import dataclass
 from typing import Protocol
 
 from tru_ai.graph.builder import KnowledgeGraph
-from tru_ai.graph.models import GraphEdge
 from tru_ai.inference.models import (
     EdgeKey,
     InferredEdge,
