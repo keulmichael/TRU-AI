@@ -1,3 +1,6 @@
+Version en cours : 0.9.5-dev
+Version cible de stabilisation : 0.9.5
+
 9.2
 Theory Evolution
 - Versioning
@@ -5,7 +8,7 @@ Theory Evolution
 - Snapshots
 - Evolution Engine
 
-9.3
+9.3 — LIVRÉE
 Prediction Engine
 - Scientific prediction
 - Confidence
@@ -20,6 +23,7 @@ Falsification Engine
 Scientific Memory
 - Long-term knowledge
 - Theory repository
+- Stabilisation de la version 0.9.5 non finalisée
 
 10.0
 Autonomous Scientific Research

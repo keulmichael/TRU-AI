@@ -1,5 +1,9 @@
 # TRU-AI
 
+**Version active : 0.9.5-dev — Scientific Memory en développement**
+
+La version `0.9.5-dev` est une version de développement active. Elle ne doit pas être présentée comme une publication finale `0.9.5`.
+
 <p align="center">
 
 # Artificial Intelligence for the Universal Reflexivity Theory

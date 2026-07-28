@@ -1,13 +1,18 @@
 import typer
 
+from tru_ai import __version__
+
 app = typer.Typer()
+
 
 @app.command()
 def version():
-    print("TRU-AI v0.8.5.1")
+    print(f"TRU-AI v{__version__}")
+
 
 def main():
     app()
+
 
 if __name__ == "__main__":
     main()

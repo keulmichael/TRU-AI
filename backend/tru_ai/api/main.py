@@ -5,12 +5,13 @@ from pathlib import Path
 from tru_ai.cognitive.api import router as cognitive_router
 from tru_ai.exploration.api import router as exploration_router
 from tru_ai.explorer.router import router as explorer_router
+from tru_ai import __version__
 from tru_ai.query.api import router as query_router
 from tru_ai.reasoning.api import router as reasoning_router
 
 app = FastAPI(
     title="TRU-AI",
-    version="0.9.1",
+    version=__version__,
     description="Artificial Intelligence for the Universal Reflexivity Theory",
 )
 
