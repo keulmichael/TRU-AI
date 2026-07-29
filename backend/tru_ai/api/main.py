@@ -8,6 +8,7 @@ from tru_ai.explorer.router import router as explorer_router
 from tru_ai import __version__
 from tru_ai.query.api import router as query_router
 from tru_ai.reasoning.api import router as reasoning_router
+from tru_ai.scientific.api import router as scientific_router
 
 app = FastAPI(
     title="TRU-AI",
@@ -44,5 +45,6 @@ def scientific_demo_page():
 app.include_router(cognitive_router)
 app.include_router(query_router)
 app.include_router(reasoning_router)
+app.include_router(scientific_router)
 app.include_router(exploration_router)
 app.include_router(explorer_router)
