@@ -5,12 +5,14 @@ from pathlib import Path
 from tru_ai.cognitive.api import router as cognitive_router
 from tru_ai.exploration.api import router as exploration_router
 from tru_ai.explorer.router import router as explorer_router
+from tru_ai import __version__
 from tru_ai.query.api import router as query_router
 from tru_ai.reasoning.api import router as reasoning_router
+from tru_ai.scientific.api import router as scientific_router
 
 app = FastAPI(
     title="TRU-AI",
-    version="0.9.1",
+    version=__version__,
     description="Artificial Intelligence for the Universal Reflexivity Theory",
 )
 
@@ -33,8 +35,23 @@ def root():
     )
 
 
+@app.get("/scientific-demo")
+def scientific_demo_page():
+    return FileResponse(
+        COGNITIVE_STATIC_DIRECTORY / "scientific-demo.html"
+    )
+
+
+@app.get("/scientific")
+def scientific_workbench_page():
+    return FileResponse(
+        COGNITIVE_STATIC_DIRECTORY / "scientific.html"
+    )
+
+
 app.include_router(cognitive_router)
 app.include_router(query_router)
 app.include_router(reasoning_router)
+app.include_router(scientific_router)
 app.include_router(exploration_router)
 app.include_router(explorer_router)

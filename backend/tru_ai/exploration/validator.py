@@ -52,8 +52,13 @@ class ExplorationValidator:
                     f"Index sortant non stable : {node_id}"
                 )
             for edge_id in ids:
-                edge = indexes.edges_by_id.get(edge_id)
-                if edge is None or edge.subject_id != node_id:
+                outgoing_edge = indexes.edges_by_id.get(edge_id)
+                if outgoing_edge is None:
+                    report.add_error(
+                        f"Index sortant incohérent : {edge_id}"
+                    )
+                    continue
+                if outgoing_edge.subject_id != node_id:
                     report.add_error(
                         f"Index sortant incohérent : {edge_id}"
                     )
@@ -64,8 +69,13 @@ class ExplorationValidator:
                     f"Index entrant non stable : {node_id}"
                 )
             for edge_id in ids:
-                edge = indexes.edges_by_id.get(edge_id)
-                if edge is None or edge.object_id != node_id:
+                incoming_edge = indexes.edges_by_id.get(edge_id)
+                if incoming_edge is None:
+                    report.add_error(
+                        f"Index entrant incohérent : {edge_id}"
+                    )
+                    continue
+                if incoming_edge.object_id != node_id:
                     report.add_error(
                         f"Index entrant incohérent : {edge_id}"
                     )
@@ -76,8 +86,13 @@ class ExplorationValidator:
                     f"Index prédicat non stable : {predicate}"
                 )
             for edge_id in ids:
-                edge = indexes.edges_by_id.get(edge_id)
-                if edge is None or edge.predicate != predicate:
+                predicate_edge = indexes.edges_by_id.get(edge_id)
+                if predicate_edge is None:
+                    report.add_error(
+                        f"Index prédicat incohérent : {edge_id}"
+                    )
+                    continue
+                if predicate_edge.predicate != predicate:
                     report.add_error(
                         f"Index prédicat incohérent : {edge_id}"
                     )

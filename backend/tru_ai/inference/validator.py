@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections import Counter
+from collections.abc import Mapping
 
 from tru_ai.graph.builder import KnowledgeGraph
 from tru_ai.inference.models import (
@@ -107,7 +108,7 @@ class InferenceValidator:
         self,
         report: InferenceValidationReport,
         node_ids: set[str],
-        source_edges_by_key: dict[
+        source_edges_by_key: Mapping[
             EdgeKey,
             object,
         ],

@@ -18,7 +18,7 @@ from tru_ai.cognitive.reasoning.models import (
     ReasoningStage,
     ReasoningStep,
     TruthStatus,
-    TheoryGraph, TheoryComparison, TheoryEvolution, ScientificPrediction, ScientificGap,
+    Theory, TheoryGraph, TheoryComparison, TheoryEvolution, TheoryHistory, ScientificPrediction, ScientificScenario, ScenarioSimulation, ScientificObservation, VerificationReport, FalsificationReport, ScientificTheoryRevision, ScientificGap,
 )
 
 
@@ -61,9 +61,17 @@ class ReasoningExecutionState:
     )
     recognition_gaps: list[RecognitionGap] = field(default_factory=list)
     theory_graph: TheoryGraph = field(default_factory=TheoryGraph)
+    theory: Theory = field(default_factory=Theory)
     theory_comparisons: list[TheoryComparison] = field(default_factory=list)
     theory_evolution: TheoryEvolution = field(default_factory=TheoryEvolution)
+    theory_history: TheoryHistory = field(default_factory=lambda: TheoryHistory(theory_id="current-theory"))
     scientific_predictions: list[ScientificPrediction] = field(default_factory=list)
+    scientific_scenarios: list[ScientificScenario] = field(default_factory=list)
+    scenario_simulations: list[ScenarioSimulation] = field(default_factory=list)
+    scientific_observations: list[ScientificObservation] = field(default_factory=list)
+    verification_reports: list[VerificationReport] = field(default_factory=list)
+    falsification_reports: list[FalsificationReport] = field(default_factory=list)
+    scientific_theory_revisions: list[ScientificTheoryRevision] = field(default_factory=list)
     scientific_gaps: list[ScientificGap] = field(default_factory=list)
     contradictions: list[str] = field(default_factory=list)
     missing_knowledge: list[str] = field(default_factory=list)

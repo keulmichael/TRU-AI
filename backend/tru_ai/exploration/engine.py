@@ -5,6 +5,7 @@ from collections import deque
 from tru_ai.exploration.indexes import ExplorationIndexes
 from tru_ai.exploration.models import (
     ExplorationResult,
+    GraphPath,
     GraphQuery,
     NeighborhoodResult,
 )
@@ -171,7 +172,7 @@ class ExplorationEngine:
         self,
         query: GraphQuery,
     ) -> ExplorationResult:
-        paths = ()
+        paths: tuple[GraphPath, ...] = ()
         node_ids: set[str] = set()
         edge_ids: set[str] = set()
         if query.start_node_id and query.end_node_id:

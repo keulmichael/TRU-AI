@@ -21,8 +21,13 @@ from tru_ai.cognitive.reasoning.engines.recognition_meaning import (
 )
 from tru_ai.cognitive.reasoning.engines.reflexivity import ReflexivityEngine
 from tru_ai.cognitive.reasoning.engines.synthesis import SynthesisEngine
+from tru_ai.cognitive.reasoning.engines.theory_builder import (
+    TheoryBuilderEngine,
+    TheoryConstructionEngine,
+)
+from tru_ai.cognitive.reasoning.engines.falsification import FalsificationEngine, VerificationEngine
 from tru_ai.cognitive.reasoning.engines.scientific import (
-    TheoryConstructionEngine, TheoryComparisonEngine, TheoryEvolutionEngine,
+    TheoryComparisonEngine, TheoryEvolutionEngine,
     PredictionEngine, ScientificGapEngine,
 )
 
@@ -42,8 +47,8 @@ __all__ = [
     "ReasoningEngine",
     "ReasoningExecutionState",
     "SynthesisEngine",
-    "TheoryConstructionEngine", "TheoryComparisonEngine",
-    "TheoryEvolutionEngine", "PredictionEngine", "ScientificGapEngine",
+    "TheoryBuilderEngine", "TheoryConstructionEngine", "TheoryComparisonEngine",
+    "TheoryEvolutionEngine", "PredictionEngine", "VerificationEngine", "FalsificationEngine", "ScientificGapEngine",
     "normalize_string_sequence",
     "normalize_text",
 ]

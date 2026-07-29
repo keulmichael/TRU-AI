@@ -99,7 +99,6 @@ def test_builder_merges_identical_edges() -> None:
     edge = graph.edges[0]
 
     assert edge.occurrence_count == 2
-    import pytest
     assert edge.confidence_max == 0.90
 
 

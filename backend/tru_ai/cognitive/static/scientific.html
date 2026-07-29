@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRU-AI - Scientific Engine</title>
+  <link rel="stylesheet" href="/cognitive/static/scientific-demo.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>TRU-AI - Scientific Engine</h1>
+        <p>Analyse scientifique generique - Version 1.0.0</p>
+      </div>
+      <nav>
+        <a href="/">Cognitive</a>
+        <a href="/scientific-demo">Demo</a>
+        <a href="/docs">API</a>
+      </nav>
+    </header>
+
+    <section class="workspace">
+      <form id="scientific-form" class="panel" data-endpoint="/scientific/analyze">
+        <label for="question">Question scientifique</label>
+        <textarea id="question" rows="3" required>Analyze this scientific claim.</textarea>
+
+        <div class="grid">
+          <label>
+            Theory ID
+            <input id="theory-id" type="text" value="user-theory">
+          </label>
+          <label>
+            Theory name
+            <input id="theory-name" type="text" value="User theory">
+          </label>
+        </div>
+
+        <label for="claims">Claims theoriques, un par ligne</label>
+        <textarea id="claims" rows="5">Repeated recognition stabilizes a relation.</textarea>
+
+        <label for="prediction">Prediction</label>
+        <input id="prediction" type="text" value="Relation stability increases.">
+
+        <div class="grid">
+          <label>
+            Observation attendue
+            <input id="expected-observation" type="text" value="Observed stability increases.">
+          </label>
+          <label>
+            Condition de falsification
+            <input id="falsification-condition" type="text" value="Observed stability decreases.">
+          </label>
+        </div>
+
+        <label for="observation">Observation reelle</label>
+        <textarea id="observation" rows="3">Observed stability increases.</textarea>
+
+        <div class="grid">
+          <label>
+            Score de compatibilite
+            <input id="compatibility-score" type="number" min="0" max="1" step="0.01" value="0.9">
+          </label>
+          <label class="inline-control">
+            <input id="falsification-hit" type="checkbox">
+            Condition de falsification atteinte
+          </label>
+        </div>
+
+        <label class="inline-control">
+          <input id="include-raw" type="checkbox">
+          Inclure le resultat brut
+        </label>
+
+        <div class="actions">
+          <button type="submit">Analyser</button>
+          <button id="clear-button" type="button" class="secondary">Effacer</button>
+        </div>
+        <div class="actions">
+          <button id="confirmatory-button" type="button" class="secondary">Cas confirmatif</button>
+          <button id="contradictory-button" type="button" class="secondary">Cas contradictoire</button>
+        </div>
+        <div class="actions">
+          <button id="incomplete-button" type="button" class="secondary">Cas incomplet</button>
+        </div>
+      </form>
+
+      <section class="panel output">
+        <div id="status" class="status idle">Pret.</div>
+        <section id="summary" class="summary" aria-label="Resume"></section>
+        <section id="human-readable" class="conclusion" aria-label="Explication lisible"></section>
+
+        <section>
+          <h2>Resultats scientifiques</h2>
+          <div id="results" class="cards"></div>
+        </section>
+
+        <section>
+          <h2>Etapes executees</h2>
+          <div id="stage-cards" class="cards"></div>
+        </section>
+
+        <section>
+          <h2>Trace operateur</h2>
+          <div id="trace" class="trace"></div>
+        </section>
+
+        <details class="json-panel">
+          <summary>Resultat JSON</summary>
+          <pre id="raw-json"></pre>
+        </details>
+      </section>
+    </section>
+  </main>
+
+  <script src="/cognitive/static/scientific.js"></script>
+</body>
+</html>

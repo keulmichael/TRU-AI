@@ -93,7 +93,8 @@ class ContradictionEngine:
             if target is None or target.relation_id == relation.relation_id:
                 continue
 
-            pair = tuple(sorted((relation.relation_id, target.relation_id)))
+            first_id, second_id = sorted((relation.relation_id, target.relation_id))
+            pair = (first_id, second_id)
             if pair in seen_pairs:
                 continue
             seen_pairs.add(pair)

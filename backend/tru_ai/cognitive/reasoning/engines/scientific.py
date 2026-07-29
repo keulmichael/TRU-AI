@@ -7,13 +7,21 @@ from tru_ai.cognitive.reasoning.engines.base import ReasoningExecutionState, nor
 from tru_ai.cognitive.reasoning.models import (
     ReasoningStage,
     ReasoningStep,
+    PredictionConfidenceLevel,
+    ScenarioSimulation,
     ScientificGap,
     ScientificPrediction,
+    ScientificScenario,
     TheoryClaim,
     TheoryClaimStatus,
     TheoryComparison,
     TheoryEvolution,
     TheoryGraph,
+    TheoryHistory,
+    TheoryMaturity,
+    TheoryProposition,
+    TheoryPropositionRole,
+    TheorySnapshot,
     TruthStatus,
 )
 
@@ -181,30 +189,299 @@ class TheoryEvolutionEngine:
             strengthened_claims=tuple(sorted(strengthened)),
             weakened_claims=tuple(sorted(weakened)),
         )
-        return {"theory_evolution": state.theory_evolution.to_dict()}
+
+        history_payload = state.conversation_context.get("theory_history")
+        history_payload = history_payload if isinstance(history_payload, Mapping) else {}
+        raw_snapshots = _items(history_payload.get("snapshots"))
+        snapshots: list[TheorySnapshot] = []
+        for index, raw_snapshot in enumerate(raw_snapshots, start=1):
+            raw_propositions = _items(raw_snapshot.get("propositions") or raw_snapshot.get("claims"))
+            propositions: list[TheoryProposition] = []
+            for p_index, item in enumerate(raw_propositions, start=1):
+                text = normalize_text(item.get("text"))
+                if not text:
+                    continue
+                status = _claim_status(item.get("status"), ())
+                role_text = normalize_text(item.get("role")).casefold()
+                role = {r.value: r for r in TheoryPropositionRole}.get(role_text, TheoryPropositionRole.PROPOSITION)
+                confidence = item.get("confidence")
+                confidence = float(confidence) if isinstance(confidence, (int, float)) else 0.0
+                propositions.append(TheoryProposition(
+                    proposition_id=normalize_text(item.get("proposition_id") or item.get("id")) or f"snapshot-{index}-p{p_index}",
+                    text=text, role=role, status=status, confidence=max(0.0, min(1.0, confidence)),
+                ))
+            maturity_payload = raw_snapshot.get("maturity")
+            maturity_payload = maturity_payload if isinstance(maturity_payload, Mapping) else {}
+            snapshots.append(TheorySnapshot(
+                snapshot_id=normalize_text(raw_snapshot.get("snapshot_id") or raw_snapshot.get("id")) or f"snapshot-{index}",
+                theory_id=normalize_text(raw_snapshot.get("theory_id")) or state.theory.theory_id,
+                version=normalize_text(raw_snapshot.get("version")) or f"0.{index}",
+                propositions=tuple(propositions),
+                maturity=TheoryMaturity(
+                    score=float(maturity_payload.get("score", 0.0) or 0.0),
+                    level=normalize_text(maturity_payload.get("level")) or "embryonic",
+                    supported_ratio=float(maturity_payload.get("supported_ratio", 0.0) or 0.0),
+                    evidence_coverage=float(maturity_payload.get("evidence_coverage", 0.0) or 0.0),
+                    contradiction_ratio=float(maturity_payload.get("contradiction_ratio", 0.0) or 0.0),
+                ),
+                parent_snapshot_id=normalize_text(raw_snapshot.get("parent_snapshot_id")) or None,
+                change_summary=normalize_text(raw_snapshot.get("change_summary")),
+            ))
+
+        explicit_version = normalize_text(state.conversation_context.get("theory_version"))
+        if explicit_version:
+            next_version = explicit_version
+        elif snapshots:
+            last = snapshots[-1].version
+            parts = last.split(".")
+            if parts and parts[-1].isdigit():
+                parts[-1] = str(int(parts[-1]) + 1)
+                next_version = ".".join(parts)
+            else:
+                next_version = f"{last}.1"
+        else:
+            next_version = "1.0"
+
+        change_count = len(added) + len(removed) + len(strengthened) + len(weakened)
+        summary = (
+            f"{len(added)} ajout(s), {len(removed)} retrait(s), "
+            f"{len(strengthened)} renforcement(s), {len(weakened)} affaiblissement(s)."
+        )
+        parent_id = snapshots[-1].snapshot_id if snapshots else None
+        current_snapshot = TheorySnapshot(
+            snapshot_id=f"{state.theory.theory_id}@{next_version}",
+            theory_id=state.theory.theory_id,
+            version=next_version,
+            propositions=state.theory.propositions,
+            maturity=state.theory.maturity,
+            parent_snapshot_id=parent_id,
+            change_summary=summary if change_count else "Aucun changement structurel détecté.",
+        )
+        if not snapshots or snapshots[-1].to_dict() != current_snapshot.to_dict():
+            snapshots.append(current_snapshot)
+        state.theory_history = TheoryHistory(
+            theory_id=state.theory.theory_id,
+            snapshots=tuple(snapshots),
+            current_snapshot_id=current_snapshot.snapshot_id,
+        )
+        return {
+            "theory_evolution": state.theory_evolution.to_dict(),
+            "theory_history": state.theory_history.to_dict(),
+            "current_snapshot": current_snapshot.to_dict(),
+        }
 
 
 class PredictionEngine:
     stage = ReasoningStage.PREDICTION
 
+    _STATUS_BASE = {
+        TheoryClaimStatus.SUPPORTED: 0.82,
+        TheoryClaimStatus.PARTIAL: 0.58,
+        TheoryClaimStatus.UNSUPPORTED: 0.28,
+        TheoryClaimStatus.CONTRADICTED: 0.05,
+    }
+
     def execute(self, *, step: ReasoningStep, state: ReasoningExecutionState) -> Mapping[str, Any]:
+        predictions = self._build_predictions(state)
+        scenarios = self._build_scenarios(state)
+        simulations = self._simulate(predictions, scenarios)
+
+        state.scientific_predictions = predictions
+        state.scientific_scenarios = scenarios
+        state.scenario_simulations = simulations
+        return {
+            "scientific_predictions": [item.to_dict() for item in predictions],
+            "scientific_scenarios": [item.to_dict() for item in scenarios],
+            "scenario_simulations": [item.to_dict() for item in simulations],
+        }
+
+    def _build_predictions(self, state: ReasoningExecutionState) -> list[ScientificPrediction]:
         predictions: list[ScientificPrediction] = []
-        raw_predictions = state.conversation_context.get("predictions", ())
-        for index, item in enumerate(_items(raw_predictions), start=1):
+        raw_predictions = list(_items(state.conversation_context.get("predictions", ())))
+        raw_predictions.extend(self._rules_as_predictions(state.conversation_context.get("prediction_rules", ())))
+        claims = {claim.claim_id: claim for claim in state.theory_graph.claims}
+
+        for index, item in enumerate(raw_predictions, start=1):
             text = normalize_text(item.get("text"))
             if not text:
                 continue
             source_ids = item.get("source_claim_ids", ())
-            source_ids = tuple(normalize_text(value) for value in source_ids if normalize_text(value)) if isinstance(source_ids, (list, tuple)) else ()
+            source_ids = tuple(
+                normalize_text(value) for value in source_ids if normalize_text(value)
+            ) if isinstance(source_ids, (list, tuple)) else ()
+            assumptions = item.get("assumptions", ())
+            assumptions = tuple(
+                normalize_text(value) for value in assumptions if normalize_text(value)
+            ) if isinstance(assumptions, (list, tuple)) else ()
+            falsification = normalize_text(item.get("falsification_condition")) or None
+            expected = normalize_text(item.get("expected_observation")) or None
+            confidence, factors = self._confidence(
+                item=item,
+                source_ids=source_ids,
+                claims=claims,
+                maturity=state.theory.maturity.score,
+                falsification_condition=falsification,
+                expected_observation=expected,
+                assumptions=assumptions,
+            )
             predictions.append(ScientificPrediction(
                 prediction_id=normalize_text(item.get("id") or item.get("prediction_id")) or f"prediction-{index}",
                 text=text,
                 source_claim_ids=source_ids,
-                falsification_condition=normalize_text(item.get("falsification_condition")) or None,
+                falsification_condition=falsification,
                 status=normalize_text(item.get("status")) or "untested",
+                confidence=confidence,
+                confidence_level=self._confidence_level(confidence),
+                confidence_factors=factors,
+                assumptions=assumptions,
+                expected_observation=expected,
+                horizon=normalize_text(item.get("horizon")) or None,
             ))
-        state.scientific_predictions = predictions
-        return {"scientific_predictions": [item.to_dict() for item in predictions]}
+        return predictions
+
+    @staticmethod
+    def _rules_as_predictions(value: Any) -> list[Mapping[str, Any]]:
+        results: list[Mapping[str, Any]] = []
+        for index, rule in enumerate(_items(value), start=1):
+            condition = normalize_text(rule.get("if") or rule.get("condition"))
+            consequence = normalize_text(rule.get("then") or rule.get("consequence"))
+            if not condition or not consequence:
+                continue
+            payload = dict(rule)
+            payload.setdefault("id", f"prediction-rule-{index}")
+            payload["text"] = f"Si {condition}, alors {consequence}."
+            assumptions = list(payload.get("assumptions", ())) if isinstance(payload.get("assumptions"), (list, tuple)) else []
+            if condition not in assumptions:
+                assumptions.append(condition)
+            payload["assumptions"] = assumptions
+            results.append(payload)
+        return results
+
+    def _confidence(
+        self,
+        *,
+        item: Mapping[str, Any],
+        source_ids: tuple[str, ...],
+        claims: Mapping[str, TheoryClaim],
+        maturity: float,
+        falsification_condition: str | None,
+        expected_observation: str | None,
+        assumptions: tuple[str, ...],
+    ) -> tuple[float, tuple[str, ...]]:
+        explicit = item.get("confidence")
+        if isinstance(explicit, (int, float)):
+            value = self._clamp(float(explicit))
+            return value, ("confiance fournie explicitement",)
+
+        factors: list[str] = []
+        source_scores: list[float] = []
+        for source_id in source_ids:
+            claim = claims.get(source_id)
+            if claim is None:
+                factors.append(f"source inconnue : {source_id}")
+                source_scores.append(0.20)
+                continue
+            score = self._STATUS_BASE[claim.status]
+            if claim.evidence:
+                score = min(1.0, score + min(0.10, len(claim.evidence) * 0.04))
+                factors.append(f"preuve associée à {source_id}")
+            factors.append(f"statut {claim.status.value} pour {source_id}")
+            source_scores.append(score)
+
+        source_score = sum(source_scores) / len(source_scores) if source_scores else 0.25
+        maturity_score = self._clamp(float(maturity or 0.0))
+        confidence = (0.75 * source_score) + (0.25 * maturity_score)
+        factors.append(f"maturité de théorie : {maturity_score:.2f}")
+        if falsification_condition:
+            confidence += 0.05
+            factors.append("condition de falsification explicite")
+        if expected_observation:
+            confidence += 0.05
+            factors.append("observation attendue explicite")
+        if assumptions:
+            confidence -= min(0.15, len(assumptions) * 0.03)
+            factors.append(f"{len(assumptions)} hypothèse(s) conditionnelle(s)")
+        return round(self._clamp(confidence), 4), tuple(factors)
+
+    @staticmethod
+    def _confidence_level(value: float) -> PredictionConfidenceLevel:
+        if value < 0.20:
+            return PredictionConfidenceLevel.VERY_LOW
+        if value < 0.40:
+            return PredictionConfidenceLevel.LOW
+        if value < 0.65:
+            return PredictionConfidenceLevel.MODERATE
+        if value < 0.85:
+            return PredictionConfidenceLevel.HIGH
+        return PredictionConfidenceLevel.VERY_HIGH
+
+    @staticmethod
+    def _build_scenarios(state: ReasoningExecutionState) -> list[ScientificScenario]:
+        scenarios: list[ScientificScenario] = []
+        for index, item in enumerate(_items(state.conversation_context.get("scenarios", ())), start=1):
+            name = normalize_text(item.get("name")) or f"Scénario {index}"
+            assumptions = item.get("assumptions", ())
+            assumptions = tuple(
+                normalize_text(value) for value in assumptions if normalize_text(value)
+            ) if isinstance(assumptions, (list, tuple)) else ()
+            variables = item.get("variables")
+            variables = dict(variables) if isinstance(variables, Mapping) else {}
+            scenarios.append(ScientificScenario(
+                scenario_id=normalize_text(item.get("id") or item.get("scenario_id")) or f"scenario-{index}",
+                name=name,
+                description=normalize_text(item.get("description")),
+                assumptions=assumptions,
+                variables=variables,
+            ))
+        return scenarios
+
+    def _simulate(
+        self,
+        predictions: list[ScientificPrediction],
+        scenarios: list[ScientificScenario],
+    ) -> list[ScenarioSimulation]:
+        simulations: list[ScenarioSimulation] = []
+        for scenario in scenarios:
+            scenario_assumptions = {item.casefold(): item for item in scenario.assumptions}
+            modifier = scenario.variables.get("confidence_modifier", 0.0)
+            modifier = float(modifier) if isinstance(modifier, (int, float)) else 0.0
+            for prediction in predictions:
+                matched = tuple(
+                    assumption for assumption in prediction.assumptions
+                    if assumption.casefold() in scenario_assumptions
+                )
+                missing = tuple(
+                    assumption for assumption in prediction.assumptions
+                    if assumption.casefold() not in scenario_assumptions
+                )
+                if not prediction.assumptions:
+                    outcome = "applicable"
+                    rationale = "La prédiction ne déclare aucune hypothèse de scénario obligatoire."
+                    assumption_adjustment = 0.0
+                elif missing:
+                    outcome = "conditional"
+                    rationale = "Le scénario ne satisfait pas toutes les hypothèses déclarées."
+                    assumption_adjustment = -min(0.30, len(missing) * 0.10)
+                else:
+                    outcome = "supported_by_scenario"
+                    rationale = "Le scénario satisfait toutes les hypothèses déclarées."
+                    assumption_adjustment = min(0.12, len(matched) * 0.04)
+                adjusted = round(self._clamp(prediction.confidence + assumption_adjustment + modifier), 4)
+                simulations.append(ScenarioSimulation(
+                    simulation_id=f"{scenario.scenario_id}:{prediction.prediction_id}",
+                    scenario_id=scenario.scenario_id,
+                    prediction_id=prediction.prediction_id,
+                    outcome=outcome,
+                    adjusted_confidence=adjusted,
+                    matched_assumptions=matched,
+                    missing_assumptions=missing,
+                    rationale=rationale,
+                ))
+        return simulations
+
+    @staticmethod
+    def _clamp(value: float) -> float:
+        return max(0.0, min(1.0, value))
 
 
 class ScientificGapEngine:

@@ -128,3 +128,112 @@ def test_reasoning_reload(monkeypatch) -> None:
     assert response.status_code == 200
     assert response.json()["status"] == "reloaded"
     assert callable_store.cleared is True
+
+
+def test_scientific_demo_runs_full_pipeline(monkeypatch) -> None:
+    client = create_client(monkeypatch)
+
+    response = client.post(
+        "/reasoning/scientific-demo",
+        json={
+            "observation": (
+                "La reconnaissance répétée ne stabilise pas cette relation."
+            ),
+            "claims": [
+                "La reconnaissance répétée stabilise une relation.",
+                "Une relation stabilisée rend les prédictions plus robustes.",
+            ],
+            "prediction_rule": {
+                "id": "rule-stability",
+                "statement": (
+                    "La répétition de la reconnaissance augmente la stabilité."
+                ),
+                "confidence": 0.85,
+            },
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()
+    trace = {
+        item["operator"]
+        for item in data["operator_trace"]
+    }
+
+    assert "TheoryEvolutionOperator" in trace
+    assert "PredictionOperator" in trace
+    assert "VerificationOperator" in trace
+    assert "FalsificationOperator" in trace
+    assert "human_readable" in data
+    assert "raw_result" in data
+    assert data["summary"]["falsified"] is True
+    assert data["summary"]["revision_required"] is True
+    assert data["summary"]["verification_status"] == "contradicted"
+    assert "contredite" in data["human_readable"]["conclusion"]
+    assert "Falsifié : True" in data["human_readable"]["falsification_explanation"]
+
+
+def test_scientific_demo_human_readable_reflexive_view(monkeypatch) -> None:
+    client = create_client(monkeypatch)
+
+    response = client.post(
+        "/reasoning/scientific-demo",
+        json={},
+    )
+
+    assert response.status_code == 200
+    view = response.json()["human_readable"]["reflexive_view"]
+
+    assert set(view) == {
+        "observed",
+        "recognized",
+        "predicted",
+        "confirmed_or_refuted_by",
+        "learning",
+    }
+    assert view["observed"]
+    assert view["predicted"]
+
+
+def test_scientific_demo_human_readable_does_not_invent_missing_data() -> None:
+    human = api._build_human_readable({})
+
+    assert "Non déterminé par cette exécution." in human["conclusion"]
+    assert all(
+        value == "Non déterminé par cette exécution."
+        for value in human["reflexive_view"].values()
+    )
+
+
+def test_scientific_demo_confirmatory_case_is_supported(monkeypatch) -> None:
+    client = create_client(monkeypatch)
+
+    response = client.post(
+        "/reasoning/scientific-demo",
+        json={
+            "observation": (
+                "La reconnaissance répétée stabilise cette relation."
+            ),
+            "claims": [
+                "La reconnaissance répétée stabilise une relation.",
+                "Une relation stabilisée rend les prédictions plus robustes.",
+            ],
+            "prediction_rule": {
+                "id": "rule-stability",
+                "statement": (
+                    "La répétition de la reconnaissance augmente la stabilité."
+                ),
+                "confidence": 0.85,
+            },
+            "compatibility_score": 0.9,
+            "matches_falsification_condition": False,
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()
+
+    assert data["summary"]["verification_status"] == "confirmed"
+    assert data["summary"]["falsified"] is False
+    assert data["summary"]["final_action"] == "retain"
+    assert "confirmée" in data["human_readable"]["conclusion"]

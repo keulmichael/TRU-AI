@@ -1,74 +1,50 @@
-# TRU-AI — Livraison 7.4
+# Installation de TRU-AI 1.0.0
 
-## Objet
+Cette documentation concerne la version `1.0.0`.
 
-Cette livraison ajoute l'analyse déterministe des contradictions réflexives.
-Elle conserve les contradictions déjà déclarées dans le contexte et examine
-uniquement des métadonnées explicites du graphe de reconnaissance.
+## Methode rapide
 
-## Métadonnées reconnues
-
-### Référence de contradiction explicite
-
-```python
-"attributes": {"contradicts_relation_id": "r2"}
-```
-
-### Polarité explicite
-
-```python
-"attributes": {"polarity": "positive"}
-"attributes": {"polarity": "negative"}
-```
-
-Deux polarités opposées portant sur la même paire orientée de nœuds produisent
-une contradiction réflexive explicite.
-
-### Tension potentielle
-
-```python
-"attributes": {"tension": True}
-"attributes": {"tension": "potential"}
-```
-
-Une tension potentielle est signalée séparément et n'est pas présentée comme
-une contradiction établie.
-
-## Principe de sûreté épistémique
-
-Le moteur ne déduit rien à partir de mots tels que `nie`, `refuse`, `accepte`
-ou `reconnaît`. En l'absence de métadonnées explicites, aucune contradiction
-réflexive n'est créée.
-
-## Fichiers
-
-```text
-backend/tru_ai/cognitive/reasoning/engines/contradictions.py
-backend/tru_ai/cognitive/reasoning/engines/synthesis.py
-backend/tests/cognitive/test_reasoning_engines.py
-backend/tests/cognitive/test_reasoning_executor.py
-backend/tests/cognitive/test_reflexive_contradictions.py
-```
-
-## Installation
-
-Copier le dossier `backend` de l'archive dans la racine du dépôt TRU-AI et
-accepter le remplacement des fichiers présents dans cette livraison.
-
-## Tests
-
-Depuis `C:\Sites\Projects\TRU-AI\backend` :
+Placez-vous a la racine du depot :
 
 ```cmd
-python -m py_compile tru_ai\cognitiveeasoning\engines\contradictions.py
-python -m py_compile tru_ai\cognitiveeasoning\engines\synthesis.py
-python -m pytest tests\cognitive	est_reflexive_contradictions.py -v
-python -m pytest tests\cognitive	est_reasoning_engines.py -v
-python -m pytest tests\cognitive	est_reasoning_executor.py -v
-python -m pytest
+cd <repo>
 ```
 
-## Résultat attendu
+Utilisez le depot Git comme source de verite. N'utilisez pas d'ancienne archive
+ZIP comme reference si le depot est disponible.
 
-La base validée contient 420 tests. Cette livraison ajoute 10 tests, soit un
-total attendu de 430 tests si aucun autre test n'a été ajouté localement.
+## Dependances de developpement
+
+Installez le paquet et les outils qualite depuis la racine du depot :
+
+```cmd
+python -m pip install -e "backend[dev]"
+```
+
+## Lancement local
+
+```cmd
+cd backend
+python -m uvicorn tru_ai.api.main:app --host 127.0.0.1 --port 8000
+```
+
+URLs utiles :
+
+- `http://127.0.0.1:8000/scientific`
+- `http://127.0.0.1:8000/scientific/health`
+- `http://127.0.0.1:8000/scientific-demo`
+- `http://127.0.0.1:8000/docs`
+
+## Validation
+
+Dans le depot complet :
+
+```cmd
+python -m pytest
+python -m ruff check backend/tru_ai backend/tests backend/scripts
+python -m mypy backend/tru_ai
+git diff --check
+```
+
+Resultat attendu dans l'etat 1.0.0 : suite complete verte, Ruff vert, mypy
+vert et diff sans erreur d'espaces.

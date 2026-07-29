@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from tru_ai.graph.models import GraphEdge
+from typing import Protocol
 from tru_ai.inference.models import (
     EdgeKey,
     InferenceRule,
@@ -9,8 +9,15 @@ from tru_ai.inference.models import (
 )
 
 
+class RuleEdge(Protocol):
+    subject_id: str
+    predicate: str
+    object_id: str
+    confidence_max: float
+
+
 def edge_confidence(
-    edge: GraphEdge,
+    edge: RuleEdge,
 ) -> float:
     return clamp_confidence(
         edge.confidence_max
@@ -35,7 +42,7 @@ def calculate_confidence(
 
 def apply_inverse_rule(
     rule: InferenceRule,
-    edge: GraphEdge,
+    edge: RuleEdge,
 ) -> tuple[EdgeKey, dict[str, str], float]:
     predicate = (
         rule.target_predicate
@@ -77,7 +84,7 @@ def apply_inverse_rule(
 
 def apply_symmetry_rule(
     rule: InferenceRule,
-    edge: GraphEdge,
+    edge: RuleEdge,
 ) -> tuple[EdgeKey, dict[str, str], float]:
     predicate = (
         rule.target_predicate
@@ -113,8 +120,8 @@ def apply_symmetry_rule(
 
 def apply_transitivity_rule(
     rule: InferenceRule,
-    first_edge: GraphEdge,
-    second_edge: GraphEdge,
+    first_edge: RuleEdge,
+    second_edge: RuleEdge,
 ) -> tuple[EdgeKey, dict[str, str], float]:
     predicate = (
         rule.target_predicate

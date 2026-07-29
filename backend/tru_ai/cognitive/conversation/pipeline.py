@@ -96,6 +96,8 @@ class ConversationPipeline:
             intent=intent,
             previous_turn=previous_turn,
         ):
+            if previous_turn is None:
+                raise ValueError("A follow-up response requires a previous turn.")
             return self._answer_follow_up(
                 conversation_id=conversation_id,
                 question=question,

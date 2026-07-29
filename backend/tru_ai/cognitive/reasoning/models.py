@@ -23,6 +23,8 @@ class ReasoningStage(StrEnum):
     THEORY_COMPARISON = "theory_comparison"
     THEORY_EVOLUTION = "theory_evolution"
     PREDICTION = "prediction"
+    VERIFICATION = "verification"
+    FALSIFICATION = "falsification"
     SCIENTIFIC_GAPS = "scientific_gaps"
     CONTRADICTIONS = "contradictions"
     MISSING_KNOWLEDGE = "missing_knowledge"
@@ -454,6 +456,106 @@ class TheoryGraph:
         }
 
 
+
+
+class TheoryPropositionRole(StrEnum):
+    AXIOM = "axiom"
+    PROPOSITION = "proposition"
+    HYPOTHESIS = "hypothesis"
+
+
+@dataclass(frozen=True)
+class TheoryEvidence:
+    evidence_id: str
+    description: str
+    source: str | None = None
+    strength: float = 1.0
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class TheoryProposition:
+    proposition_id: str
+    text: str
+    role: TheoryPropositionRole = TheoryPropositionRole.PROPOSITION
+    status: TheoryClaimStatus = TheoryClaimStatus.UNSUPPORTED
+    evidence_ids: tuple[str, ...] = ()
+    limitations: tuple[str, ...] = ()
+    confidence: float = 0.0
+    source_claim_ids: tuple[str, ...] = ()
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "proposition_id": self.proposition_id,
+            "text": self.text,
+            "role": self.role.value,
+            "status": self.status.value,
+            "evidence_ids": list(self.evidence_ids),
+            "limitations": list(self.limitations),
+            "confidence": self.confidence,
+            "source_claim_ids": list(self.source_claim_ids),
+        }
+
+
+@dataclass(frozen=True)
+class TheoryRevision:
+    revision_id: str
+    action: str
+    proposition_id: str
+    description: str
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class TheoryMaturity:
+    score: float = 0.0
+    level: str = "embryonic"
+    supported_ratio: float = 0.0
+    evidence_coverage: float = 0.0
+    contradiction_ratio: float = 0.0
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class Theory:
+    theory_id: str = "current-theory"
+    title: str = "Théorie courante"
+    domain: str | None = None
+    propositions: tuple[TheoryProposition, ...] = ()
+    evidence: tuple[TheoryEvidence, ...] = ()
+    revisions: tuple[TheoryRevision, ...] = ()
+    contradictions: tuple[str, ...] = ()
+    maturity: TheoryMaturity = field(default_factory=TheoryMaturity)
+
+    @property
+    def axioms(self) -> tuple[TheoryProposition, ...]:
+        return tuple(p for p in self.propositions if p.role is TheoryPropositionRole.AXIOM)
+
+    @property
+    def hypotheses(self) -> tuple[TheoryProposition, ...]:
+        return tuple(p for p in self.propositions if p.role is TheoryPropositionRole.HYPOTHESIS)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "theory_id": self.theory_id,
+            "title": self.title,
+            "domain": self.domain,
+            "propositions": [p.to_dict() for p in self.propositions],
+            "axioms": [p.to_dict() for p in self.axioms],
+            "hypotheses": [p.to_dict() for p in self.hypotheses],
+            "evidence": [e.to_dict() for e in self.evidence],
+            "revisions": [r.to_dict() for r in self.revisions],
+            "contradictions": list(self.contradictions),
+            "maturity": self.maturity.to_dict(),
+        }
+
+
 @dataclass(frozen=True)
 class TheoryComparison:
     compared_theory_id: str
@@ -485,6 +587,78 @@ class TheoryEvolution:
         return {key: list(value) for key, value in asdict(self).items()}
 
 
+class OperatorStatus(StrEnum):
+    SUCCESS = "success"
+    SKIPPED = "skipped"
+    FAILED = "failed"
+
+
+@dataclass(frozen=True)
+class OperatorTrace:
+    operator: str
+    stage: ReasoningStage
+    position: int
+    status: OperatorStatus = OperatorStatus.SUCCESS
+    inputs: tuple[str, ...] = ()
+    outputs: tuple[str, ...] = ()
+    error: str | None = None
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "operator": self.operator,
+            "stage": self.stage.value,
+            "position": self.position,
+            "status": self.status.value,
+            "inputs": list(self.inputs),
+            "outputs": list(self.outputs),
+            "error": self.error,
+        }
+
+
+@dataclass(frozen=True)
+class TheorySnapshot:
+    snapshot_id: str
+    theory_id: str
+    version: str
+    propositions: tuple[TheoryProposition, ...] = ()
+    maturity: TheoryMaturity = field(default_factory=TheoryMaturity)
+    parent_snapshot_id: str | None = None
+    change_summary: str = ""
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "snapshot_id": self.snapshot_id,
+            "theory_id": self.theory_id,
+            "version": self.version,
+            "propositions": [item.to_dict() for item in self.propositions],
+            "maturity": self.maturity.to_dict(),
+            "parent_snapshot_id": self.parent_snapshot_id,
+            "change_summary": self.change_summary,
+        }
+
+
+@dataclass(frozen=True)
+class TheoryHistory:
+    theory_id: str
+    snapshots: tuple[TheorySnapshot, ...] = ()
+    current_snapshot_id: str | None = None
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "theory_id": self.theory_id,
+            "snapshots": [item.to_dict() for item in self.snapshots],
+            "current_snapshot_id": self.current_snapshot_id,
+        }
+
+
+class PredictionConfidenceLevel(StrEnum):
+    VERY_LOW = "very_low"
+    LOW = "low"
+    MODERATE = "moderate"
+    HIGH = "high"
+    VERY_HIGH = "very_high"
+
+
 @dataclass(frozen=True)
 class ScientificPrediction:
     prediction_id: str
@@ -492,13 +666,167 @@ class ScientificPrediction:
     source_claim_ids: tuple[str, ...] = ()
     falsification_condition: str | None = None
     status: str = "untested"
+    confidence: float = 0.0
+    confidence_level: PredictionConfidenceLevel = PredictionConfidenceLevel.VERY_LOW
+    confidence_factors: tuple[str, ...] = ()
+    assumptions: tuple[str, ...] = ()
+    expected_observation: str | None = None
+    horizon: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return {
-            "prediction_id": self.prediction_id, "text": self.text,
+            "prediction_id": self.prediction_id,
+            "text": self.text,
             "source_claim_ids": list(self.source_claim_ids),
             "falsification_condition": self.falsification_condition,
             "status": self.status,
+            "confidence": self.confidence,
+            "confidence_level": self.confidence_level.value,
+            "confidence_factors": list(self.confidence_factors),
+            "assumptions": list(self.assumptions),
+            "expected_observation": self.expected_observation,
+            "horizon": self.horizon,
+        }
+
+
+@dataclass(frozen=True)
+class ScientificScenario:
+    scenario_id: str
+    name: str
+    description: str = ""
+    assumptions: tuple[str, ...] = ()
+    variables: dict[str, Any] = field(default_factory=dict)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "scenario_id": self.scenario_id,
+            "name": self.name,
+            "description": self.description,
+            "assumptions": list(self.assumptions),
+            "variables": dict(self.variables),
+        }
+
+
+@dataclass(frozen=True)
+class ScenarioSimulation:
+    simulation_id: str
+    scenario_id: str
+    prediction_id: str
+    outcome: str
+    adjusted_confidence: float
+    matched_assumptions: tuple[str, ...] = ()
+    missing_assumptions: tuple[str, ...] = ()
+    rationale: str = ""
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "simulation_id": self.simulation_id,
+            "scenario_id": self.scenario_id,
+            "prediction_id": self.prediction_id,
+            "outcome": self.outcome,
+            "adjusted_confidence": self.adjusted_confidence,
+            "matched_assumptions": list(self.matched_assumptions),
+            "missing_assumptions": list(self.missing_assumptions),
+            "rationale": self.rationale,
+        }
+
+
+
+class VerificationStatus(StrEnum):
+    UNTESTED = "untested"
+    CONFIRMED = "confirmed"
+    WEAKENED = "weakened"
+    CONTRADICTED = "contradicted"
+    INCONCLUSIVE = "inconclusive"
+
+
+@dataclass(frozen=True)
+class ScientificObservation:
+    observation_id: str
+    text: str
+    prediction_id: str | None = None
+    evidence_ids: tuple[str, ...] = ()
+    compatibility_score: float | None = None
+    matches_falsification_condition: bool = False
+    metadata: dict[str, Any] = field(default_factory=dict)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "observation_id": self.observation_id,
+            "text": self.text,
+            "prediction_id": self.prediction_id,
+            "evidence_ids": list(self.evidence_ids),
+            "compatibility_score": self.compatibility_score,
+            "matches_falsification_condition": self.matches_falsification_condition,
+            "metadata": dict(self.metadata),
+        }
+
+
+@dataclass(frozen=True)
+class VerificationReport:
+    report_id: str
+    prediction_id: str
+    observation_ids: tuple[str, ...] = ()
+    status: VerificationStatus = VerificationStatus.UNTESTED
+    consistency_score: float = 0.0
+    evidence_score: float = 0.0
+    rationale: str = ""
+    limitations: tuple[str, ...] = ()
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "report_id": self.report_id,
+            "prediction_id": self.prediction_id,
+            "observation_ids": list(self.observation_ids),
+            "status": self.status.value,
+            "consistency_score": self.consistency_score,
+            "evidence_score": self.evidence_score,
+            "rationale": self.rationale,
+            "limitations": list(self.limitations),
+        }
+
+
+@dataclass(frozen=True)
+class FalsificationReport:
+    report_id: str
+    prediction_id: str
+    verification_report_id: str
+    falsified: bool = False
+    formal_test_possible: bool = False
+    falsification_condition_met: bool = False
+    revision_required: bool = False
+    affected_claim_ids: tuple[str, ...] = ()
+    rationale: str = ""
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "report_id": self.report_id,
+            "prediction_id": self.prediction_id,
+            "verification_report_id": self.verification_report_id,
+            "falsified": self.falsified,
+            "formal_test_possible": self.formal_test_possible,
+            "falsification_condition_met": self.falsification_condition_met,
+            "revision_required": self.revision_required,
+            "affected_claim_ids": list(self.affected_claim_ids),
+            "rationale": self.rationale,
+        }
+
+
+@dataclass(frozen=True)
+class ScientificTheoryRevision:
+    revision_id: str
+    prediction_id: str
+    action: str
+    affected_claim_ids: tuple[str, ...] = ()
+    reason: str = ""
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "revision_id": self.revision_id,
+            "prediction_id": self.prediction_id,
+            "action": self.action,
+            "affected_claim_ids": list(self.affected_claim_ids),
+            "reason": self.reason,
         }
 
 
@@ -543,9 +871,18 @@ class ReasoningResult:
     recognition_meanings: tuple[RecognitionMeaning, ...] = ()
     recognition_gaps: tuple[RecognitionGap, ...] = ()
     theory_graph: TheoryGraph = field(default_factory=TheoryGraph)
+    theory: Theory = field(default_factory=Theory)
     theory_comparisons: tuple[TheoryComparison, ...] = ()
     theory_evolution: TheoryEvolution = field(default_factory=TheoryEvolution)
+    theory_history: TheoryHistory = field(default_factory=lambda: TheoryHistory(theory_id="current-theory"))
+    operator_trace: tuple[OperatorTrace, ...] = ()
     scientific_predictions: tuple[ScientificPrediction, ...] = ()
+    scientific_scenarios: tuple[ScientificScenario, ...] = ()
+    scenario_simulations: tuple[ScenarioSimulation, ...] = ()
+    scientific_observations: tuple[ScientificObservation, ...] = ()
+    verification_reports: tuple[VerificationReport, ...] = ()
+    falsification_reports: tuple[FalsificationReport, ...] = ()
+    scientific_theory_revisions: tuple[ScientificTheoryRevision, ...] = ()
     scientific_gaps: tuple[ScientificGap, ...] = ()
     contradictions: tuple[str, ...] = ()
     missing_knowledge: tuple[str, ...] = ()
@@ -583,9 +920,18 @@ class ReasoningResult:
                 gap.to_dict() for gap in self.recognition_gaps
             ],
             "theory_graph": self.theory_graph.to_dict(),
+            "theory": self.theory.to_dict(),
             "theory_comparisons": [item.to_dict() for item in self.theory_comparisons],
             "theory_evolution": self.theory_evolution.to_dict(),
+            "theory_history": self.theory_history.to_dict(),
+            "operator_trace": [item.to_dict() for item in self.operator_trace],
             "scientific_predictions": [item.to_dict() for item in self.scientific_predictions],
+            "scientific_scenarios": [item.to_dict() for item in self.scientific_scenarios],
+            "scenario_simulations": [item.to_dict() for item in self.scenario_simulations],
+            "scientific_observations": [item.to_dict() for item in self.scientific_observations],
+            "verification_reports": [item.to_dict() for item in self.verification_reports],
+            "falsification_reports": [item.to_dict() for item in self.falsification_reports],
+            "scientific_theory_revisions": [item.to_dict() for item in self.scientific_theory_revisions],
             "scientific_gaps": [item.to_dict() for item in self.scientific_gaps],
             "contradictions": list(self.contradictions),
             "missing_knowledge": list(self.missing_knowledge),

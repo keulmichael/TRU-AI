@@ -82,7 +82,7 @@ class DeltaOperatorEngine:
         evidence: tuple[CognitiveEvidence, ...],
     ) -> CognitiveComparison:
         states = self._explicit_states(question)
-        provenance = []
+        provenance: list[str] = []
         dimensions = set()
         lower_question = question.lower()
         if not states:

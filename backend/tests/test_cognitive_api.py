@@ -71,6 +71,30 @@ def test_root_serves_cognitive_interface():
     assert "/cognitive/ask" in response.text
 
 
+def test_scientific_demo_page_is_available():
+    client = TestClient(app)
+
+    response = client.get("/scientific-demo")
+
+    assert response.status_code == 200
+    assert "TRU-AI - Pipeline scientifique" in response.text
+    assert "/reasoning/scientific-demo" in response.text
+
+
+def test_scientific_workbench_page_is_available():
+    client = TestClient(app)
+
+    response = client.get("/scientific")
+
+    assert response.status_code == 200
+    assert "TRU-AI" in response.text
+    assert "/scientific/analyze" in response.text
+    assert "/cognitive/static/scientific.js" in response.text
+    assert "Cas confirmatif" in response.text
+    assert "Cas contradictoire" in response.text
+    assert "Cas incomplet" in response.text
+
+
 def test_cognitive_follow_up_reuses_previous_execution():
     cognitive_api.get_core.cache_clear()
     cognitive_api.get_repository.cache_clear()

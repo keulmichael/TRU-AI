@@ -2,7 +2,6 @@ from tru_ai.graph.builder import KnowledgeGraph
 from tru_ai.graph.models import GraphEdge, GraphNode
 from tru_ai.inference.engine import InferenceEngine
 from tru_ai.inference.models import (
-    InferenceResult,
     InferenceTrace,
 )
 from tru_ai.inference.repository import (

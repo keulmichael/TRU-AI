@@ -1,6 +1,6 @@
 [project]
 name = "tru-ai"
-version = "0.9.1"
+version = "1.0.0"
 description = "Artificial Intelligence for the Universal Reflexivity Theory"
 requires-python = ">=3.11"
 
@@ -16,11 +16,41 @@ dependencies = [
     "python-dotenv",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+]
+
+[tool.setuptools.packages.find]
+include = ["tru_ai*"]
+exclude = ["backend*", "scripts*", "tests*"]
+
 [tool.black]
 line-length = 88
 
 [tool.ruff]
 line-length = 88
+target-version = "py311"
+exclude = [
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+    "*.egg-info",
+]
+
+[tool.ruff.lint]
+select = ["F"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["tru_ai"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
