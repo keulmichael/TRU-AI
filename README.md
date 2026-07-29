@@ -1,8 +1,9 @@
 # TRU-AI
 
-**Version active : 0.9.5-dev — Scientific Memory en développement**
+**Version active : 0.9.6 — Generic Scientific Engine**
 
-La version `0.9.5-dev` est une version de développement active. Elle ne doit pas être présentée comme une publication finale `0.9.5`.
+La version `0.9.6` stabilise le moteur scientifique générique, son API publique
+et la compatibilité du démonstrateur scientifique historique.
 
 <p align="center">
 
@@ -247,7 +248,31 @@ source .venv/bin/activate
 Installation des dépendances :
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -e "backend[dev]"
+```
+
+---
+
+# Lancement local
+
+Depuis la racine du dépôt :
+
+```bash
+cd backend
+python -m uvicorn tru_ai.api.main:app --host 127.0.0.1 --port 8000
+```
+
+URLs locales :
+
+- API : `http://127.0.0.1:8000`
+- OpenAPI : `http://127.0.0.1:8000/docs`
+- Santé scientifique : `http://127.0.0.1:8000/scientific/health`
+- Démonstrateur : `http://127.0.0.1:8000/scientific-demo`
+
+Variables d'environnement strictement nécessaires :
+
+```text
+Aucune pour le moteur scientifique local 0.9.6.
 ```
 
 ---

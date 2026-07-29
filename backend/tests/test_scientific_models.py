@@ -67,7 +67,7 @@ def test_minimal_scientific_analysis_request_defaults() -> None:
 def test_complete_scientific_analysis_request_serializes() -> None:
     request = ScientificAnalysisRequest(
         question="Compare this theory with observations.",
-        theory_version="0.9.6-dev",
+        theory_version="0.9.6",
         theory=ScientificTheoryInput(
             id="theory-a",
             name="Theory A",

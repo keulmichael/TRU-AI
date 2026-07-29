@@ -1,6 +1,23 @@
-## [0.9.5-dev] - Unreleased
+## [0.9.6]
 
-- préparation de la version active `0.9.5-dev` ;
+- added public scientific analysis models for generic scientific requests and
+  results;
+- added `ScientificInputAdapter` to isolate mapping from public inputs to
+  reasoning context;
+- added `ScientificService` as the application facade over `ReasoningPlanner`
+  and `ReasoningExecutor`;
+- added `ScientificExplanationService` for reusable summaries, stage cards, and
+  human-readable projections derived from real results;
+- exposed `GET /scientific/health` and `POST /scientific/analyze`;
+- migrated `POST /reasoning/scientific-demo` to the generic scientific service
+  while preserving the historical response contract;
+- preserved compatibility with `GET /scientific-demo`;
+- kept scientific revisions as recommendations, not applied mutations;
+- kept persistence disabled and absent from the scientific API.
+
+## [0.9.5-dev] - Historical development line
+
+- préparation de l'ancienne ligne de développement `0.9.5-dev` ;
 - ajout d'une source Python unique de version pour le package, la CLI et les métadonnées FastAPI ;
 - nettoyage du suivi Git des artefacts générés (`__pycache__`, fichiers `.pyc`, métadonnées `.egg-info`, archives et verrous temporaires).
 

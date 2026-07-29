@@ -19,7 +19,7 @@ sources.
 
 ## Current Software Baseline
 
-Current active line: `0.9.5-dev`.
+Current active line: `0.9.6`.
 
 Recently integrated capabilities:
 
@@ -39,25 +39,27 @@ Observation
 Current demonstrator:
 
 - `GET /scientific-demo`: `integrated`;
-- `POST /reasoning/scientific-demo`: `integrated`.
+- `POST /reasoning/scientific-demo`: `integrated`;
+- `GET /scientific/health`: `integrated`;
+- `POST /scientific/analyze`: `integrated`.
 
 Current quality baseline:
 
-- full test suite: `466 passed`;
+- full test suite: `514 passed`;
 - Ruff: passing;
 - mypy on `backend/tru_ai`: passing.
 
-## 0.9.5-dev Focus
+## 0.9.6 Focus
 
-The `0.9.5-dev` line should stabilize the integrated scientific pipeline before
-an alpha milestone.
+The `0.9.6` line stabilizes the integrated scientific pipeline as a generic
+scientific API and keeps the historical demo compatible.
 
 Recommended focus:
 
-- keep the scientific demo aligned with real reasoning results;
+- keep the scientific demo aligned with the generic scientific service;
 - preserve human-readable explanations derived from raw outputs;
-- improve central documentation;
-- audit untracked corpus and formalization material;
+- keep central documentation aligned with the release state;
+- audit untracked corpus and formalization material separately;
 - decide what belongs in Git and what remains generated or external.
 
 ## Integrated Research Capabilities
@@ -157,14 +159,14 @@ scientific review.
 
 The following should remain deferred until explicitly approved:
 
-- `0.9.5-alpha` tagging;
+- broad alpha tagging before the `0.9.6` release is marked;
 - broad corpus integration;
 - release documentation integration;
 - normative scientific document integration;
 - independent observatory operation.
 
-The current recommendation is to continue on `0.9.5-dev` until central
-documentation, formalization status, and corpus policy are arbitrated.
+The current recommendation is to tag `v0.9.6` after release validation, then
+continue corpus and formalization decisions in separate lots.
 
 ## Research Integrity Rules
 

@@ -178,7 +178,7 @@ def test_scientific_analyze_complete(monkeypatch: MonkeyPatch) -> None:
         "/scientific/analyze",
         json={
             "question": "Analyze complete request.",
-            "theory_version": "0.9.6-dev",
+            "theory_version": "0.9.6",
             "theory": {
                 "id": "theory-a",
                 "name": "Theory A",

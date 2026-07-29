@@ -120,7 +120,7 @@ class ScientificDemoRequestAdapter:
         rule = payload.prediction_rule
         return ScientificAnalysisRequest(
             question="Démonstration du pipeline scientifique TRU-AI",
-            theory_version="0.9.5-dev-demo",
+            theory_version="0.9.6-demo",
             theory=ScientificTheoryInput(
                 id="tru-scientific-demo",
                 name="TRU-AI scientific demo",
