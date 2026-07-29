@@ -118,12 +118,17 @@ class ScientificSummary(ScientificModel):
     """Neutral counts and statuses derived from actual scientific results."""
 
     theory_maturity: JsonObject = Field(default_factory=dict)
+    claim_count: int = Field(default=0, ge=0)
     prediction_count: int = Field(default=0, ge=0)
     scenario_count: int = Field(default=0, ge=0)
     simulation_count: int = Field(default=0, ge=0)
     observation_count: int = Field(default=0, ge=0)
+    verification_report_count: int = Field(default=0, ge=0)
     verification_status_counts: dict[str, int] = Field(default_factory=dict)
+    falsification_report_count: int = Field(default=0, ge=0)
     falsified_count: int = Field(default=0, ge=0)
+    has_theory_evolution: bool = False
+    has_revision_recommendations: bool = False
     revision_recommendation_count: int = Field(default=0, ge=0)
     scientific_gap_count: int = Field(default=0, ge=0)
 
