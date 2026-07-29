@@ -75,7 +75,10 @@ class CanonicalMemoryBuilder:
 
         documents = [importer.import_path(path) for path in source_paths]
         if demo_paths:
-            demo_importer = DocumentImporter(self.demo_directory)
+            demo_directory = self.demo_directory
+            if demo_directory is None:
+                raise ValueError("demo_directory is required when demo paths are available.")
+            demo_importer = DocumentImporter(demo_directory)
             documents.extend(demo_importer.import_path(path) for path in demo_paths)
 
         sources: list[SourceDocument] = []
@@ -125,7 +128,7 @@ class CanonicalMemoryBuilder:
             )
             order += 1
             elements.append(doc_element)
-            current_parent = doc_element.element_id
+            current_parent: str | None = doc_element.element_id
 
             for block in document.blocks:
                 (
@@ -279,7 +282,7 @@ class CanonicalMemoryBuilder:
     def _classify_block(
         self,
         block: ExtractedBlock,
-        current_parent: str,
+        current_parent: str | None,
     ) -> tuple[str, str | None, str, float]:
         text = block.text
         if block.block_type == "table":

@@ -75,7 +75,8 @@ class TheoryBuilderEngine:
                 continue
             ev = item.get("evidence", ())
             evidence = _unique(ev if isinstance(ev, (list, tuple)) else ())
-            confidence = float(item.get("confidence")) if isinstance(item.get("confidence"), (int, float)) else (0.75 if evidence else 0.25)
+            raw_confidence = item.get("confidence")
+            confidence = float(raw_confidence) if isinstance(raw_confidence, (int, float)) else (0.75 if evidence else 0.25)
             candidates.append({
                 "id": normalize_text(item.get("id") or item.get("claim_id") or item.get("proposition_id")) or f"theory-claim-{index}",
                 "text": text,

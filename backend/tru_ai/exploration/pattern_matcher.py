@@ -7,6 +7,7 @@ from tru_ai.exploration.models import (
     PatternMatch,
     make_pattern_match_id,
 )
+from tru_ai.graph.models import GraphEdge
 
 
 class ExplorationPatternMatcher:
@@ -93,7 +94,8 @@ class ExplorationPatternMatcher:
     def candidate_edges(
         self,
         constraint: PatternConstraint,
-    ):
+    ) -> tuple[GraphEdge, ...]:
+        edges: tuple[GraphEdge, ...]
         if constraint.predicate is None:
             edges = self.indexes.graph.edges
         else:
@@ -101,10 +103,10 @@ class ExplorationPatternMatcher:
                 constraint.predicate,
                 [],
             )
-            edges = [
+            edges = tuple(
                 self.indexes.edges_by_id[edge_id]
                 for edge_id in edge_ids
-            ]
+            )
         return tuple(
             sorted(
                 edges,

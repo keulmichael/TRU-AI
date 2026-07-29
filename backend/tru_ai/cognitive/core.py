@@ -198,7 +198,7 @@ class CognitiveCore:
             "contradiction_detected": bool(contradictions),
             "confidence_matches_evidence": confidence > 0 or bool(unknowns),
             "missing_information_count": len(answer.missing_knowledge),
-            "confidence_breakdown": dict(sorted(confidence_justification and {})),
+            "confidence_breakdown": {},
         }
         return CognitiveExecution(
             execution_id=deterministic_id(
