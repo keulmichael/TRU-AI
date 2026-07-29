@@ -19,9 +19,11 @@ from tru_ai.cognitive.reasoning.engines import (
     ReasoningExecutionState,
     SynthesisEngine,
     TheoryConstructionEngine, TheoryComparisonEngine, TheoryEvolutionEngine,
-    PredictionEngine, ScientificGapEngine,
+    PredictionEngine, VerificationEngine, FalsificationEngine, ScientificGapEngine,
 )
-from tru_ai.cognitive.reasoning.models import ReasoningPlan, ReasoningResult
+from tru_ai.cognitive.reasoning.models import (
+    OperatorStatus, OperatorTrace, ReasoningPlan, ReasoningResult, ReasoningStage,
+)
 
 
 class ReasoningExecutor:
@@ -61,10 +63,21 @@ class ReasoningExecutor:
             conversation_context=dict(conversation_context or {}),
         )
 
+        operator_trace: list[OperatorTrace] = []
+
         for step in plan.steps:
             engine = self._engines.get(step.stage)
 
             if engine is None:
+                operator_trace.append(OperatorTrace(
+                    operator=self._operator_name(step.stage),
+                    stage=step.stage,
+                    position=step.position,
+                    status=OperatorStatus.SKIPPED,
+                    inputs=step.inputs,
+                    outputs=(),
+                    error="No handler available.",
+                ))
                 if step.required:
                     raise ValueError(
                         "Aucun handler n'est disponible pour l'étape "
@@ -72,7 +85,21 @@ class ReasoningExecutor:
                     )
                 continue
 
-            output = engine.execute(step=step, state=state)
+            try:
+                output = engine.execute(step=step, state=state)
+            except Exception as exc:
+                operator_trace.append(OperatorTrace(
+                    operator=self._operator_name(step.stage), stage=step.stage,
+                    position=step.position, status=OperatorStatus.FAILED,
+                    inputs=step.inputs, outputs=(), error=str(exc),
+                ))
+                raise
+            actual_outputs = tuple(output.keys()) if output is not None else ()
+            operator_trace.append(OperatorTrace(
+                operator=self._operator_name(step.stage), stage=step.stage,
+                position=step.position, status=OperatorStatus.SUCCESS,
+                inputs=step.inputs, outputs=actual_outputs,
+            ))
             if output is not None:
                 state.step_outputs[step.stage.value] = dict(output)
 
@@ -92,12 +119,34 @@ class ReasoningExecutor:
             theory=state.theory,
             theory_comparisons=tuple(state.theory_comparisons),
             theory_evolution=state.theory_evolution,
+            theory_history=state.theory_history,
+            operator_trace=tuple(operator_trace),
             scientific_predictions=tuple(state.scientific_predictions),
+            scientific_scenarios=tuple(state.scientific_scenarios),
+            scenario_simulations=tuple(state.scenario_simulations),
+            scientific_observations=tuple(state.scientific_observations),
+            verification_reports=tuple(state.verification_reports),
+            falsification_reports=tuple(state.falsification_reports),
+            scientific_theory_revisions=tuple(state.scientific_theory_revisions),
             scientific_gaps=tuple(state.scientific_gaps),
             contradictions=tuple(state.contradictions),
             missing_knowledge=tuple(state.missing_knowledge),
             synthesis=state.synthesis,
         )
+
+    @staticmethod
+    def _operator_name(stage: ReasoningStage) -> str:
+        aliases = {
+            ReasoningStage.OBSERVATION: "ObservationOperator",
+            ReasoningStage.DELTA: "DeltaOperator",
+            ReasoningStage.RECOGNITION: "RecognitionOperator",
+            ReasoningStage.REFLEXIVITY: "ReflexivityOperator",
+            ReasoningStage.RECOGNITION_MEANING: "IntegrationOperator",
+            ReasoningStage.THEORY_CONSTRUCTION: "TheoryConstructionOperator",
+            ReasoningStage.THEORY_EVOLUTION: "TheoryEvolutionOperator",
+            ReasoningStage.SYNTHESIS: "ManifestationOperator",
+        }
+        return aliases.get(stage, f"{''.join(part.title() for part in stage.value.split('_'))}Operator")
 
     @staticmethod
     def _default_engines() -> tuple[ReasoningEngine, ...]:
@@ -115,6 +164,8 @@ class ReasoningExecutor:
             TheoryComparisonEngine(),
             TheoryEvolutionEngine(),
             PredictionEngine(),
+            VerificationEngine(),
+            FalsificationEngine(),
             ScientificGapEngine(),
             ContradictionEngine(),
             MissingKnowledgeEngine(),

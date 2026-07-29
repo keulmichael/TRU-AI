@@ -15,7 +15,7 @@ from tru_ai.cognitive.reasoning.engines import (
     ReasoningExecutionState,
     SynthesisEngine,
     TheoryBuilderEngine, TheoryConstructionEngine, TheoryComparisonEngine, TheoryEvolutionEngine,
-    PredictionEngine, ScientificGapEngine,
+    PredictionEngine, VerificationEngine, FalsificationEngine, ScientificGapEngine,
 )
 from tru_ai.cognitive.reasoning.executor import ReasoningExecutor
 from tru_ai.cognitive.reasoning.models import (
@@ -43,8 +43,9 @@ from tru_ai.cognitive.reasoning.models import (
     ReasoningStep,
     TruthStatus,
     TheoryClaimStatus, TheoryClaim, TheoryGraph, TheoryComparison, TheoryEvolution,
+    TheorySnapshot, TheoryHistory, OperatorTrace, OperatorStatus,
     Theory, TheoryEvidence, TheoryMaturity, TheoryProposition, TheoryPropositionRole, TheoryRevision,
-    ScientificPrediction, ScientificGap,
+    ScientificPrediction, PredictionConfidenceLevel, ScientificScenario, ScenarioSimulation, ScientificObservation, VerificationStatus, VerificationReport, FalsificationReport, ScientificTheoryRevision, ScientificGap,
 )
 from tru_ai.cognitive.reasoning.planner import ReasoningPlanner
 from tru_ai.cognitive.reasoning.policy import ReasoningPolicy
@@ -94,7 +95,8 @@ __all__ = [
     "TheoryClaimStatus", "TheoryClaim", "TheoryGraph", "TheoryComparison",
     "Theory", "TheoryEvidence", "TheoryMaturity", "TheoryProposition",
     "TheoryPropositionRole", "TheoryRevision",
-    "TheoryEvolution", "ScientificPrediction", "ScientificGap",
+    "TheoryEvolution", "TheorySnapshot", "TheoryHistory",
+    "OperatorTrace", "OperatorStatus", "ScientificPrediction", "PredictionConfidenceLevel", "ScientificScenario", "ScenarioSimulation", "ScientificObservation", "VerificationStatus", "VerificationReport", "FalsificationReport", "ScientificTheoryRevision", "ScientificGap",
     "TheoryBuilderEngine", "TheoryConstructionEngine", "TheoryComparisonEngine",
-    "TheoryEvolutionEngine", "PredictionEngine", "ScientificGapEngine",
+    "TheoryEvolutionEngine", "PredictionEngine", "VerificationEngine", "FalsificationEngine", "ScientificGapEngine",
 ]

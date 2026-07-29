@@ -13,6 +13,7 @@ from tru_ai.cognitive.reasoning.models import (
     ReasoningRequest,
     ReasoningStage,
     ReasoningStep,
+    OperatorStatus,
     TruthStatus,
 )
 from tru_ai.cognitive.reasoning.planner import ReasoningPlanner
@@ -223,6 +224,7 @@ def test_missing_optional_handler_is_ignored() -> None:
     result = executor.execute(plan)
 
     assert result.synthesis is None
+    assert result.operator_trace[0].status is OperatorStatus.SKIPPED
 
 
 def test_duplicate_handlers_are_rejected() -> None:

@@ -38,13 +38,15 @@ def test_default_plan_contains_full_reflexive_sequence() -> None:
         ReasoningStage.THEORY_COMPARISON,
         ReasoningStage.THEORY_EVOLUTION,
         ReasoningStage.PREDICTION,
+        ReasoningStage.VERIFICATION,
+        ReasoningStage.FALSIFICATION,
         ReasoningStage.SCIENTIFIC_GAPS,
         ReasoningStage.CONTRADICTIONS,
         ReasoningStage.MISSING_KNOWLEDGE,
         ReasoningStage.SYNTHESIS,
     )
 
-    assert tuple(step.position for step in plan.steps) == tuple(range(1, 18))
+    assert tuple(step.position for step in plan.steps) == tuple(range(1, 20))
 
 
 def test_supporting_arguments_plan_is_reduced() -> None:

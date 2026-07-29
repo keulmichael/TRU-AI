@@ -25,6 +25,7 @@ from tru_ai.cognitive.reasoning.engines.theory_builder import (
     TheoryBuilderEngine,
     TheoryConstructionEngine,
 )
+from tru_ai.cognitive.reasoning.engines.falsification import FalsificationEngine, VerificationEngine
 from tru_ai.cognitive.reasoning.engines.scientific import (
     TheoryComparisonEngine, TheoryEvolutionEngine,
     PredictionEngine, ScientificGapEngine,
@@ -47,7 +48,7 @@ __all__ = [
     "ReasoningExecutionState",
     "SynthesisEngine",
     "TheoryBuilderEngine", "TheoryConstructionEngine", "TheoryComparisonEngine",
-    "TheoryEvolutionEngine", "PredictionEngine", "ScientificGapEngine",
+    "TheoryEvolutionEngine", "PredictionEngine", "VerificationEngine", "FalsificationEngine", "ScientificGapEngine",
     "normalize_string_sequence",
     "normalize_text",
 ]
