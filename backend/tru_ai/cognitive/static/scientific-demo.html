@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRU-AI — Pipeline scientifique</title>
+  <link rel="stylesheet" href="/cognitive/static/scientific-demo.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>TRU-AI — Pipeline scientifique</h1>
+        <p>Version 0.9.5-dev · Theory Evolution · Prediction · Verification · Falsification</p>
+      </div>
+      <nav>
+        <a href="/">Cognitive</a>
+        <a href="/explorer">Explorer</a>
+        <a href="/docs">API</a>
+      </nav>
+    </header>
+
+    <section class="workspace">
+      <form id="demo-form" class="panel" data-endpoint="/reasoning/scientific-demo">
+        <label for="observation">Observation</label>
+        <textarea id="observation" rows="4"></textarea>
+
+        <label for="claims">Propositions théoriques</label>
+        <textarea id="claims" rows="5"></textarea>
+
+        <div class="grid">
+          <label>
+            Règle de prédiction
+            <input id="rule-id" type="text">
+          </label>
+          <label>
+            Confiance
+            <input id="confidence" type="number" min="0" max="1" step="0.01">
+          </label>
+        </div>
+
+        <label for="statement">Énoncé prédictif</label>
+        <input id="statement" type="text">
+
+        <div class="actions">
+          <button type="submit">Exécuter le pipeline</button>
+          <button id="reset-button" type="button" class="secondary">Réinitialiser</button>
+        </div>
+        <div class="actions">
+          <button id="contradictory-button" type="button" class="secondary">Charger un cas contradictoire</button>
+          <button id="confirmatory-button" type="button" class="secondary">Charger un cas confirmatif</button>
+        </div>
+      </form>
+
+      <section class="panel output">
+        <div id="status" class="status idle">Prêt.</div>
+
+        <section id="summary" class="summary" aria-label="Synthèse"></section>
+
+        <section id="conclusion" class="conclusion" aria-label="Conclusion du moteur"></section>
+
+        <section id="reflexive-view" class="reflexive" aria-label="Lecture réflexive"></section>
+
+        <ol class="pipeline" aria-label="Étapes du pipeline">
+          <li>Observation</li>
+          <li>Theory Evolution</li>
+          <li>Prediction</li>
+          <li>Verification</li>
+          <li>Falsification</li>
+          <li>Scientific Gaps</li>
+        </ol>
+
+        <section id="stage-cards" class="cards"></section>
+
+        <section>
+          <h2>Trace d’exécution</h2>
+          <div id="trace" class="trace"></div>
+        </section>
+
+        <details class="json-panel">
+          <summary>Résultat JSON complet</summary>
+          <pre id="raw-json"></pre>
+        </details>
+      </section>
+    </section>
+  </main>
+
+  <script src="/cognitive/static/scientific-demo.js"></script>
+</body>
+</html>
