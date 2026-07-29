@@ -12,7 +12,7 @@ client = TestClient(app)
 def release_payload(*, include_raw_result: bool = False) -> dict:
     return {
         "question": "Analyze release scientific claim.",
-        "theory_version": "0.9.6",
+        "theory_version": "1.0.0",
         "theory": {
             "id": "release-theory",
             "name": "Release Theory",
@@ -58,7 +58,7 @@ def test_scientific_health_reports_release_version() -> None:
 
     assert response.status_code == 200
     data = response.json()
-    assert data["version"] == "0.9.6"
+    assert data["version"] == "1.0.0"
     assert data["version"] == __version__
     assert data["scientific_service_available"] is True
     assert data["planner_available"] is True
@@ -132,7 +132,7 @@ def test_scientific_demo_release_compatibility() -> None:
 
     page = client.get("/scientific-demo")
     assert page.status_code == 200
-    assert "Version 0.9.6" in page.text
+    assert "Version 1.0.0" in page.text
 
     response = client.post("/reasoning/scientific-demo", json={})
 

@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TRU-AI — Pipeline scientifique</title>
+  <title>TRU-AI - Pipeline scientifique</title>
   <link rel="stylesheet" href="/cognitive/static/scientific-demo.css">
 </head>
 <body>
   <main class="shell">
     <header class="topbar">
       <div>
-        <h1>TRU-AI — Pipeline scientifique</h1>
-        <p>Version 0.9.6 · Generic Scientific Engine · Demo compatibility</p>
+        <h1>TRU-AI - Pipeline scientifique</h1>
+        <p>Version 1.0.0 - Generic Scientific Engine - Demo compatibility</p>
       </div>
       <nav>
         <a href="/">Cognitive</a>
+        <a href="/scientific">Scientific</a>
         <a href="/explorer">Explorer</a>
         <a href="/docs">API</a>
       </nav>
@@ -25,12 +26,12 @@
         <label for="observation">Observation</label>
         <textarea id="observation" rows="4"></textarea>
 
-        <label for="claims">Propositions théoriques</label>
+        <label for="claims">Propositions theoriques</label>
         <textarea id="claims" rows="5"></textarea>
 
         <div class="grid">
           <label>
-            Règle de prédiction
+            Regle de prediction
             <input id="rule-id" type="text">
           </label>
           <label>
@@ -39,12 +40,12 @@
           </label>
         </div>
 
-        <label for="statement">Énoncé prédictif</label>
+        <label for="statement">Enonce predictif</label>
         <input id="statement" type="text">
 
         <div class="actions">
-          <button type="submit">Exécuter le pipeline</button>
-          <button id="reset-button" type="button" class="secondary">Réinitialiser</button>
+          <button type="submit">Executer le pipeline</button>
+          <button id="reset-button" type="button" class="secondary">Reinitialiser</button>
         </div>
         <div class="actions">
           <button id="contradictory-button" type="button" class="secondary">Charger un cas contradictoire</button>
@@ -53,15 +54,15 @@
       </form>
 
       <section class="panel output">
-        <div id="status" class="status idle">Prêt.</div>
+        <div id="status" class="status idle">Pret.</div>
 
-        <section id="summary" class="summary" aria-label="Synthèse"></section>
+        <section id="summary" class="summary" aria-label="Synthese"></section>
 
         <section id="conclusion" class="conclusion" aria-label="Conclusion du moteur"></section>
 
-        <section id="reflexive-view" class="reflexive" aria-label="Lecture réflexive"></section>
+        <section id="reflexive-view" class="reflexive" aria-label="Lecture reflexive"></section>
 
-        <ol class="pipeline" aria-label="Étapes du pipeline">
+        <ol class="pipeline" aria-label="Etapes du pipeline">
           <li>Observation</li>
           <li>Theory Evolution</li>
           <li>Prediction</li>
@@ -73,12 +74,12 @@
         <section id="stage-cards" class="cards"></section>
 
         <section>
-          <h2>Trace d’exécution</h2>
+          <h2>Trace d'execution</h2>
           <div id="trace" class="trace"></div>
         </section>
 
         <details class="json-panel">
-          <summary>Résultat JSON complet</summary>
+          <summary>Resultat JSON complet</summary>
           <pre id="raw-json"></pre>
         </details>
       </section>

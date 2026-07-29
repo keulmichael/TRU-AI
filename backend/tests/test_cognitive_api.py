@@ -77,7 +77,7 @@ def test_scientific_demo_page_is_available():
     response = client.get("/scientific-demo")
 
     assert response.status_code == 200
-    assert "TRU-AI — Pipeline scientifique" in response.text
+    assert "TRU-AI - Pipeline scientifique" in response.text
     assert "/reasoning/scientific-demo" in response.text
 
 

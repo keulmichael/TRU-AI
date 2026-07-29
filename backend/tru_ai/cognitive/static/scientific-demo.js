@@ -1,17 +1,17 @@
 const contradictoryExample = {
-  observation: "La reconnaissance répétée ne stabilise pas cette relation.",
+  observation: "La reconnaissance repetee ne stabilise pas cette relation.",
   claims: [
-    "La reconnaissance répétée stabilise une relation.",
-    "Une relation stabilisée rend les prédictions plus robustes."
+    "La reconnaissance repetee stabilise une relation.",
+    "Une relation stabilisee rend les predictions plus robustes."
   ],
   prediction_rule: {
     id: "rule-stability",
-    statement: "La répétition de la reconnaissance augmente la stabilité.",
-    condition: "la reconnaissance est répétée",
-    consequence: "la stabilité mesurée augmente",
+    statement: "La repetition de la reconnaissance augmente la stabilite.",
+    condition: "la reconnaissance est repetee",
+    consequence: "la stabilite mesuree augmente",
     confidence: 0.85,
-    expected_observation: "Hausse mesurable de la stabilité.",
-    falsification_condition: "La stabilité diminue malgré la répétition.",
+    expected_observation: "Hausse mesurable de la stabilite.",
+    falsification_condition: "La stabilite diminue malgre la repetition.",
     horizon: "trois cycles"
   },
   compatibility_score: 0.12,
@@ -20,7 +20,7 @@ const contradictoryExample = {
 
 const confirmatoryExample = {
   ...contradictoryExample,
-  observation: "La reconnaissance répétée stabilise cette relation.",
+  observation: "La reconnaissance repetee stabilise cette relation.",
   compatibility_score: 0.9,
   matches_falsification_condition: false
 };
@@ -88,7 +88,7 @@ function escapeHtml(value) {
 
 function valueOrDash(value) {
   if (value === null || value === undefined || value === "") {
-    return "—";
+    return "-";
   }
   if (typeof value === "boolean") {
     return value ? "oui" : "non";
@@ -117,14 +117,14 @@ function statusClass(value) {
 function renderSummary(data) {
   const s = data.summary;
   const metrics = [
-    ["Maturité", s.theory_maturity?.score, true],
+    ["Maturite", s.theory_maturity?.score, true],
     ["Confiance", s.prediction_confidence, true],
     ["Niveau", s.prediction_confidence_level, false],
-    ["Vérification", s.verification_status, false],
-    ["Cohérence", s.verification_consistency_score, true],
+    ["Verification", s.verification_status, false],
+    ["Coherence", s.verification_consistency_score, true],
     ["Preuve", s.verification_evidence_score, true],
-    ["Falsifié", s.falsified, false],
-    ["Révision", s.revision_required, false],
+    ["Falsifie", s.falsified, false],
+    ["Revision", s.revision_required, false],
     ["Action finale", s.final_action, false]
   ];
   summary.innerHTML = metrics.map(([label, value, score]) => `
@@ -146,14 +146,14 @@ function renderConclusion(data) {
 function renderReflexiveView(data) {
   const view = data.human_readable.reflexive_view;
   const rows = [
-    ["Qu’est-ce qui est observé ?", view.observed],
-    ["Qu’est-ce qui est reconnu ?", view.recognized],
-    ["Qu’est-ce qui est prédit ?", view.predicted],
-    ["Qu’est-ce qui confirme ou infirme la prédiction ?", view.confirmed_or_refuted_by],
-    ["Que doit apprendre ou réviser le système ?", view.learning]
+    ["Qu'est-ce qui est observe ?", view.observed],
+    ["Qu'est-ce qui est reconnu ?", view.recognized],
+    ["Qu'est-ce qui est predit ?", view.predicted],
+    ["Qu'est-ce qui confirme ou infirme la prediction ?", view.confirmed_or_refuted_by],
+    ["Que doit apprendre ou reviser le systeme ?", view.learning]
   ];
   reflexiveView.innerHTML = `
-    <h2>Lecture réflexive</h2>
+    <h2>Lecture reflexive</h2>
     <div class="reflexive-grid">
       ${rows.map(([question, answer]) => `
         <article>
@@ -174,14 +174,14 @@ function renderCards(data) {
       </header>
       <p class="explanation">${escapeHtml(card.explanation)}</p>
       <div class="stage-grid">
-        <div class="cell"><span>Opérateur</span>${escapeHtml(card.operator)}</div>
-        <div class="cell"><span>Ce que le moteur reçoit</span>${escapeHtml(card.inputs.join(", ") || "—")}</div>
-        <div class="cell"><span>Ce qu’il produit</span>${escapeHtml(card.outputs.join(", ") || "—")}</div>
+        <div class="cell"><span>Operateur</span>${escapeHtml(card.operator)}</div>
+        <div class="cell"><span>Ce que le moteur recoit</span>${escapeHtml(card.inputs.join(", ") || "-")}</div>
+        <div class="cell"><span>Ce qu'il produit</span>${escapeHtml(card.outputs.join(", ") || "-")}</div>
         <div class="cell"><span>Score principal</span>${escapeHtml(formatScore(card.score))}</div>
       </div>
-      <div class="cell decision"><span>Décision prise</span>${escapeHtml(card.decision)}</div>
+      <div class="cell decision"><span>Decision prise</span>${escapeHtml(card.decision)}</div>
       <details>
-        <summary>Données JSON</summary>
+        <summary>Donnees JSON</summary>
         <pre>${escapeHtml(JSON.stringify(card.data, null, 2))}</pre>
       </details>
     </article>
@@ -192,7 +192,7 @@ function renderTrace(data) {
   trace.innerHTML = data.operator_trace.map((item) => `
     <div class="trace-row ${statusClass(item.status)}">
       <strong>${escapeHtml(item.position)}</strong>
-      <span>${escapeHtml(item.operator)} · ${escapeHtml(item.stage)}</span>
+      <span>${escapeHtml(item.operator)} - ${escapeHtml(item.stage)}</span>
       <span>${escapeHtml(item.status)}</span>
     </div>
   `).join("");
@@ -201,7 +201,7 @@ function renderTrace(data) {
 async function runDemo(event) {
   event.preventDefault();
   statusBox.className = "status";
-  statusBox.textContent = "Exécution du pipeline...";
+  statusBox.textContent = "Execution du pipeline...";
   form.querySelectorAll("button").forEach((button) => {
     button.disabled = true;
   });
@@ -222,7 +222,7 @@ async function runDemo(event) {
     renderCards(data);
     renderTrace(data);
     rawJson.textContent = JSON.stringify(data, null, 2);
-    statusBox.textContent = "Pipeline exécuté.";
+    statusBox.textContent = "Pipeline execute.";
   } catch (error) {
     statusBox.className = "status error";
     statusBox.textContent = error.message;
@@ -237,21 +237,21 @@ resetButton.addEventListener("click", () => {
   loadExample(contradictoryExample);
   resetOutput();
   statusBox.className = "status idle";
-  statusBox.textContent = "Prêt.";
+  statusBox.textContent = "Pret.";
 });
 
 contradictoryButton.addEventListener("click", () => {
   loadExample(contradictoryExample);
   resetOutput();
   statusBox.className = "status idle";
-  statusBox.textContent = "Cas contradictoire chargé.";
+  statusBox.textContent = "Cas contradictoire charge.";
 });
 
 confirmatoryButton.addEventListener("click", () => {
   loadExample(confirmatoryExample);
   resetOutput();
   statusBox.className = "status idle";
-  statusBox.textContent = "Cas confirmatif chargé.";
+  statusBox.textContent = "Cas confirmatif charge.";
 });
 
 form.addEventListener("submit", runDemo);

@@ -8,6 +8,7 @@ from typing import Any
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
+from tru_ai import __version__
 from tru_ai.cognitive.reasoning.models import (
     ScientificObservation,
     ScientificPrediction,
@@ -120,7 +121,7 @@ class ScientificDemoRequestAdapter:
         rule = payload.prediction_rule
         return ScientificAnalysisRequest(
             question="Démonstration du pipeline scientifique TRU-AI",
-            theory_version="0.9.6-demo",
+            theory_version=f"{__version__}-demo",
             theory=ScientificTheoryInput(
                 id="tru-scientific-demo",
                 name="TRU-AI scientific demo",

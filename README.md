@@ -1,261 +1,95 @@
 # TRU-AI
 
-**Version active : 0.9.6 — Generic Scientific Engine**
+**Version active : 1.0.0 - Scientific Workbench**
 
-La version `0.9.6` stabilise le moteur scientifique générique, son API publique
-et la compatibilité du démonstrateur scientifique historique.
+TRU-AI est un moteur scientifique local concu pour analyser des questions,
+theories, predictions et observations a travers un pipeline deterministe.
 
-<p align="center">
+Le produit 1.0 expose le moteur scientifique generique sous forme d'API REST et
+d'interface Web utilisable localement. Le demonstrateur historique reste
+disponible pour compatibilite.
 
-# Artificial Intelligence for the Universal Reflexivity Theory
+## Capacites Utilisateur
 
-Scientific Reasoning Engine
+TRU-AI permet aujourd'hui de :
 
-</p>
+- saisir une question scientifique ;
+- fournir une theorie et des claims ;
+- fournir une prediction, une observation attendue et une condition de
+  falsification ;
+- fournir une observation reelle et un score de compatibilite ;
+- executer le pipeline scientifique complet ;
+- consulter un resume, une explication lisible, les cartes d'etapes, la trace
+  operateur et le JSON de resultat ;
+- tester rapidement des cas confirmatif, contradictoire et incomplet.
 
----
+## Pipeline Scientifique
 
-## Présentation
-
-TRU-AI (Artificial Intelligence for the Universal Reflexivity Theory) est un moteur d'intelligence artificielle conçu pour assister la recherche scientifique.
-
-Contrairement aux assistants conversationnels classiques, TRU-AI ne cherche pas uniquement à répondre à des questions. Son objectif est de construire, faire évoluer et tester des théories à partir d'observations.
-
-Le projet repose sur les principes de la Théorie de la Réflexivité Universelle (TRU) et développe progressivement un moteur scientifique capable :
-
-- d'observer ;
-- d'identifier des faits ;
-- d'établir des relations ;
-- de reconnaître des structures ;
-- de construire des théories ;
-- de faire évoluer ces théories ;
-- de produire des prédictions ;
-- de proposer des protocoles expérimentaux.
-
----
-
-# Vision
-
-TRU-AI vise à devenir une plateforme d'assistance à la recherche scientifique.
-
-Le moteur est développé de manière incrémentale afin de garantir :
-
-- la reproductibilité ;
-- la déterminisme ;
-- la traçabilité ;
-- la testabilité ;
-- la compatibilité ascendante.
-
----
-
-# Architecture générale
-
-```
-Corpus
-
-↓
+Le pipeline actuellement implemente est :
 
 Observation
-
-↓
-
-Context
-
-↓
-
-Claims
-
-↓
-
-Deductions
-
-↓
-
-Hypotheses
-
-↓
-
-Recognition
-
-↓
-
-Delta
-
-↓
-
-Reflexivity
-
-↓
-
-Recognition Meaning
-
-↓
-
-Theory Builder
-
-↓
-
-Theory Evolution
-
-↓
-
-Prediction
-
-↓
-
-Experiment
-
-↓
-
-Publication
-```
-
-Chaque nouvelle version enrichit cette architecture sans remettre en cause les composants existants.
-
----
-
-# Fonctionnalités actuelles
-
-Le moteur comprend notamment :
-
-## Observation
-
-- extraction d'informations
-- contextualisation
-- segmentation
-
-## Reasoning
-
-- déductions
-- hypothèses
-- contradictions
-- connaissances manquantes
-
-## Recognition
-
-Détection de :
-
-- répétitions
-- symétries
-- inversions
-- transformations
-- cycles
-- bifurcations
-- points fixes
-
-## Reflexivity
-
-- graphes réflexifs
-- relations réciproques
-- boucles de rétroaction
-
-## Recognition Meaning
-
-- interprétation des structures reconnues
-- stabilité
-- complétude
-- écarts de reconnaissance
-
-## Scientific Reasoning
-
-- construction de théories
-- comparaison de théories
-- évolution scientifique
-- prédictions
-- lacunes scientifiques
-
----
-
-# Feuille de route
-
-| Version | Fonction |
-|----------|----------|
-| 8.x | Architecture cognitive |
-| 9.0 | Scientific Reasoning |
-| 9.1 | Theory Builder |
-| 9.2 | Theory Evolution |
-| 9.3 | Prediction Engine |
-| 9.4 | Falsification Engine |
-| 9.5 | Scientific Memory |
-| 10.0 | Autonomous Scientific Research |
-
----
-
-# Philosophie du projet
-
-TRU-AI est développé selon plusieurs principes fondamentaux :
-
-- architecture modulaire ;
-- déterminisme ;
-- faible couplage ;
-- forte cohésion ;
-- compatibilité ascendante ;
-- couverture complète par des tests ;
-- documentation systématique.
-
-Les fonctionnalités existantes ne sont jamais supprimées mais enrichies au fil des versions.
-
----
-
-# Structure du dépôt
-
-```
-backend/
-    reasoning/
-    cognitive/
-    api/
-    tests/
-
-corpus/
-
-docs/
-
-README.md
-
-README-INSTALLATION.md
-
-TRU-AI_PROTOCOL.md
-
-ROADMAP.md
-
-CHANGELOG.md
-```
-
----
-
-# Installation
-
-Créer un environnement virtuel :
+-> Theory Evolution
+-> Prediction
+-> Verification
+-> Falsification
+-> Scientific Gaps
+
+Les explications lisibles sont derivees des resultats reels du pipeline. Les
+recommandations de revision restent des recommandations : aucune mutation de
+theorie et aucune persistance implicite ne sont effectuees.
+
+## Routes Disponibles
+
+- `GET /` : interface cognitive historique ;
+- `GET /scientific` : interface generique du moteur scientifique ;
+- `GET /scientific-demo` : demonstrateur scientifique historique ;
+- `GET /scientific/health` : etat du moteur scientifique ;
+- `POST /scientific/analyze` : API generique d'analyse scientifique ;
+- `POST /reasoning/scientific-demo` : route de compatibilite du demonstrateur ;
+- `GET /docs` : documentation OpenAPI.
+
+## Limites 1.0
+
+TRU-AI 1.0 ne fournit pas :
+
+- de sessions scientifiques persistantes ;
+- d'historique stocke des analyses ;
+- d'ingestion dynamique de corpus ;
+- de validation scientifique externe ;
+- d'export PDF ou Markdown ;
+- d'authentification ;
+- d'administration ;
+- d'apprentissage autonome.
+
+## Installation
+
+Depuis la racine du depot :
 
 ```bash
 python -m venv .venv
 ```
 
-Activation :
-
-Windows
+Activation Windows :
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Linux / macOS
+Activation Linux / macOS :
 
 ```bash
 source .venv/bin/activate
 ```
 
-Installation des dépendances :
+Installation des dependances :
 
 ```bash
 python -m pip install -e "backend[dev]"
 ```
 
----
+## Lancement Local
 
-# Lancement local
-
-Depuis la racine du dépôt :
+Depuis la racine du depot :
 
 ```bash
 cd backend
@@ -266,109 +100,47 @@ URLs locales :
 
 - API : `http://127.0.0.1:8000`
 - OpenAPI : `http://127.0.0.1:8000/docs`
-- Santé scientifique : `http://127.0.0.1:8000/scientific/health`
-- Démonstrateur : `http://127.0.0.1:8000/scientific-demo`
+- Interface scientifique : `http://127.0.0.1:8000/scientific`
+- Sante scientifique : `http://127.0.0.1:8000/scientific/health`
+- Demonstrateur : `http://127.0.0.1:8000/scientific-demo`
 
-Variables d'environnement strictement nécessaires :
+Variables d'environnement strictement necessaires :
 
 ```text
-Aucune pour le moteur scientifique local 0.9.6.
+Aucune pour le moteur scientifique local 1.0.0.
 ```
 
----
+## Exemple API Minimal
 
-# Exécution des tests
+```bash
+curl -X POST http://127.0.0.1:8000/scientific/analyze \
+  -H "Content-Type: application/json" \
+  -d "{\"question\":\"Analyze this scientific observation.\"}"
+```
+
+## Validation
 
 Commande officielle :
 
 ```bash
 python -m pytest
+python -m ruff check backend/tru_ai backend/tests backend/scripts
+python -m mypy backend/tru_ai
+git diff --check
 ```
 
-Toutes les nouvelles fonctionnalités doivent être compatibles avec la suite de tests existante.
+Etat attendu pour 1.0.0 : suite complete verte, Ruff vert, mypy vert.
 
-Aucune régression n'est acceptée.
+## Documentation Centrale
 
----
+- `CODEX.md` : regles permanentes de developpement ;
+- `AI_WORKFLOW.md` : processus operationnel ;
+- `ARCHITECTURE.md` : architecture existante ;
+- `SCIENTIFIC_CAPABILITIES.md` : capacites scientifiques implementees ;
+- `PROJECT_STATUS.md` : etat court du projet ;
+- `ROADMAP.md` et `RESEARCH_ROADMAP.md` : trajectoire produit et recherche ;
+- `CHANGELOG.md` : historique des versions.
 
-# Workflow de développement
+## Licence
 
-Le dépôt GitHub constitue la source officielle du projet.
-
-Chaque évolution suit le processus suivant :
-
-1. conception ;
-2. développement ;
-3. intégration ;
-4. tests ;
-5. documentation ;
-6. livraison.
-
-Chaque version est développée sur une branche dédiée avant intégration dans `main`.
-
----
-
-# Documentation
-
-Les documents principaux sont :
-
-- README.md
-- TRU-AI_PROTOCOL.md
-- ROADMAP.md
-- CHANGELOG.md
-- README-INSTALLATION.md
-
-Le fichier **TRU-AI_PROTOCOL.md** définit les règles officielles de développement du projet et constitue la référence pour toute nouvelle session.
-
----
-
-# Compatibilité
-
-Le projet garantit :
-
-- compatibilité ascendante ;
-- stabilité des API publiques ;
-- ajout progressif des fonctionnalités ;
-- conservation des tests existants.
-
----
-
-# Licence
-
-Voir le fichier LICENSE.
-
----
-
-# Auteur
-
-Michael Host
-
-Créateur de la Théorie de la Réflexivité Universelle (TRU)
-
-Architecte du projet TRU-AI.
-
----
-
-# Contribution
-
-Le projet est actuellement développé sous la direction de son auteur.
-
-Les contributions futures devront respecter les règles définies dans :
-
-- TRU-AI_PROTOCOL.md
-- ROADMAP.md
-- CHANGELOG.md
-
----
-
-# Objectif final
-
-Construire un moteur scientifique capable de :
-
-- comprendre des observations ;
-- construire des connaissances ;
-- élaborer des théories ;
-- faire évoluer ces théories ;
-- proposer des prédictions ;
-- suggérer des expériences ;
-- contribuer à la recherche scientifique de manière déterministe, traçable et reproductible.
+Voir `LICENSE`.

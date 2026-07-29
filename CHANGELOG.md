@@ -1,3 +1,18 @@
+# Changelog
+
+## [1.0.0]
+
+- promoted the generic scientific engine to the first usable local product
+  baseline;
+- added `GET /scientific` as a generic Web workbench for
+  `POST /scientific/analyze`;
+- added confirmatory, contradictory, and incomplete examples to the workbench;
+- kept the historical `GET /scientific-demo` and
+  `POST /reasoning/scientific-demo` compatibility flow;
+- kept `ScientificService` as the single scientific application facade for the
+  generic API and demo compatibility route;
+- kept persistence absent and disabled.
+
 ## [0.9.6]
 
 - added public scientific analysis models for generic scientific requests and
@@ -15,62 +30,27 @@
 - kept scientific revisions as recommendations, not applied mutations;
 - kept persistence disabled and absent from the scientific API.
 
-## [0.9.5-dev] - Historical development line
+## [0.9.5-dev]
 
-- préparation de l'ancienne ligne de développement `0.9.5-dev` ;
-- ajout d'une source Python unique de version pour le package, la CLI et les métadonnées FastAPI ;
-- nettoyage du suivi Git des artefacts générés (`__pycache__`, fichiers `.pyc`, métadonnées `.egg-info`, archives et verrous temporaires).
+- prepared the previous `0.9.5-dev` development line;
+- added a single Python package version source for the package, CLI, and
+  FastAPI metadata;
+- cleaned generated artifact tracking.
 
-## 0.9.4 — Falsification Engine
+## [0.9.4]
 
-- ajout de `ScientificObservation`, `VerificationReport` et `FalsificationReport` ;
-- ajout de `VerificationOperator` et `FalsificationOperator` au pipeline cognitif ;
-- comparaison explicite des prédictions aux observations ;
-- calcul déterministe des scores de cohérence et de preuve ;
-- falsification formelle uniquement lorsqu’une condition explicite existe et est satisfaite ;
-- production de révisions scientifiques (`retain`, `review`, `revise`) ;
-- sérialisation complète et traçabilité opératorielle ;
-- ajout de cinq tests dédiés à la version 9.4 ;
-- passage de la version du paquet à `0.9.4`.
+- added `ScientificObservation`, `VerificationReport`, and
+  `FalsificationReport`;
+- added `VerificationOperator` and `FalsificationOperator` to the cognitive
+  pipeline;
+- compared predictions explicitly against observations;
+- produced scientific revisions as recommendations;
+- kept serialization and operator traceability.
 
-# Changelog
+## [0.9.3]
 
-## 0.9.3 — Prediction Engine
-
-- ajout du calcul déterministe de confiance des prédictions ;
-- ajout des niveaux normalisés de confiance ;
-- prise en charge des observations attendues, horizons et hypothèses ;
-- génération de prédictions depuis des règles conditionnelles explicites ;
-- ajout des scénarios scientifiques ;
-- ajout de la simulation croisée prédictions/scénarios ;
-- sérialisation des scénarios et simulations ;
-- ajout de cinq tests dédiés à la version 9.3 ;
-- passage de la version du paquet à `0.9.3`.
-
-9.0
-✓ Scientific Reasoning
-
-447 tests
-
---------------------------------
-
-9.1
-✓ Theory Builder
-
-447 tests
-
---------------------------------
-
-9.2
-
-✓ Theory Evolution
-✓ Versionnement déterministe des théories
-✓ Historique et snapshots immuables
-✓ Filiation entre snapshots
-✓ Résumé des ajouts, retraits, renforcements et affaiblissements
-✓ Trace des opérateurs TRU
-✓ Sérialisation et compatibilité ascendante
-✓ 4 nouveaux tests dédiés à la 9.2
-
-Validation de l’export léger : 447 tests réussis sur 451.
-Les 4 tests restants requièrent les corpus et ressources statiques exclus de l’export.
+- added deterministic prediction confidence;
+- added normalized confidence levels;
+- supported expected observations, horizons, and hypotheses;
+- generated predictions from explicit conditional rules;
+- added scientific scenarios and simulations.

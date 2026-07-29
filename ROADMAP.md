@@ -1,36 +1,53 @@
-Version en cours : 0.9.6
-Version cible de stabilisation : 0.9.6
+Version en cours : 1.0.0
+Version cible de stabilisation : 1.0.0
 
-9.2
-Theory Evolution
-- Versioning
-- History
-- Snapshots
-- Evolution Engine
+## Integre
 
-9.3 — LIVRÉE
-Prediction Engine
-- Scientific prediction
-- Confidence
-- Scenario simulation
+### 9.2 - Theory Evolution
 
-9.4
-Falsification Engine
-- Contradiction detection
-- Theory validation
+- Versioning.
+- History.
+- Snapshots.
+- Evolution Engine.
 
-9.5
-Scientific Memory
-- Long-term knowledge
-- Theory repository
-- Stabilisation de la version 0.9.5 non finalisée
+### 9.3 - Prediction Engine
 
-9.6
-Generic Scientific Engine
-- Public scientific models
-- Scientific service facade
-- Generic scientific API
-- Scientific demo compatibility
+- Scientific prediction.
+- Confidence.
+- Scenario simulation.
 
-10.0
-Autonomous Scientific Research
+### 9.4 - Verification and Falsification
+
+- Observation verification.
+- Contradiction detection.
+- Falsification reports.
+- Revision recommendations.
+
+### 0.9.6 - Generic Scientific Engine
+
+- Public scientific models.
+- Scientific input adapter.
+- Scientific service facade.
+- Generic scientific API.
+- Scientific explanation service.
+- Scientific demo compatibility.
+
+### 1.0.0 - Usable Scientific Workbench
+
+- Generic Web workbench: `GET /scientific`.
+- Generic analysis API: `POST /scientific/analyze`.
+- Health endpoint: `GET /scientific/health`.
+- Confirmatory, contradictory, and incomplete workbench examples.
+- Historical demo compatibility.
+- No implicit persistence.
+
+## Differe
+
+- Scientific sessions.
+- Persistent analysis history.
+- Dynamic corpus ingestion.
+- External scientific validation.
+- Exports.
+- Authentication.
+- Administration.
+- Autonomous scientific research.

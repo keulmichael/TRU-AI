@@ -1,13 +1,14 @@
 # TRU-AI Scientific Capabilities
 
-Version: `0.9.6`
+Version: `1.0.0`
 
 This document describes only capabilities implemented in the repository.
 
 ## Objective
 
-The scientific engine provides a reusable API for running the existing TRU-AI
-scientific reasoning pipeline against user-supplied scientific inputs.
+The scientific engine provides a reusable local API and Web workbench for
+running the existing TRU-AI scientific reasoning pipeline against user-supplied
+scientific inputs.
 
 ## Public Inputs
 
@@ -34,7 +35,7 @@ Options currently include:
 - `include_human_readable`;
 - `persist`.
 
-`persist` defaults to `false` and does not trigger persistence in `0.9.6`.
+`persist` defaults to `false` and does not trigger persistence in `1.0.0`.
 
 ## Pipeline
 
@@ -88,6 +89,7 @@ The public scientific layer is composed of:
 
 ## Routes
 
+- `GET /scientific`
 - `GET /scientific/health`
 - `POST /scientific/analyze`
 - `GET /scientific-demo`

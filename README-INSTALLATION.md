@@ -1,36 +1,50 @@
-# Installation de TRU-AI 0.9.6
+# Installation de TRU-AI 1.0.0
 
-Cette documentation concerne la version `0.9.6`.
+Cette documentation concerne la version `1.0.0`.
 
-## Méthode rapide sous Windows
+## Methode rapide
 
-Placez-vous à la racine du dépôt :
+Placez-vous a la racine du depot :
 
 ```cmd
 cd <repo>
 ```
 
-Utilisez le dépôt Git comme source de vérité. N'utilisez pas d'ancienne archive ZIP comme référence si le dépôt est disponible.
+Utilisez le depot Git comme source de verite. N'utilisez pas d'ancienne archive
+ZIP comme reference si le depot est disponible.
 
-## Dépendances de développement
+## Dependances de developpement
 
-Installez le paquet et les outils qualité depuis la racine du dépôt :
+Installez le paquet et les outils qualite depuis la racine du depot :
 
 ```cmd
 python -m pip install -e "backend[dev]"
 ```
 
-## Validation
-
-Dans le dépôt complet :
+## Lancement local
 
 ```cmd
-cd <repo>
+cd backend
+python -m uvicorn tru_ai.api.main:app --host 127.0.0.1 --port 8000
+```
+
+URLs utiles :
+
+- `http://127.0.0.1:8000/scientific`
+- `http://127.0.0.1:8000/scientific/health`
+- `http://127.0.0.1:8000/scientific-demo`
+- `http://127.0.0.1:8000/docs`
+
+## Validation
+
+Dans le depot complet :
+
+```cmd
 python -m pytest
+python -m ruff check backend/tru_ai backend/tests backend/scripts
+python -m mypy backend/tru_ai
+git diff --check
 ```
 
-Résultat attendu dans l'état de préparation `0.9.6` :
-
-```text
-514 passed
-```
+Resultat attendu dans l'etat 1.0.0 : suite complete verte, Ruff vert, mypy
+vert et diff sans erreur d'espaces.

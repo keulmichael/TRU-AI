@@ -166,7 +166,7 @@ class RecordingExecutor:
 def full_request() -> ScientificAnalysisRequest:
     return ScientificAnalysisRequest(
         question="Analyze public scientific inputs.",
-        theory_version="0.9.6",
+        theory_version="1.0.0",
         theory=ScientificTheoryInput(
             id="theory-a",
             name="Theory A",
@@ -218,7 +218,7 @@ def test_adapter_maps_minimal_request_to_empty_context() -> None:
 def test_adapter_maps_complete_request_without_inventing_keys() -> None:
     context = ScientificInputAdapter().to_conversation_context(full_request())
 
-    assert context["theory_version"] == "0.9.6"
+    assert context["theory_version"] == "1.0.0"
     assert context["theory"]["id"] == "theory-a"
     assert context["theory"]["claims"][0]["claim_id"] == "c1"
     assert context["theory"]["relations"] == [

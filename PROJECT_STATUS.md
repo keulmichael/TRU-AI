@@ -1,13 +1,13 @@
 # TRU-AI Project Status
 
-Version: `0.9.6`
+Version: `1.0.0`
 
-Status: stable release candidate.
+Status: stable local product baseline.
 
 ## Engine State
 
-The generic scientific engine is available through the public scientific API and
-the historical scientific demo route.
+The generic scientific engine is available through a public API, a generic Web
+workbench, and the historical scientific demo route.
 
 Current pipeline:
 
@@ -25,8 +25,11 @@ Observation
 - `ScientificService` facade.
 - `ScientificExplanationService`.
 - Generic API routes: `GET /scientific/health` and `POST /scientific/analyze`.
+- Generic static workbench: `GET /scientific`.
 - Demo compatibility route: `POST /reasoning/scientific-demo`.
-- Static demo page: `GET /scientific-demo`.
+- Historical static demo page: `GET /scientific-demo`.
+- Confirmatory, contradictory, and incomplete examples in the generic
+  workbench.
 
 ## Deferred Components
 
@@ -37,19 +40,20 @@ Observation
 - Exports.
 - Authentication and administration.
 - Product dashboard.
+- Autonomous learning.
 
 ## Last Validation
 
-- Full test suite: `514 passed`.
+- Full test suite: `521 passed`.
 - Ruff: passing.
 - mypy: passing on `backend/tru_ai`.
 - `git diff --check`: passing.
 
 ## Next Version Objective
 
-The next version should focus on release tagging and then on explicitly scoped
-post-release capabilities. No deferred component should be added without a
-separate design and implementation lot.
+The next version should be scoped after user feedback on the 1.0 workbench.
+Deferred capabilities must be designed and validated separately before
+implementation.
 
 ## Known Risks
 

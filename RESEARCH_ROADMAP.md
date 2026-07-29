@@ -1,6 +1,6 @@
 # TRU Research Roadmap
 
-Version: 1.1
+Version: 1.0.0
 
 Status: central prospective documentation.
 
@@ -19,13 +19,15 @@ sources.
 
 ## Current Software Baseline
 
-Current active line: `0.9.6`.
+Current active line: `1.0.0`.
 
-Recently integrated capabilities:
+Integrated capabilities:
 
 - `9.2` Theory Evolution: `integrated`;
 - `9.3` Prediction Engine: `integrated`;
-- `9.4` Verification and Falsification: `integrated`.
+- `9.4` Verification and Falsification: `integrated`;
+- `0.9.6` Generic Scientific Engine: `integrated`;
+- `1.0.0` usable local scientific workbench: `integrated`.
 
 Current scientific pipeline:
 
@@ -36,8 +38,9 @@ Observation
 -> Falsification
 -> Scientific Gaps
 
-Current demonstrator:
+Current interfaces and routes:
 
+- `GET /scientific`: `integrated`;
 - `GET /scientific-demo`: `integrated`;
 - `POST /reasoning/scientific-demo`: `integrated`;
 - `GET /scientific/health`: `integrated`;
@@ -45,22 +48,19 @@ Current demonstrator:
 
 Current quality baseline:
 
-- full test suite: `514 passed`;
+- full test suite: `521 passed`;
 - Ruff: passing;
 - mypy on `backend/tru_ai`: passing.
 
-## 0.9.6 Focus
+## 1.0.0 Focus
 
-The `0.9.6` line stabilizes the integrated scientific pipeline as a generic
-scientific API and keeps the historical demo compatible.
+The `1.0.0` line provides the smallest usable local product:
 
-Recommended focus:
-
-- keep the scientific demo aligned with the generic scientific service;
-- preserve human-readable explanations derived from raw outputs;
-- keep central documentation aligned with the release state;
-- audit untracked corpus and formalization material separately;
-- decide what belongs in Git and what remains generated or external.
+- a generic scientific workbench for non-API users;
+- a reusable scientific API for applications;
+- compatibility with the historical scientific demo;
+- traceable summaries and human-readable explanations derived from raw results;
+- no implicit persistence and no automatic corpus ingestion.
 
 ## Integrated Research Capabilities
 
@@ -142,8 +142,8 @@ Status: `integrated`, with future improvements `planned`.
 Goal: keep `/scientific-demo` useful as a traceable demonstration of the
 pipeline without turning demo outputs into scientific evidence.
 
-Future work may include richer incomplete-case examples, better explanation
-inspection, and clearer separation between raw outputs and readable summaries.
+The generic workbench at `/scientific` is now the primary user-facing
+scientific interface.
 
 ## Observatory
 
@@ -159,14 +159,11 @@ scientific review.
 
 The following should remain deferred until explicitly approved:
 
-- broad alpha tagging before the `0.9.6` release is marked;
 - broad corpus integration;
-- release documentation integration;
+- release documentation integration outside the central docs;
 - normative scientific document integration;
-- independent observatory operation.
-
-The current recommendation is to tag `v0.9.6` after release validation, then
-continue corpus and formalization decisions in separate lots.
+- independent observatory operation;
+- autonomous scientific research.
 
 ## Research Integrity Rules
 

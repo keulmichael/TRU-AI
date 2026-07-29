@@ -17,14 +17,15 @@ Never modify scientific principles without explicit instructions.
 
 Current informative state:
 
-- active version: `0.9.6`;
+- active version: `1.0.0`;
 - UI commit: `59ae52e feat(ui): expose human-readable scientific reasoning`;
 - scientific pipeline commit: `ba07259 feat(reasoning): integrate scientific pipeline 9.2 to 9.4`;
 - integrated scientific pipeline: Observation -> Theory Evolution -> Prediction -> Verification -> Falsification -> Scientific Gaps;
+- generic scientific workbench: `GET /scientific`;
 - demo interface: `GET /scientific-demo`;
 - demo API: `POST /reasoning/scientific-demo`;
 - generic scientific API: `POST /scientific/analyze`;
-- validation baseline: 514 tests pass, Ruff passes, and mypy passes;
+- validation baseline: 521 tests pass, Ruff passes, and mypy passes;
 - known typing debt: none in `backend/tru_ai`;
 - no push was performed for the commits above.
 

@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TRU-AI — Scientific Engine</title>
+  <title>TRU-AI - Scientific Engine</title>
   <link rel="stylesheet" href="/cognitive/static/scientific-demo.css">
 </head>
 <body>
   <main class="shell">
     <header class="topbar">
       <div>
-        <h1>TRU-AI — Scientific Engine</h1>
-        <p>Analyse scientifique générique · Version 0.9.6</p>
+        <h1>TRU-AI - Scientific Engine</h1>
+        <p>Analyse scientifique generique - Version 1.0.0</p>
       </div>
       <nav>
         <a href="/">Cognitive</a>
@@ -36,10 +36,10 @@
           </label>
         </div>
 
-        <label for="claims">Claims théoriques, un par ligne</label>
+        <label for="claims">Claims theoriques, un par ligne</label>
         <textarea id="claims" rows="5">Repeated recognition stabilizes a relation.</textarea>
 
-        <label for="prediction">Prédiction</label>
+        <label for="prediction">Prediction</label>
         <input id="prediction" type="text" value="Relation stability increases.">
 
         <div class="grid">
@@ -53,12 +53,12 @@
           </label>
         </div>
 
-        <label for="observation">Observation réelle</label>
+        <label for="observation">Observation reelle</label>
         <textarea id="observation" rows="3">Observed stability increases.</textarea>
 
         <div class="grid">
           <label>
-            Score de compatibilité
+            Score de compatibilite
             <input id="compatibility-score" type="number" min="0" max="1" step="0.01" value="0.9">
           </label>
           <label class="inline-control">
@@ -69,7 +69,7 @@
 
         <label class="inline-control">
           <input id="include-raw" type="checkbox">
-          Inclure le résultat brut
+          Inclure le resultat brut
         </label>
 
         <div class="actions">
@@ -86,27 +86,27 @@
       </form>
 
       <section class="panel output">
-        <div id="status" class="status idle">Prêt.</div>
-        <section id="summary" class="summary" aria-label="Résumé"></section>
+        <div id="status" class="status idle">Pret.</div>
+        <section id="summary" class="summary" aria-label="Resume"></section>
         <section id="human-readable" class="conclusion" aria-label="Explication lisible"></section>
 
         <section>
-          <h2>Résultats scientifiques</h2>
+          <h2>Resultats scientifiques</h2>
           <div id="results" class="cards"></div>
         </section>
 
         <section>
-          <h2>Étapes exécutées</h2>
+          <h2>Etapes executees</h2>
           <div id="stage-cards" class="cards"></div>
         </section>
 
         <section>
-          <h2>Trace opérateur</h2>
+          <h2>Trace operateur</h2>
           <div id="trace" class="trace"></div>
         </section>
 
         <details class="json-panel">
-          <summary>Résultat JSON</summary>
+          <summary>Resultat JSON</summary>
           <pre id="raw-json"></pre>
         </details>
       </section>

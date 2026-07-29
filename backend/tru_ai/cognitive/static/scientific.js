@@ -88,7 +88,7 @@ function payloadFromForm() {
   const compatibilityScore = numericValue("#compatibility-score");
   const request = {
     question: document.querySelector("#question").value.trim(),
-    theory_version: "0.9.6",
+    theory_version: "1.0.0",
     options: {
       include_human_readable: true,
       include_raw_result: document.querySelector("#include-raw").checked,
