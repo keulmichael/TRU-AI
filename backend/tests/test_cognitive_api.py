@@ -90,6 +90,9 @@ def test_scientific_workbench_page_is_available():
     assert "TRU-AI" in response.text
     assert "/scientific/analyze" in response.text
     assert "/cognitive/static/scientific.js" in response.text
+    assert "Cas confirmatif" in response.text
+    assert "Cas contradictoire" in response.text
+    assert "Cas incomplet" in response.text
 
 
 def test_cognitive_follow_up_reuses_previous_execution():

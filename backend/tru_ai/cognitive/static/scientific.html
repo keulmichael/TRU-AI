@@ -56,10 +56,16 @@
         <label for="observation">Observation réelle</label>
         <textarea id="observation" rows="3">Observed stability increases.</textarea>
 
-        <label>
-          Score de compatibilité
-          <input id="compatibility-score" type="number" min="0" max="1" step="0.01" value="0.9">
-        </label>
+        <div class="grid">
+          <label>
+            Score de compatibilité
+            <input id="compatibility-score" type="number" min="0" max="1" step="0.01" value="0.9">
+          </label>
+          <label class="inline-control">
+            <input id="falsification-hit" type="checkbox">
+            Condition de falsification atteinte
+          </label>
+        </div>
 
         <label class="inline-control">
           <input id="include-raw" type="checkbox">
@@ -69,6 +75,13 @@
         <div class="actions">
           <button type="submit">Analyser</button>
           <button id="clear-button" type="button" class="secondary">Effacer</button>
+        </div>
+        <div class="actions">
+          <button id="confirmatory-button" type="button" class="secondary">Cas confirmatif</button>
+          <button id="contradictory-button" type="button" class="secondary">Cas contradictoire</button>
+        </div>
+        <div class="actions">
+          <button id="incomplete-button" type="button" class="secondary">Cas incomplet</button>
         </div>
       </form>
 

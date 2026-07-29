@@ -7,6 +7,48 @@ const stageCards = document.querySelector("#stage-cards");
 const trace = document.querySelector("#trace");
 const rawJson = document.querySelector("#raw-json");
 const clearButton = document.querySelector("#clear-button");
+const confirmatoryButton = document.querySelector("#confirmatory-button");
+const contradictoryButton = document.querySelector("#contradictory-button");
+const incompleteButton = document.querySelector("#incomplete-button");
+
+const examples = {
+  confirmatory: {
+    question: "Analyze whether the observation confirms the supplied prediction.",
+    theoryId: "stability-theory",
+    theoryName: "Relation stability theory",
+    claims: ["Repeated recognition stabilizes a relation."],
+    prediction: "Relation stability increases.",
+    expectedObservation: "Observed stability increases.",
+    falsificationCondition: "Observed stability decreases.",
+    observation: "Observed stability increases.",
+    compatibilityScore: 0.9,
+    falsificationHit: false
+  },
+  contradictory: {
+    question: "Analyze whether the observation contradicts the supplied prediction.",
+    theoryId: "stability-theory",
+    theoryName: "Relation stability theory",
+    claims: ["Repeated recognition stabilizes a relation."],
+    prediction: "Relation stability increases.",
+    expectedObservation: "Observed stability increases.",
+    falsificationCondition: "Observed stability decreases.",
+    observation: "Observed stability decreases.",
+    compatibilityScore: 0.1,
+    falsificationHit: true
+  },
+  incomplete: {
+    question: "Analyze the theory with no matching scientific observation.",
+    theoryId: "stability-theory",
+    theoryName: "Relation stability theory",
+    claims: ["Repeated recognition stabilizes a relation."],
+    prediction: "Relation stability increases.",
+    expectedObservation: "Observed stability increases.",
+    falsificationCondition: "Observed stability decreases.",
+    observation: "",
+    compatibilityScore: 0.5,
+    falsificationHit: false
+  }
+};
 
 function valueOrDash(value) {
   if (value === null || value === undefined || value === "") {
@@ -83,11 +125,25 @@ function payloadFromForm() {
       prediction_id: predictionText ? "rule-1" : null,
       text: observationText,
       compatibility_score: compatibilityScore,
-      matches_falsification_condition: false
+      matches_falsification_condition: document.querySelector("#falsification-hit").checked
     }];
   }
 
   return request;
+}
+
+function loadExample(example) {
+  document.querySelector("#question").value = example.question;
+  document.querySelector("#theory-id").value = example.theoryId;
+  document.querySelector("#theory-name").value = example.theoryName;
+  document.querySelector("#claims").value = example.claims.join("\n");
+  document.querySelector("#prediction").value = example.prediction;
+  document.querySelector("#expected-observation").value = example.expectedObservation;
+  document.querySelector("#falsification-condition").value = example.falsificationCondition;
+  document.querySelector("#observation").value = example.observation;
+  document.querySelector("#compatibility-score").value = example.compatibilityScore;
+  document.querySelector("#falsification-hit").checked = example.falsificationHit;
+  resetOutput();
 }
 
 function renderSummary(data) {
@@ -233,3 +289,6 @@ async function runAnalysis(event) {
 
 form.addEventListener("submit", runAnalysis);
 clearButton.addEventListener("click", resetOutput);
+confirmatoryButton.addEventListener("click", () => loadExample(examples.confirmatory));
+contradictoryButton.addEventListener("click", () => loadExample(examples.contradictory));
+incompleteButton.addEventListener("click", () => loadExample(examples.incomplete));
