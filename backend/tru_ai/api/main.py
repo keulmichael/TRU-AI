@@ -42,6 +42,13 @@ def scientific_demo_page():
     )
 
 
+@app.get("/scientific")
+def scientific_workbench_page():
+    return FileResponse(
+        COGNITIVE_STATIC_DIRECTORY / "scientific.html"
+    )
+
+
 app.include_router(cognitive_router)
 app.include_router(query_router)
 app.include_router(reasoning_router)

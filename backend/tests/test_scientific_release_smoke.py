@@ -126,6 +126,10 @@ def test_scientific_analyze_full_release_chain_with_raw_result() -> None:
 
 
 def test_scientific_demo_release_compatibility() -> None:
+    workbench = client.get("/scientific")
+    assert workbench.status_code == 200
+    assert "/scientific/analyze" in workbench.text
+
     page = client.get("/scientific-demo")
     assert page.status_code == 200
     assert "Version 0.9.6" in page.text

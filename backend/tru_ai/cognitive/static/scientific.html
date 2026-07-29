@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TRU-AI — Scientific Engine</title>
+  <link rel="stylesheet" href="/cognitive/static/scientific-demo.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>TRU-AI — Scientific Engine</h1>
+        <p>Analyse scientifique générique · Version 0.9.6</p>
+      </div>
+      <nav>
+        <a href="/">Cognitive</a>
+        <a href="/scientific-demo">Demo</a>
+        <a href="/docs">API</a>
+      </nav>
+    </header>
+
+    <section class="workspace">
+      <form id="scientific-form" class="panel" data-endpoint="/scientific/analyze">
+        <label for="question">Question scientifique</label>
+        <textarea id="question" rows="3" required>Analyze this scientific claim.</textarea>
+
+        <div class="grid">
+          <label>
+            Theory ID
+            <input id="theory-id" type="text" value="user-theory">
+          </label>
+          <label>
+            Theory name
+            <input id="theory-name" type="text" value="User theory">
+          </label>
+        </div>
+
+        <label for="claims">Claims théoriques, un par ligne</label>
+        <textarea id="claims" rows="5">Repeated recognition stabilizes a relation.</textarea>
+
+        <label for="prediction">Prédiction</label>
+        <input id="prediction" type="text" value="Relation stability increases.">
+
+        <div class="grid">
+          <label>
+            Observation attendue
+            <input id="expected-observation" type="text" value="Observed stability increases.">
+          </label>
+          <label>
+            Condition de falsification
+            <input id="falsification-condition" type="text" value="Observed stability decreases.">
+          </label>
+        </div>
+
+        <label for="observation">Observation réelle</label>
+        <textarea id="observation" rows="3">Observed stability increases.</textarea>
+
+        <label>
+          Score de compatibilité
+          <input id="compatibility-score" type="number" min="0" max="1" step="0.01" value="0.9">
+        </label>
+
+        <label class="inline-control">
+          <input id="include-raw" type="checkbox">
+          Inclure le résultat brut
+        </label>
+
+        <div class="actions">
+          <button type="submit">Analyser</button>
+          <button id="clear-button" type="button" class="secondary">Effacer</button>
+        </div>
+      </form>
+
+      <section class="panel output">
+        <div id="status" class="status idle">Prêt.</div>
+        <section id="summary" class="summary" aria-label="Résumé"></section>
+        <section id="human-readable" class="conclusion" aria-label="Explication lisible"></section>
+
+        <section>
+          <h2>Résultats scientifiques</h2>
+          <div id="results" class="cards"></div>
+        </section>
+
+        <section>
+          <h2>Étapes exécutées</h2>
+          <div id="stage-cards" class="cards"></div>
+        </section>
+
+        <section>
+          <h2>Trace opérateur</h2>
+          <div id="trace" class="trace"></div>
+        </section>
+
+        <details class="json-panel">
+          <summary>Résultat JSON</summary>
+          <pre id="raw-json"></pre>
+        </details>
+      </section>
+    </section>
+  </main>
+
+  <script src="/cognitive/static/scientific.js"></script>
+</body>
+</html>
